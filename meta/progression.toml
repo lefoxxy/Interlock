@@ -1,0 +1,28 @@
+starting_age = "hand tools and burners"
+midgame_age = "basic power and routed logistics"
+advanced_age = "scaled processing and networked factories"
+endgame_age = "high throughput optimization"
+
+[principles]
+manual_processing_should_matter = true
+ore_doubling_should_not_be_free = true
+early_storage_should_be_tight = true
+mobility_should_not_skip_factory_buildout = true
+logistics_should_arrive_before_hypercompression = true
+single_block_solutions_should_be_late = true
+
+[[gates]]
+name = "ore_processing"
+goal = "Move from raw ore smelting into staged treatment"
+
+[[gates]]
+name = "power_generation"
+goal = "Require deliberate infrastructure before convenient automation"
+
+[[gates]]
+name = "bulk_logistics"
+goal = "Reward transport planning instead of backpack escalation"
+
+[[gates]]
+name = "digital_storage"
+goal = "Reserve universal storage for established factory play"

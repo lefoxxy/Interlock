@@ -1,0 +1,31 @@
+# Fill this file with the curated roster once selection begins.
+
+[[category]]
+name = "core-tech"
+goal = "Primary automation, processing, power, and logistics backbone"
+max_mods = 3
+
+[[category]]
+name = "resource-processing"
+goal = "Ore treatment, material forms, and cross-mod recipe coherence"
+max_mods = 3
+
+[[category]]
+name = "logistics"
+goal = "Item, fluid, and energy movement with clear progression"
+max_mods = 3
+
+[[category]]
+name = "world-support"
+goal = "Terrain, structures, and utility mods that strengthen the industrial sandbox"
+max_mods = 6
+
+[[category]]
+name = "quality-of-life"
+goal = "Interface and usability improvements that do not flatten progression"
+max_mods = 8
+
+[[category]]
+name = "questing-and-guidance"
+goal = "Progression visibility, onboarding, and diagnostics"
+max_mods = 2

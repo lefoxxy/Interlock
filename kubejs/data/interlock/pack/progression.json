@@ -1,0 +1,1008 @@
+{
+  "remove": [
+    {
+      "output": "mekanism:steel_casing"
+    },
+    {
+      "output": "mekanism:basic_control_circuit"
+    },
+    {
+      "output": "mekanism:metallurgic_infuser"
+    },
+    {
+      "output": "mekanism:enrichment_chamber"
+    },
+    {
+      "output": "mekanism:energized_smelter"
+    },
+    {
+      "output": "mekanism:crusher"
+    },
+    {
+      "output": "industrialforegoing:machine_frame_pity"
+    },
+    {
+      "output": "industrialforegoing:latex_processing_unit"
+    },
+    {
+      "output": "industrialforegoing:machine_frame_simple"
+    },
+    {
+      "output": "industrialforegoing:machine_frame_advanced"
+    },
+    {
+      "output": "industrialforegoing:machine_frame_supreme"
+    },
+    {
+      "output": "industrialforegoing:plant_sower"
+    },
+    {
+      "output": "industrialforegoing:plant_gatherer"
+    },
+    {
+      "output": "industrialforegoing:plant_fertilizer"
+    },
+    {
+      "output": "industrialforegoing:animal_rancher"
+    },
+    {
+      "output": "industrialforegoing:mob_crusher"
+    },
+    {
+      "output": "industrialforegoing:mob_slaughter_factory"
+    },
+    {
+      "output": "industrialforegoing:mob_duplicator"
+    },
+    {
+      "output": "industrialforegoing:fluid_extractor"
+    },
+    {
+      "output": "industrialforegoing:fluid_placer"
+    },
+    {
+      "output": "industrialforegoing:hydroponic_bed"
+    },
+    {
+      "output": "industrialforegoing:simulated_hydroponic_bed"
+    },
+    {
+      "output": "industrialforegoing:hydroponic_simulation_processor"
+    },
+    {
+      "output": "industrialforegoing:potion_brewer"
+    },
+    {
+      "output": "industrialforegoing:pitiful_generator"
+    },
+    {
+      "output": "industrialforegoing:biofuel_generator"
+    },
+    {
+      "output": "industrialforegoing:resourceful_furnace"
+    },
+    {
+      "output": "industrialforegoing:material_stonework_factory"
+    },
+    {
+      "output": "industrialforegoing:washing_factory"
+    },
+    {
+      "output": "industrialforegoing:dissolution_chamber"
+    },
+    {
+      "output": "industrialforegoing:laser_drill"
+    },
+    {
+      "output": "industrialforegoing:ore_laser_base"
+    },
+    {
+      "output": "industrialforegoing:fluid_laser_base"
+    },
+    {
+      "output": "industrialforegoing:mycelial_culinary"
+    },
+    {
+      "output": "industrialforegoing:mycelial_crimed"
+    },
+    {
+      "output": "industrialforegoing:mycelial_death"
+    },
+    {
+      "output": "industrialforegoing:mycelial_disenchantment"
+    },
+    {
+      "output": "industrialforegoing:mycelial_ender"
+    },
+    {
+      "output": "industrialforegoing:mycelial_explosive"
+    },
+    {
+      "output": "industrialforegoing:mycelial_frosty"
+    },
+    {
+      "output": "industrialforegoing:mycelial_furnace"
+    },
+    {
+      "output": "industrialforegoing:mycelial_halitosis"
+    },
+    {
+      "output": "industrialforegoing:mycelial_magma"
+    },
+    {
+      "output": "industrialforegoing:mycelial_meatallurgic"
+    },
+    {
+      "output": "industrialforegoing:mycelial_netherstar"
+    },
+    {
+      "output": "industrialforegoing:mycelial_pink"
+    },
+    {
+      "output": "industrialforegoing:mycelial_potion"
+    },
+    {
+      "output": "industrialforegoing:mycelial_reactor"
+    },
+    {
+      "output": "industrialforegoing:mycelial_rocket"
+    },
+    {
+      "output": "industrialforegoing:mycelial_slimey"
+    },
+    {
+      "output": "powah:dielectric_casing"
+    },
+    {
+      "output": "powah:capacitor_basic"
+    },
+    {
+      "output": "powah:photoelectric_pane"
+    },
+    {
+      "output": "powah:thermoelectric_plate"
+    },
+    {
+      "output": "powah:energizing_orb"
+    },
+    {
+      "output": "powah:energy_cell_starter"
+    },
+    {
+      "output": "powah:energy_cell_basic"
+    },
+    {
+      "output": "powah:battery_starter"
+    },
+    {
+      "output": "powah:battery_basic"
+    },
+    {
+      "output": "powah:energy_cable_starter"
+    },
+    {
+      "output": "powah:energy_cable_basic"
+    },
+    {
+      "output": "powah:furnator_starter"
+    },
+    {
+      "output": "powah:furnator_basic"
+    },
+    {
+      "output": "powah:magmator_starter"
+    },
+    {
+      "output": "powah:magmator_basic"
+    },
+    {
+      "output": "powah:solar_panel_starter"
+    },
+    {
+      "output": "powah:solar_panel_basic"
+    },
+    {
+      "output": "powah:thermo_generator_starter"
+    },
+    {
+      "output": "powah:thermo_generator_basic"
+    },
+    {
+      "output": "powah:energizing_rod_starter"
+    },
+    {
+      "output": "powah:energizing_rod_basic"
+    },
+    {
+      "output": "powah:reactor_starter"
+    },
+    {
+      "output": "powah:reactor_basic"
+    }
+  ],
+  "replacements": [],
+  "shaped": [
+    {
+      "id": "interlock:progression/mekanism/steel_casing",
+      "output": "mekanism:steel_casing",
+      "pattern": [
+        "PCP",
+        "SIS",
+        "PCP"
+      ],
+      "key": {
+        "P": "#c:plates/copper",
+        "C": "immersiveengineering:component_iron",
+        "S": "#c:ingots/steel",
+        "I": "#c:ingots/iron"
+      }
+    },
+    {
+      "id": "interlock:progression/mekanism/basic_control_circuit",
+      "output": "mekanism:basic_control_circuit",
+      "pattern": [
+        "RER",
+        "OOO",
+        "RER"
+      ],
+      "key": {
+        "R": "minecraft:redstone",
+        "E": "immersiveengineering:electron_tube",
+        "O": "mekanism:ingot_osmium"
+      }
+    },
+    {
+      "id": "interlock:progression/mekanism/metallurgic_infuser",
+      "output": "mekanism:metallurgic_infuser",
+      "pattern": [
+        "ICI",
+        "SFS",
+        "ILI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "mekanism:basic_control_circuit",
+        "S": "mekanism:steel_casing",
+        "F": "minecraft:furnace",
+        "L": "immersiveengineering:light_engineering"
+      }
+    },
+    {
+      "id": "interlock:progression/mekanism/enrichment_chamber",
+      "output": "mekanism:enrichment_chamber",
+      "pattern": [
+        "ICI",
+        "SAS",
+        "IPI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "mekanism:basic_control_circuit",
+        "S": "mekanism:steel_casing",
+        "A": "minecraft:anvil",
+        "P": "immersiveengineering:component_iron"
+      }
+    },
+    {
+      "id": "interlock:progression/mekanism/energized_smelter",
+      "output": "mekanism:energized_smelter",
+      "pattern": [
+        "ICI",
+        "SFS",
+        "ITI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "mekanism:basic_control_circuit",
+        "S": "mekanism:steel_casing",
+        "F": "minecraft:furnace",
+        "T": "immersiveengineering:electron_tube"
+      }
+    },
+    {
+      "id": "interlock:progression/mekanism/crusher",
+      "output": "mekanism:crusher",
+      "pattern": [
+        "ICI",
+        "SPS",
+        "ILI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "mekanism:basic_control_circuit",
+        "S": "mekanism:steel_casing",
+        "P": "minecraft:piston",
+        "L": "immersiveengineering:light_engineering"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/machine_frame_simple",
+      "output": "industrialforegoing:machine_frame_simple",
+      "pattern": [
+        "PLP",
+        "BMB",
+        "PEP"
+      ],
+      "key": {
+        "P": "industrialforegoing:plastic",
+        "L": "immersiveengineering:light_engineering",
+        "B": "mekanism:basic_energy_cube",
+        "M": "industrialforegoing:machine_frame_pity",
+        "E": "mekanism:energy_tablet"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/machine_frame_advanced",
+      "output": "industrialforegoing:machine_frame_advanced",
+      "pattern": [
+        "PEP",
+        "BMB",
+        "CEC"
+      ],
+      "key": {
+        "P": "#c:plates/steel",
+        "M": "industrialforegoing:machine_frame_simple",
+        "B": "immersiveengineering:capacitor_mv",
+        "C": "mekanism:advanced_control_circuit",
+        "E": "mekanism:basic_energy_cube"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/machine_frame_supreme",
+      "output": "industrialforegoing:machine_frame_supreme",
+      "pattern": [
+        "PEP",
+        "BMB",
+        "CEC"
+      ],
+      "key": {
+        "P": "#c:plates/electrum",
+        "M": "industrialforegoing:machine_frame_advanced",
+        "B": "immersiveengineering:heavy_engineering",
+        "C": "mekanism:elite_control_circuit",
+        "E": "mekanism:advanced_energy_cube"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/machine_frame_pity",
+      "output": "industrialforegoing:machine_frame_pity",
+      "pattern": [
+        "ICI",
+        "EME",
+        "IRI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "immersiveengineering:component_iron",
+        "E": "mekanism:energy_tablet",
+        "M": "immersiveengineering:capacitor_lv",
+        "R": "mekanism:basic_control_circuit"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/latex_processing_unit",
+      "output": "industrialforegoing:latex_processing_unit",
+      "pattern": [
+        "IGI",
+        "BMB",
+        "CEC"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "G": "minecraft:redstone_block",
+        "B": "minecraft:bucket",
+        "M": "industrialforegoing:machine_frame_pity",
+        "C": "immersiveengineering:capacitor_mv",
+        "E": "mekanism:energy_tablet"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/plant_sower",
+      "output": "industrialforegoing:plant_sower",
+      "pattern": [
+        "PBP",
+        "LML",
+        "ICI"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "B": "minecraft:flower_pot",
+        "L": "minecraft:piston",
+        "M": "industrialforegoing:machine_frame_simple",
+        "I": "immersiveengineering:component_iron",
+        "C": "mekanism:basic_control_circuit"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/plant_fertilizer",
+      "output": "industrialforegoing:plant_fertilizer",
+      "pattern": [
+        "PBP",
+        "SMS",
+        "ICI"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "B": "minecraft:glass_bottle",
+        "S": "minecraft:leather",
+        "M": "industrialforegoing:machine_frame_simple",
+        "I": "immersiveengineering:component_iron",
+        "C": "mekanism:basic_control_circuit"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/fluid_extractor",
+      "output": "industrialforegoing:fluid_extractor",
+      "pattern": [
+        "IPI",
+        "CMC",
+        "IRI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "P": "minecraft:piston",
+        "C": "immersiveengineering:component_iron",
+        "M": "industrialforegoing:machine_frame_pity",
+        "R": "mekanism:basic_control_circuit"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/fluid_placer",
+      "output": "industrialforegoing:fluid_placer",
+      "pattern": [
+        "PBP",
+        "CMC",
+        "IRI"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "B": "minecraft:water_bucket",
+        "C": "immersiveengineering:component_iron",
+        "M": "industrialforegoing:machine_frame_simple",
+        "R": "mekanism:basic_control_circuit",
+        "I": "#c:ingots/iron"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/animal_rancher",
+      "output": "industrialforegoing:animal_rancher",
+      "pattern": [
+        "PBP",
+        "SMS",
+        "ACA"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "B": "minecraft:bucket",
+        "S": "minecraft:shears",
+        "M": "industrialforegoing:machine_frame_advanced",
+        "A": "mekanism:advanced_control_circuit",
+        "C": "immersiveengineering:component_iron"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/plant_gatherer",
+      "output": "industrialforegoing:plant_gatherer",
+      "pattern": [
+        "PHP",
+        "AMA",
+        "CSC"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "H": "minecraft:iron_hoe",
+        "A": "minecraft:iron_axe",
+        "M": "industrialforegoing:machine_frame_advanced",
+        "C": "mekanism:advanced_control_circuit",
+        "S": "immersiveengineering:component_steel"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/hydroponic_simulation_processor",
+      "output": "industrialforegoing:hydroponic_simulation_processor",
+      "pattern": [
+        "PEP",
+        "DRD",
+        "PAP"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "E": "immersiveengineering:electron_tube",
+        "D": "minecraft:observer",
+        "R": "minecraft:repeater",
+        "A": "mekanism:advanced_control_circuit"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/hydroponic_bed",
+      "output": "industrialforegoing:hydroponic_bed",
+      "pattern": [
+        "PFP",
+        "HBH",
+        "AMA"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "F": "industrialforegoing:plant_fertilizer",
+        "H": "minecraft:iron_hoe",
+        "B": "mekanism:advanced_control_circuit",
+        "A": "industrialforegoing:machine_frame_advanced",
+        "M": "immersiveengineering:component_steel"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/simulated_hydroponic_bed",
+      "output": "industrialforegoing:simulated_hydroponic_bed",
+      "pattern": [
+        "PHP",
+        "BMB",
+        "SES"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "H": "industrialforegoing:hydroponic_simulation_processor",
+        "B": "industrialforegoing:hydroponic_bed",
+        "M": "industrialforegoing:machine_frame_supreme",
+        "E": "mekanism:elite_control_circuit",
+        "S": "immersiveengineering:component_steel"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/mob_slaughter_factory",
+      "output": "industrialforegoing:mob_slaughter_factory",
+      "pattern": [
+        "PDP",
+        "SMS",
+        "ACA"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "D": "minecraft:iron_axe",
+        "S": "minecraft:iron_sword",
+        "M": "industrialforegoing:machine_frame_advanced",
+        "A": "mekanism:advanced_control_circuit",
+        "C": "immersiveengineering:component_steel"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/mob_crusher",
+      "output": "industrialforegoing:mob_crusher",
+      "pattern": [
+        "PSP",
+        "AMA",
+        "CDC"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "S": "minecraft:diamond_sword",
+        "A": "industrialforegoing:machine_frame_advanced",
+        "M": "mekanism:advanced_control_circuit",
+        "C": "immersiveengineering:component_steel",
+        "D": "minecraft:book"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/potion_brewer",
+      "output": "industrialforegoing:potion_brewer",
+      "pattern": [
+        "PSP",
+        "BMB",
+        "CRC"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "S": "minecraft:brewing_stand",
+        "B": "immersiveengineering:electron_tube",
+        "M": "industrialforegoing:machine_frame_advanced",
+        "C": "mekanism:advanced_control_circuit",
+        "R": "minecraft:repeater"
+      }
+    },
+    {
+      "id": "interlock:progression/industrialforegoing/mob_duplicator",
+      "output": "industrialforegoing:mob_duplicator",
+      "pattern": [
+        "PWP",
+        "GMG",
+        "ESE"
+      ],
+      "key": {
+        "P": "#c:plastics",
+        "W": "minecraft:nether_wart",
+        "G": "minecraft:ghast_tear",
+        "M": "industrialforegoing:machine_frame_supreme",
+        "E": "mekanism:elite_control_circuit",
+        "S": "immersiveengineering:component_steel"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/dielectric_casing",
+      "output": "powah:dielectric_casing",
+      "pattern": [
+        "ICI",
+        "R R",
+        "ICI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "immersiveengineering:component_iron",
+        "R": "powah:dielectric_rod"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/capacitor_basic",
+      "output": "4x powah:capacitor_basic",
+      "pattern": [
+        " IE",
+        "RCR",
+        "EI "
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "E": "mekanism:energy_tablet",
+        "R": "minecraft:redstone_block",
+        "C": "powah:dielectric_paste"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/photoelectric_pane",
+      "output": "powah:photoelectric_pane",
+      "pattern": [
+        "DLD",
+        "EPE",
+        "DLD"
+      ],
+      "key": {
+        "D": "powah:dielectric_paste",
+        "L": "minecraft:lapis_lazuli",
+        "E": "immersiveengineering:electron_tube",
+        "P": "#c:glass_panes"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/thermoelectric_plate",
+      "output": "powah:thermoelectric_plate",
+      "pattern": [
+        "BRB",
+        "RTR",
+        "BAB"
+      ],
+      "key": {
+        "B": "minecraft:blaze_powder",
+        "R": "minecraft:redstone",
+        "T": "powah:capacitor_basic_tiny",
+        "A": "mekanism:alloy_infused"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/energizing_orb",
+      "output": "powah:energizing_orb",
+      "pattern": [
+        "GGG",
+        "LCL",
+        "RER"
+      ],
+      "key": {
+        "G": "#c:glass_blocks",
+        "L": "immersiveengineering:light_engineering",
+        "C": "powah:dielectric_casing",
+        "R": "powah:dielectric_rod_horizontal",
+        "E": "mekanism:energy_tablet"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/energy_cell_starter",
+      "output": "powah:energy_cell_starter",
+      "pattern": [
+        "ICI",
+        "TET",
+        "ICI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "powah:capacitor_basic_tiny",
+        "T": "mekanism:energy_tablet",
+        "E": "powah:dielectric_casing"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/energy_cell_basic",
+      "output": "powah:energy_cell_basic",
+      "pattern": [
+        "ICI",
+        "TET",
+        "ICI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "powah:capacitor_basic",
+        "T": "mekanism:basic_control_circuit",
+        "E": "powah:energy_cell_starter"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/battery_starter",
+      "output": "powah:battery_starter",
+      "pattern": [
+        "OIO",
+        "RCR",
+        "OEO"
+      ],
+      "key": {
+        "O": "powah:dielectric_paste",
+        "I": "powah:capacitor_basic",
+        "R": "minecraft:redstone_block",
+        "C": "immersiveengineering:component_iron",
+        "E": "mekanism:energy_tablet"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/battery_basic",
+      "output": "powah:battery_basic",
+      "pattern": [
+        "OIO",
+        "KCK",
+        "OBO"
+      ],
+      "key": {
+        "O": "powah:dielectric_paste",
+        "I": "powah:capacitor_basic_large",
+        "K": "#c:ingots/iron",
+        "C": "mekanism:basic_control_circuit",
+        "B": "powah:battery_starter"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/energy_cable_starter",
+      "output": "12x powah:energy_cable_starter",
+      "pattern": [
+        "DDD",
+        "ETE",
+        "DDD"
+      ],
+      "key": {
+        "D": "powah:dielectric_rod_horizontal",
+        "E": "mekanism:energy_tablet",
+        "T": "powah:capacitor_basic_tiny"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/energy_cable_basic",
+      "output": "6x powah:energy_cable_basic",
+      "pattern": [
+        "DDD",
+        "TCT",
+        "DDD"
+      ],
+      "key": {
+        "D": "powah:dielectric_rod_horizontal",
+        "T": "powah:energy_cable_starter",
+        "C": "powah:capacitor_basic"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/furnator_starter",
+      "output": "powah:furnator_starter",
+      "pattern": [
+        "GGG",
+        "CDC",
+        "GFG"
+      ],
+      "key": {
+        "G": "powah:dielectric_paste",
+        "C": "powah:capacitor_basic_tiny",
+        "D": "powah:dielectric_casing",
+        "F": "minecraft:furnace"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/furnator_basic",
+      "output": "powah:furnator_basic",
+      "pattern": [
+        "III",
+        "CDC",
+        "IFI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "powah:capacitor_basic",
+        "D": "powah:dielectric_casing",
+        "F": "powah:furnator_starter"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/magmator_starter",
+      "output": "powah:magmator_starter",
+      "pattern": [
+        "GGG",
+        "CDC",
+        "GBG"
+      ],
+      "key": {
+        "G": "powah:dielectric_paste",
+        "C": "powah:capacitor_basic_tiny",
+        "D": "powah:dielectric_casing",
+        "B": "minecraft:bucket"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/magmator_basic",
+      "output": "powah:magmator_basic",
+      "pattern": [
+        "III",
+        "CDC",
+        "IFI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "powah:capacitor_basic",
+        "D": "powah:dielectric_casing",
+        "F": "powah:magmator_starter"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/solar_panel_starter",
+      "output": "powah:solar_panel_starter",
+      "pattern": [
+        "PPP",
+        "CDC",
+        "EEE"
+      ],
+      "key": {
+        "P": "powah:photoelectric_pane",
+        "C": "powah:capacitor_basic_tiny",
+        "D": "powah:dielectric_casing",
+        "E": "immersiveengineering:electron_tube"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/solar_panel_basic",
+      "output": "powah:solar_panel_basic",
+      "pattern": [
+        "PPP",
+        "CDC",
+        "III"
+      ],
+      "key": {
+        "P": "powah:solar_panel_starter",
+        "C": "powah:capacitor_basic",
+        "D": "powah:dielectric_casing",
+        "I": "#c:ingots/iron"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/thermo_generator_starter",
+      "output": "powah:thermo_generator_starter",
+      "pattern": [
+        "III",
+        "CDC",
+        "PPP"
+      ],
+      "key": {
+        "I": "powah:dielectric_paste",
+        "C": "powah:capacitor_basic_tiny",
+        "D": "powah:dielectric_casing",
+        "P": "powah:thermoelectric_plate"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/thermo_generator_basic",
+      "output": "powah:thermo_generator_basic",
+      "pattern": [
+        "EIE",
+        "CDC",
+        "PTP"
+      ],
+      "key": {
+        "E": "powah:dielectric_paste",
+        "I": "#c:ingots/iron",
+        "C": "powah:capacitor_basic",
+        "D": "powah:dielectric_casing",
+        "P": "powah:thermoelectric_plate",
+        "T": "powah:thermo_generator_starter"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/energizing_rod_starter",
+      "output": "powah:energizing_rod_starter",
+      "pattern": [
+        " Q ",
+        "BCB",
+        " H "
+      ],
+      "key": {
+        "Q": "minecraft:quartz",
+        "B": "powah:capacitor_basic_tiny",
+        "C": "powah:dielectric_casing",
+        "H": "mekanism:energy_tablet"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/energizing_rod_basic",
+      "output": "powah:energizing_rod_basic",
+      "pattern": [
+        " Q ",
+        "BCB",
+        " H "
+      ],
+      "key": {
+        "Q": "#c:storage_blocks/quartz",
+        "B": "powah:capacitor_basic",
+        "C": "powah:dielectric_casing",
+        "H": "powah:energizing_rod_starter"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/reactor_starter",
+      "output": "4x powah:reactor_starter",
+      "pattern": [
+        "ULU",
+        "LCL",
+        "UEU"
+      ],
+      "key": {
+        "U": "powah:uraninite",
+        "L": "powah:capacitor_basic_tiny",
+        "C": "powah:dielectric_casing",
+        "E": "immersiveengineering:light_engineering"
+      }
+    },
+    {
+      "id": "interlock:progression/powah/reactor_basic",
+      "output": "4x powah:reactor_basic",
+      "pattern": [
+        "RLR",
+        "UAU",
+        "RLR"
+      ],
+      "key": {
+        "R": "powah:reactor_starter",
+        "L": "powah:capacitor_basic_large",
+        "U": "powah:uraninite",
+        "A": "mekanism:advanced_control_circuit"
+      }
+    }
+  ],
+  "shapeless": [
+    {
+      "id": "interlock:progression/powah/capacitor_basic_tiny",
+      "output": "2x powah:capacitor_basic_tiny",
+      "inputs": [
+        "powah:capacitor_basic"
+      ]
+    },
+    {
+      "id": "interlock:progression/powah/capacitor_basic_large",
+      "output": "powah:capacitor_basic_large",
+      "inputs": [
+        "powah:capacitor_basic",
+        "powah:capacitor_basic"
+      ]
+    }
+  ],
+  "roleMap": {
+    "immersiveengineering": "Early game machines and power",
+    "mekanism": "Primary processing and mid-game machines",
+    "industrialforegoing": "Automation only: farms, mobs, fluids"
+  },
+  "overlapList": [
+    "Industrial Foregoing generators compete with Immersive Engineering's early power role.",
+    "Industrial Foregoing laser and passive resource machines bypass Mekanism's intended processing and factory expansion loop.",
+    "Industrial Foregoing standalone processing blocks dilute the division between automation support and primary machine progression."
+  ],
+  "dependencyMap": [
+    "Immersive Engineering -> Mekanism core machines",
+    "Immersive Engineering + Mekanism -> Powah starter/basic power",
+    "Mekanism + Immersive Engineering power/components -> Industrial Foregoing pity frame",
+    "Pity frame + fluid extractor + latex processing unit -> plastic production",
+    "Plastic production -> Industrial Foregoing simple/advanced/supreme frames",
+    "Industrial Foregoing frames -> Industrial Foregoing automation machines"
+  ],
+  "notes": [
+    "Industrial Foregoing is kept as a late automation layer, not as a replacement for IE power or Mekanism processing.",
+    "The IF entry path is now: pity frame -> fluid extractor and latex processing -> plastic -> full machine frames -> automation machines.",
+    "Farm, mob, and fluid automation are gated through Industrial Foregoing machine frames plus Mekanism circuits and IE components.",
+    "Mid-tier power items are part of the unlock, using Mekanism energy storage and IE capacitors to mark IF as a mid-game milestone.",
+    "Power generators, passive resource production, and processing-adjacent IF machines are disabled by recipe removal."
+  ]
+}

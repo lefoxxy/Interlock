@@ -1,0 +1,12 @@
+pack_name = "Interlock"
+pack_version = "0.1.0"
+minecraft_version = "1.21.1"
+loader = "neoforge"
+neoforge_version = "21.1.226"
+distribution_format = "curseforge-export"
+
+[policy]
+content_direction = "integrated industrial sandbox"
+custom_content_level = "minimal"
+quest_style = "guided progression with optional optimization"
+balance_priority = "coherence over breadth"

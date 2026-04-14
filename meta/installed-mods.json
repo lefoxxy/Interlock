@@ -1,0 +1,207 @@
+{
+    "minecraft":  "1.21.1",
+    "neoforge":  "21.1.226",
+    "generated_at":  "2026-04-12T15:43:21-07:00",
+    "mods":  [
+                 {
+                     "name":  "Applied Energistics 2",
+                     "slug":  "ae2",
+                     "source":  "modrinth",
+                     "version":  "19.2.17",
+                     "file":  "mods/appliedenergistics2-19.2.17.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/ae2/version/kfyIqgJ6"
+                 },
+                 {
+                     "name":  "Cloth Config API",
+                     "slug":  "cloth-config",
+                     "source":  "modrinth",
+                     "version":  "15.0.140+neoforge",
+                     "file":  "mods/cloth-config-15.0.140-neoforge.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/cloth-config/version/izKINKFg"
+                 },
+                 {
+                     "name":  "Architectury API",
+                     "slug":  "architectury-neoforge",
+                     "source":  "maven",
+                     "version":  "13.0.8",
+                     "file":  "mods/architectury-neoforge-13.0.8.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://maven.architectury.dev/dev/architectury/architectury-neoforge/"
+                 },
+                 {
+                     "name":  "Controlling",
+                     "slug":  "controlling",
+                     "source":  "modrinth",
+                     "version":  "19.0.5",
+                     "file":  "mods/Controlling-neoforge-1.21.1-19.0.5.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/controlling/version/FaNppCJJ"
+                 },
+                 {
+                     "name":  "FTB Library",
+                     "slug":  "ftb-library-neoforge",
+                     "source":  "maven",
+                     "version":  "2101.1.31",
+                     "file":  "mods/ftb-library-neoforge-2101.1.31.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-library-neoforge/"
+                 },
+                 {
+                     "name":  "FTB Quests",
+                     "slug":  "ftb-quests-neoforge",
+                     "source":  "maven",
+                     "version":  "2101.1.24",
+                     "file":  "mods/ftb-quests-neoforge-2101.1.24.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-quests-neoforge/"
+                 },
+                 {
+                     "name":  "FTB Teams",
+                     "slug":  "ftb-teams-neoforge",
+                     "source":  "maven",
+                     "version":  "2101.1.9",
+                     "file":  "mods/ftb-teams-neoforge-2101.1.9.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-teams-neoforge/"
+                 },
+                 {
+                     "name":  "GuideME",
+                     "slug":  "guideme",
+                     "source":  "modrinth",
+                     "version":  "21.1.15",
+                     "file":  "mods/guideme-21.1.15.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/guideme/version/ILW6vM7o"
+                 },
+                 {
+                     "name":  "Immersive Engineering",
+                     "slug":  "immersiveengineering",
+                     "source":  "modrinth",
+                     "version":  "12.4.2-194",
+                     "file":  "mods/ImmersiveEngineering-1.21.1-12.4.2-194.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/immersiveengineering/version/uNRARSH2"
+                 },
+                 {
+                     "name":  "Industrial Foregoing",
+                     "slug":  "industrial-foregoing",
+                     "source":  "modrinth",
+                     "version":  "1.21-3.6.38",
+                     "file":  "mods/industrialforegoing-1.21-3.6.38.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/industrial-foregoing/version/os5V2Plx"
+                 },
+                 {
+                     "name":  "Jade",
+                     "slug":  "jade",
+                     "source":  "modrinth",
+                     "version":  "15.10.5+neoforge",
+                     "file":  "mods/Jade-1.21.1-NeoForge-15.10.5.jar",
+                     "client_side":  "optional",
+                     "server_side":  "optional",
+                     "url":  "https://modrinth.com/mod/jade/version/yd8FKCmx"
+                 },
+                 {
+                     "name":  "Just Enough Items (JEI)",
+                     "slug":  "jei",
+                     "source":  "modrinth",
+                     "version":  "19.27.0.340",
+                     "file":  "mods/jei-1.21.1-neoforge-19.27.0.340.jar",
+                     "client_side":  "optional",
+                     "server_side":  "optional",
+                     "url":  "https://modrinth.com/mod/jei/version/YAcQ6elZ"
+                 },
+                 {
+                     "name":  "KubeJS",
+                     "slug":  "kubejs",
+                     "source":  "modrinth",
+                     "version":  "2101.7.2-build.348",
+                     "file":  "mods/kubejs-neoforge-2101.7.2-build.348.jar",
+                     "client_side":  "optional",
+                     "server_side":  "optional",
+                     "url":  "https://modrinth.com/mod/kubejs/version/8nuqyxbw"
+                 },
+                 {
+                     "name":  "Mekanism",
+                     "slug":  "mekanism",
+                     "source":  "modrinth",
+                     "version":  "10.7.19.85",
+                     "file":  "mods/Mekanism-1.21.1-10.7.19.85.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/mekanism/version/5KzzycBT"
+                 },
+                 {
+                     "name":  "Mouse Tweaks",
+                     "slug":  "mouse-tweaks",
+                     "source":  "modrinth",
+                     "version":  "1.21-2.26.1-neoforge",
+                     "file":  "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/mouse-tweaks/version/9I21YYxf"
+                 },
+                 {
+                     "name":  "Pipez",
+                     "slug":  "pipez",
+                     "source":  "modrinth",
+                     "version":  "neoforge-1.21.1-1.2.19",
+                     "file":  "mods/pipez-neoforge-1.21.1-1.2.19.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/pipez/version/z20ZR1YE"
+                 },
+                 {
+                     "name":  "Powah!",
+                     "slug":  "powah",
+                     "source":  "modrinth",
+                     "version":  "6.2.8-neoforge",
+                     "file":  "mods/Powah-6.2.8.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/powah/version/y2Y1fHd2"
+                 },
+                 {
+                     "name":  "Rhino",
+                     "slug":  "rhino",
+                     "source":  "modrinth",
+                     "version":  "2101.2.7-build.81+Rhino-1.21",
+                     "file":  "mods/rhino-2101.2.7-build.81.jar",
+                     "client_side":  "optional",
+                     "server_side":  "optional",
+                     "url":  "https://modrinth.com/mod/rhino/version/ZdLtebKH"
+                 },
+                 {
+                     "name":  "Searchables",
+                     "slug":  "searchables",
+                     "source":  "modrinth",
+                     "version":  "1.0.2",
+                     "file":  "mods/Searchables-neoforge-1.21.1-1.0.2.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/searchables/version/iEE85X0w"
+                 },
+                 {
+                     "name":  "Titanium",
+                     "slug":  "titanium",
+                     "source":  "modrinth",
+                     "version":  "1.21-4.0.42",
+                     "file":  "mods/titanium-1.21-4.0.42.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/titanium/version/LmipxHTo"
+                 }
+             ]
+}

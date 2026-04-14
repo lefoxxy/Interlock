@@ -1,0 +1,10 @@
+logs/
+crash-reports/
+downloads/
+exports/
+local/
+.runtime/
+installer.log
+*.bak
+*.tmp
+mods/*.jar

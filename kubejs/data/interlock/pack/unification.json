@@ -1,0 +1,329 @@
+{
+  "materials": [
+    {
+      "name": "iron",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/iron",
+          "canonical": "minecraft:iron_ingot",
+          "candidates": ["minecraft:iron_ingot"]
+        },
+        "dusts": {
+          "tag": "c:dusts/iron",
+          "canonical": "mekanism:dust_iron",
+          "candidates": ["mekanism:dust_iron", "immersiveengineering:dust_iron"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/iron",
+          "canonical": "minecraft:iron_nugget",
+          "candidates": ["minecraft:iron_nugget"]
+        },
+        "plates": {
+          "tag": "c:plates/iron",
+          "canonical": "immersiveengineering:plate_iron",
+          "candidates": ["immersiveengineering:plate_iron"]
+        }
+      }
+    },
+    {
+      "name": "gold",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/gold",
+          "canonical": "minecraft:gold_ingot",
+          "candidates": ["minecraft:gold_ingot"]
+        },
+        "dusts": {
+          "tag": "c:dusts/gold",
+          "canonical": "mekanism:dust_gold",
+          "candidates": ["mekanism:dust_gold", "immersiveengineering:dust_gold"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/gold",
+          "canonical": "minecraft:gold_nugget",
+          "candidates": ["minecraft:gold_nugget"]
+        },
+        "plates": {
+          "tag": "c:plates/gold",
+          "canonical": "immersiveengineering:plate_gold",
+          "candidates": ["immersiveengineering:plate_gold"]
+        }
+      }
+    },
+    {
+      "name": "copper",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/copper",
+          "canonical": "minecraft:copper_ingot",
+          "candidates": ["minecraft:copper_ingot"]
+        },
+        "dusts": {
+          "tag": "c:dusts/copper",
+          "canonical": "mekanism:dust_copper",
+          "candidates": ["mekanism:dust_copper", "immersiveengineering:dust_copper"]
+        },
+        "plates": {
+          "tag": "c:plates/copper",
+          "canonical": "immersiveengineering:plate_copper",
+          "candidates": ["immersiveengineering:plate_copper"]
+        }
+      }
+    },
+    {
+      "name": "tin",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/tin",
+          "canonical": "mekanism:ingot_tin",
+          "candidates": ["mekanism:ingot_tin"]
+        },
+        "dusts": {
+          "tag": "c:dusts/tin",
+          "canonical": "mekanism:dust_tin",
+          "candidates": ["mekanism:dust_tin"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/tin",
+          "canonical": "mekanism:nugget_tin",
+          "candidates": ["mekanism:nugget_tin"]
+        }
+      }
+    },
+    {
+      "name": "lead",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/lead",
+          "canonical": "mekanism:ingot_lead",
+          "candidates": ["mekanism:ingot_lead"]
+        },
+        "dusts": {
+          "tag": "c:dusts/lead",
+          "canonical": "mekanism:dust_lead",
+          "candidates": ["mekanism:dust_lead", "immersiveengineering:dust_lead"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/lead",
+          "canonical": "mekanism:nugget_lead",
+          "candidates": ["mekanism:nugget_lead", "immersiveengineering:nugget_lead"]
+        },
+        "plates": {
+          "tag": "c:plates/lead",
+          "canonical": "immersiveengineering:plate_lead",
+          "candidates": ["immersiveengineering:plate_lead"]
+        }
+      }
+    },
+    {
+      "name": "bronze",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/bronze",
+          "canonical": "mekanism:ingot_bronze",
+          "candidates": ["mekanism:ingot_bronze"]
+        },
+        "dusts": {
+          "tag": "c:dusts/bronze",
+          "canonical": "mekanism:dust_bronze",
+          "candidates": ["mekanism:dust_bronze"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/bronze",
+          "canonical": "mekanism:nugget_bronze",
+          "candidates": ["mekanism:nugget_bronze"]
+        }
+      }
+    },
+    {
+      "name": "steel",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/steel",
+          "canonical": "mekanism:ingot_steel",
+          "candidates": ["mekanism:ingot_steel"]
+        },
+        "dusts": {
+          "tag": "c:dusts/steel",
+          "canonical": "mekanism:dust_steel",
+          "candidates": ["mekanism:dust_steel", "immersiveengineering:dust_steel"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/steel",
+          "canonical": "mekanism:nugget_steel",
+          "candidates": ["mekanism:nugget_steel", "immersiveengineering:nugget_steel"]
+        },
+        "plates": {
+          "tag": "c:plates/steel",
+          "canonical": "immersiveengineering:plate_steel",
+          "candidates": ["immersiveengineering:plate_steel"]
+        }
+      }
+    },
+    {
+      "name": "osmium",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/osmium",
+          "canonical": "mekanism:ingot_osmium",
+          "candidates": ["mekanism:ingot_osmium"]
+        },
+        "dusts": {
+          "tag": "c:dusts/osmium",
+          "canonical": "mekanism:dust_osmium",
+          "candidates": ["mekanism:dust_osmium"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/osmium",
+          "canonical": "mekanism:nugget_osmium",
+          "candidates": ["mekanism:nugget_osmium"]
+        }
+      }
+    },
+    {
+      "name": "uranium",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/uranium",
+          "canonical": "mekanism:ingot_uranium",
+          "candidates": ["mekanism:ingot_uranium"]
+        },
+        "dusts": {
+          "tag": "c:dusts/uranium",
+          "canonical": "mekanism:dust_uranium",
+          "candidates": ["mekanism:dust_uranium", "immersiveengineering:dust_uranium"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/uranium",
+          "canonical": "mekanism:nugget_uranium",
+          "candidates": ["mekanism:nugget_uranium", "immersiveengineering:nugget_uranium"]
+        },
+        "plates": {
+          "tag": "c:plates/uranium",
+          "canonical": "immersiveengineering:plate_uranium",
+          "candidates": ["immersiveengineering:plate_uranium"]
+        }
+      }
+    },
+    {
+      "name": "aluminum",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/aluminum",
+          "canonical": "immersiveengineering:ingot_aluminum",
+          "candidates": ["immersiveengineering:ingot_aluminum"]
+        },
+        "dusts": {
+          "tag": "c:dusts/aluminum",
+          "canonical": "immersiveengineering:dust_aluminum",
+          "candidates": ["immersiveengineering:dust_aluminum"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/aluminum",
+          "canonical": "immersiveengineering:nugget_aluminum",
+          "candidates": ["immersiveengineering:nugget_aluminum"]
+        },
+        "plates": {
+          "tag": "c:plates/aluminum",
+          "canonical": "immersiveengineering:plate_aluminum",
+          "candidates": ["immersiveengineering:plate_aluminum"]
+        }
+      }
+    },
+    {
+      "name": "silver",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/silver",
+          "canonical": "immersiveengineering:ingot_silver",
+          "candidates": ["immersiveengineering:ingot_silver"]
+        },
+        "dusts": {
+          "tag": "c:dusts/silver",
+          "canonical": "immersiveengineering:dust_silver",
+          "candidates": ["immersiveengineering:dust_silver"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/silver",
+          "canonical": "immersiveengineering:nugget_silver",
+          "candidates": ["immersiveengineering:nugget_silver"]
+        },
+        "plates": {
+          "tag": "c:plates/silver",
+          "canonical": "immersiveengineering:plate_silver",
+          "candidates": ["immersiveengineering:plate_silver"]
+        }
+      }
+    },
+    {
+      "name": "constantan",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/constantan",
+          "canonical": "immersiveengineering:ingot_constantan",
+          "candidates": ["immersiveengineering:ingot_constantan"]
+        },
+        "dusts": {
+          "tag": "c:dusts/constantan",
+          "canonical": "immersiveengineering:dust_constantan",
+          "candidates": ["immersiveengineering:dust_constantan"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/constantan",
+          "canonical": "immersiveengineering:nugget_constantan",
+          "candidates": ["immersiveengineering:nugget_constantan"]
+        },
+        "plates": {
+          "tag": "c:plates/constantan",
+          "canonical": "immersiveengineering:plate_constantan",
+          "candidates": ["immersiveengineering:plate_constantan"]
+        }
+      }
+    },
+    {
+      "name": "electrum",
+      "forms": {
+        "ingots": {
+          "tag": "c:ingots/electrum",
+          "canonical": "immersiveengineering:ingot_electrum",
+          "candidates": ["immersiveengineering:ingot_electrum"]
+        },
+        "dusts": {
+          "tag": "c:dusts/electrum",
+          "canonical": "immersiveengineering:dust_electrum",
+          "candidates": ["immersiveengineering:dust_electrum"]
+        },
+        "nuggets": {
+          "tag": "c:nuggets/electrum",
+          "canonical": "immersiveengineering:nugget_electrum",
+          "candidates": ["immersiveengineering:nugget_electrum"]
+        },
+        "plates": {
+          "tag": "c:plates/electrum",
+          "canonical": "immersiveengineering:plate_electrum",
+          "candidates": ["immersiveengineering:plate_electrum"]
+        }
+      }
+    },
+    {
+      "name": "certus_quartz",
+      "forms": {
+        "dusts": {
+          "tag": "c:dusts/certus_quartz",
+          "canonical": "ae2:certus_quartz_dust",
+          "candidates": ["ae2:certus_quartz_dust"]
+        }
+      }
+    },
+    {
+      "name": "fluix",
+      "forms": {
+        "dusts": {
+          "tag": "c:dusts/fluix",
+          "canonical": "ae2:fluix_dust",
+          "candidates": ["ae2:fluix_dust"]
+        }
+      }
+    }
+  ]
+}

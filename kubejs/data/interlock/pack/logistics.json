@@ -1,0 +1,8 @@
+{
+  "lateGameRecipeIds": [],
+  "transportWhitelist": [],
+  "notes": [
+    "Use this file to track logistics unlocks that should remain meaningfully staged.",
+    "Prefer recipe and config adjustments over hard bans."
+  ]
+}

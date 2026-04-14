@@ -1,0 +1,21 @@
+primary_namespace = "c"
+
+[[families]]
+name = "ingots"
+materials = ["iron", "gold", "copper", "tin", "lead", "silver", "nickel", "zinc", "steel"]
+
+[[families]]
+name = "dusts"
+materials = ["iron", "gold", "copper", "tin", "lead", "silver", "nickel", "zinc", "steel", "coal", "sulfur"]
+
+[[families]]
+name = "plates"
+materials = ["iron", "gold", "copper", "tin", "lead", "silver", "nickel", "zinc", "steel", "bronze"]
+
+[[families]]
+name = "gears"
+materials = ["iron", "gold", "copper", "tin", "steel", "bronze"]
+
+[[families]]
+name = "storage_blocks"
+materials = ["iron", "gold", "copper", "tin", "lead", "silver", "nickel", "zinc", "steel"]

@@ -1,0 +1,39 @@
+[[chapter]]
+id = "welcome"
+title = "Factory Charter"
+goal = "Teach pack rules, shared resource language, and the progression promise"
+
+[[chapter]]
+id = "burner_age"
+title = "Heat and Handwork"
+goal = "Introduce primitive processing, early fuels, and first bottlenecks"
+
+[[chapter]]
+id = "power_age"
+title = "Foundational Power"
+goal = "Move players into stable generation and machine chains"
+
+[[chapter]]
+id = "transport_age"
+title = "Belts, Pipes, and Routes"
+goal = "Make logistics a solved problem before scale arrives"
+
+[[chapter]]
+id = "precision_processing"
+title = "Refinement"
+goal = "Introduce cleaner material flows and higher-value intermediates"
+
+[[chapter]]
+id = "factory_scale"
+title = "Industrial Throughput"
+goal = "Reward layout, redundancy, and production planning"
+
+[[chapter]]
+id = "digital_transition"
+title = "Systems Control"
+goal = "Unlock advanced storage and network convenience after infrastructure exists"
+
+[[chapter]]
+id = "optimization"
+title = "Peak Efficiency"
+goal = "Focus on optimization, not on unrelated mechanics"
