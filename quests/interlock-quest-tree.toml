@@ -1,0 +1,142 @@
+title = "Interlock Quest Tree"
+design_goal = "Teach staged power, physical logistics, and cross-mod automation without grind."
+
+[[chapter]]
+id = "factory_charter"
+title = "Factory Charter"
+focus = "Orientation"
+
+[[chapter.quest]]
+id = "roles_not_rush"
+title = "Roles, Not Races"
+kind = "task"
+goal = "Introduce the pack's mod roles and explain why AE2 is not an early-game target."
+completion = "Read chapter text"
+notes = "No reward pressure; this is a framing quest."
+
+[[chapter]]
+id = "stable_current"
+title = "Stable Current"
+focus = "Early power"
+
+[[chapter.quest]]
+id = "build_stable_early_grid"
+title = "Build a Stable Early Power Grid"
+kind = "milestone"
+goal = "Create a reliable Immersive Engineering power setup that can run early machines continuously."
+completion = "Detect an IE generator plus an IE power component or storage block"
+notes = "This is the first real factory checkpoint."
+
+[[chapter.quest]]
+id = "first_powered_workshop"
+title = "Power the Workshop"
+kind = "milestone"
+goal = "Run your first machine area from the early grid instead of ad hoc single-block setups."
+completion = "Detect powered early machine progression blocks"
+notes = "Confirms that power generation is connected to useful work."
+
+[[chapter]]
+id = "routed_materials"
+title = "Routed Materials"
+focus = "Logistics"
+
+[[chapter.quest]]
+id = "transport_without_ae2"
+title = "Transport Items Across Chunks Without AE2"
+kind = "milestone"
+goal = "Move materials across a meaningful distance using Pipez."
+completion = "Detect Pipez infrastructure and a routed item transfer objective"
+notes = "This locks in physical logistics as the early standard."
+
+[[chapter.quest]]
+id = "sort_inputs_and_outputs"
+title = "Sort Inputs and Outputs"
+kind = "milestone"
+goal = "Set up a routed line that feeds a machine and extracts products automatically."
+completion = "Detect a machine from one mod and a transport component from another"
+notes = "The quest should validate process flow, not a craft count."
+
+[[chapter]]
+id = "process_discipline"
+title = "Process Discipline"
+focus = "Mid-game processing"
+
+[[chapter.quest]]
+id = "mek_processing_backbone"
+title = "Commission the Processing Backbone"
+kind = "milestone"
+goal = "Build the first Mekanism processing machines unlocked through IE components."
+completion = "Detect key Mekanism machine placements"
+notes = "Shows the shift from IE startup to Mekanism throughput."
+
+[[chapter.quest]]
+id = "two_mod_ore_automation"
+title = "Automate Ore Processing Using Two Mods"
+kind = "milestone"
+goal = "Automate an ore line where transport and processing come from different mods."
+completion = "Detect Mekanism processing plus Pipez routing"
+notes = "This is one of the signature pack lessons."
+
+[[chapter]]
+id = "grid_expansion"
+title = "Grid Expansion"
+focus = "Mid-game power"
+
+[[chapter.quest]]
+id = "powah_online"
+title = "Bring Powah Online"
+kind = "milestone"
+goal = "Add Powah as a stronger power layer after IE and Mekanism are established."
+completion = "Detect a gated Powah generator or storage block"
+notes = "Powah should feel like a grid upgrade, not an early shortcut."
+
+[[chapter.quest]]
+id = "survive_sustained_load"
+title = "Survive Sustained Load"
+kind = "milestone"
+goal = "Keep a multi-machine line powered without brownouts."
+completion = "Detect multiple active machine tiers and a mid-game power component"
+notes = "Focuses on system stability rather than raw FE numbers."
+
+[[chapter]]
+id = "automation_milestone"
+title = "Automation Milestone"
+focus = "Industrial Foregoing"
+
+[[chapter.quest]]
+id = "plastic_chain"
+title = "Break Into Plastic"
+kind = "milestone"
+goal = "Complete the gated latex and plastic chain required for Industrial Foregoing."
+completion = "Detect plastic production components and resulting plastic"
+notes = "This is the formal IF unlock."
+
+[[chapter.quest]]
+id = "automation_support_not_replacement"
+title = "Automation as Support"
+kind = "milestone"
+goal = "Use one Industrial Foregoing machine to improve an existing process rather than replace the whole factory."
+completion = "Detect a gated IF machine placed after the plastic chain"
+notes = "Reinforces IF's narrow role."
+
+[[chapter]]
+id = "systems_control"
+title = "Systems Control"
+focus = "AE2"
+
+[[chapter.quest]]
+id = "controller_is_earned"
+title = "Earn the Controller"
+kind = "milestone"
+goal = "Craft the gated ME Controller using mid-game IE and Mekanism components."
+completion = "Detect ae2:controller"
+notes = "Marks the shift from physical routing to digital control."
+
+[[chapter.quest]]
+id = "first_real_me_network"
+title = "Build the First Real ME Network"
+kind = "milestone"
+goal = "Set up an ME Drive with storage cells after physical logistics has already carried the factory."
+completion = "Detect ae2:drive and a first storage cell tier"
+notes = "AE2 arrives as earned convenience, not the opening move."
+

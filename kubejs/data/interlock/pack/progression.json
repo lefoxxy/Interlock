@@ -218,6 +218,24 @@
     },
     {
       "output": "powah:reactor_basic"
+    },
+    {
+      "output": "ae2:controller"
+    },
+    {
+      "output": "ae2:drive"
+    },
+    {
+      "output": "ae2:cell_component_1k"
+    },
+    {
+      "output": "ae2:item_storage_cell_1k"
+    },
+    {
+      "output": "ae2:cell_component_4k"
+    },
+    {
+      "output": "ae2:item_storage_cell_4k"
     }
   ],
   "replacements": [],
@@ -961,6 +979,103 @@
         "U": "powah:uraninite",
         "A": "mekanism:advanced_control_circuit"
       }
+    },
+    {
+      "id": "interlock:progression/ae2/controller",
+      "output": "ae2:controller",
+      "pattern": [
+        "SES",
+        "ACA",
+        "SLS"
+      ],
+      "key": {
+        "S": "ae2:smooth_sky_stone_block",
+        "E": "ae2:engineering_processor",
+        "A": "mekanism:alloy_infused",
+        "C": "mekanism:advanced_control_circuit",
+        "L": "immersiveengineering:light_engineering"
+      }
+    },
+    {
+      "id": "interlock:progression/ae2/drive",
+      "output": "ae2:drive",
+      "pattern": [
+        "ICI",
+        "PDP",
+        "IEI"
+      ],
+      "key": {
+        "I": "#c:ingots/iron",
+        "C": "ae2:fluix_glass_cable",
+        "P": "immersiveengineering:component_iron",
+        "D": "ae2:engineering_processor",
+        "E": "mekanism:basic_control_circuit"
+      }
+    },
+    {
+      "id": "interlock:progression/ae2/cell_component_1k",
+      "output": "ae2:cell_component_1k",
+      "pattern": [
+        "RQR",
+        "QLQ",
+        "RCR"
+      ],
+      "key": {
+        "R": "#c:dusts/redstone",
+        "Q": "#ae2:all_certus_quartz",
+        "L": "ae2:logic_processor",
+        "C": "mekanism:basic_control_circuit"
+      }
+    },
+    {
+      "id": "interlock:progression/ae2/item_storage_cell_1k",
+      "output": "ae2:item_storage_cell_1k",
+      "pattern": [
+        "GRG",
+        "ACA",
+        "IEI"
+      ],
+      "key": {
+        "G": "ae2:quartz_glass",
+        "R": "#c:dusts/redstone",
+        "A": "mekanism:alloy_infused",
+        "C": "ae2:cell_component_1k",
+        "I": "#c:ingots/iron",
+        "E": "immersiveengineering:component_iron"
+      }
+    },
+    {
+      "id": "interlock:progression/ae2/cell_component_4k",
+      "output": "ae2:cell_component_4k",
+      "pattern": [
+        "RCR",
+        "ADA",
+        "RQR"
+      ],
+      "key": {
+        "R": "#c:dusts/redstone",
+        "C": "ae2:calculation_processor",
+        "A": "mekanism:alloy_infused",
+        "D": "ae2:cell_component_1k",
+        "Q": "ae2:quartz_glass"
+      }
+    },
+    {
+      "id": "interlock:progression/ae2/item_storage_cell_4k",
+      "output": "ae2:item_storage_cell_4k",
+      "pattern": [
+        "GRG",
+        "ACA",
+        "ISI"
+      ],
+      "key": {
+        "G": "ae2:quartz_glass",
+        "R": "#c:dusts/redstone",
+        "A": "mekanism:basic_energy_cube",
+        "C": "ae2:cell_component_4k",
+        "I": "#c:ingots/iron",
+        "S": "immersiveengineering:component_steel"
+      }
     }
   ],
   "shapeless": [
@@ -993,6 +1108,8 @@
   "dependencyMap": [
     "Immersive Engineering -> Mekanism core machines",
     "Immersive Engineering + Mekanism -> Powah starter/basic power",
+    "Pipez -> early physical logistics",
+    "Immersive Engineering + Mekanism -> AE2 controller, drive, and first ME storage tier",
     "Mekanism + Immersive Engineering power/components -> Industrial Foregoing pity frame",
     "Pity frame + fluid extractor + latex processing unit -> plastic production",
     "Plastic production -> Industrial Foregoing simple/advanced/supreme frames",
@@ -1003,6 +1120,8 @@
     "The IF entry path is now: pity frame -> fluid extractor and latex processing -> plastic -> full machine frames -> automation machines.",
     "Farm, mob, and fluid automation are gated through Industrial Foregoing machine frames plus Mekanism circuits and IE components.",
     "Mid-tier power items are part of the unlock, using Mekanism energy storage and IE capacitors to mark IF as a mid-game milestone.",
-    "Power generators, passive resource production, and processing-adjacent IF machines are disabled by recipe removal."
+    "Power generators, passive resource production, and processing-adjacent IF machines are disabled by recipe removal.",
+    "AE2 digital storage is intentionally delayed until after IE and Mekanism are established, so Pipez remains the practical early logistics layer.",
+    "The first AE2 controller, drive, and storage cell tiers now require mid-game components instead of being rushable from early materials alone."
   ]
 }

@@ -1,5 +1,10 @@
 # Quest Structure
 
-This directory is reserved for exported quest files once a questing mod is selected.
+This directory stores quest planning and future FTB Quests exports.
 
-Until then, `meta/quest-outline.toml` is the source of truth for chapter planning.
+Current sources of truth:
+
+- `meta/quest-outline.toml` for high-level chapter order
+- `quests/interlock-quest-tree.toml` for concrete milestone-oriented quest structure
+
+The quest design rules are documented in `docs/quest-structure.md`.

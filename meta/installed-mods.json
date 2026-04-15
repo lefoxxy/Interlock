@@ -1,7 +1,7 @@
 {
     "minecraft":  "1.21.1",
     "neoforge":  "21.1.226",
-    "generated_at":  "2026-04-12T15:43:21-07:00",
+    "generated_at":  "2026-04-13T22:10:00-07:00",
     "mods":  [
                  {
                      "name":  "Applied Energistics 2",
@@ -202,6 +202,226 @@
                      "client_side":  "required",
                      "server_side":  "required",
                      "url":  "https://modrinth.com/mod/titanium/version/LmipxHTo"
+                 },
+                 {
+                     "name":  "Athena",
+                     "slug":  "athena-ctm",
+                     "source":  "modrinth",
+                     "version":  "4.0.3",
+                     "file":  "mods/athena-neoforge-1.21-4.0.3.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/athena-ctm/version/VkHA9rmF"
+                 },
+                 {
+                     "name":  "Balm",
+                     "slug":  "balm",
+                     "source":  "modrinth",
+                     "version":  "21.0.56+neoforge-1.21.1",
+                     "file":  "mods/balm-neoforge-1.21.1-21.0.56.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/balm/version/Yoii3Xj6"
+                 },
+                 {
+                     "name":  "Chipped",
+                     "slug":  "chipped",
+                     "source":  "modrinth",
+                     "version":  "4.0.2",
+                     "file":  "mods/chipped-neoforge-1.21.1-4.0.2.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/chipped/version/eqVowbGc"
+                 },
+                 {
+                     "name":  "Durability Viewer Continuation",
+                     "slug":  "durability-viewer-continuation",
+                     "source":  "modrinth",
+                     "version":  "1.1.2-neoforge-1.21.1",
+                     "file":  "mods/durabilityviewer-1.1.2-neoforge-1.21.1.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/durability-viewer-continuation/version/Akx0pRId"
+                 },
+                 {
+                     "name":  "Dynamic Surroundings",
+                     "slug":  "dynamicsurroundingsfabric",
+                     "source":  "modrinth",
+                     "version":  "0.4.2",
+                     "file":  "mods/dynamicsurroundings-neoforge-1.21.1-0.4.2.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/dynamicsurroundingsfabric/version/aFsN201L"
+                 },
+                 {
+                     "name":  "Embeddium",
+                     "slug":  "embeddium",
+                     "source":  "modrinth",
+                     "version":  "1.0.15+mc1.21.1",
+                     "file":  "mods/embeddium-1.0.15+mc1.21.1.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/embeddium/version/J7b96IEd"
+                 },
+                 {
+                     "name":  "Explorer's Compass",
+                     "slug":  "explorers-compass",
+                     "source":  "modrinth",
+                     "version":  "1.21.1-3.4.0-neoforge",
+                     "file":  "mods/ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/explorers-compass/version/hIJ2Ev1Q"
+                 },
+                 {
+                     "name":  "FerriteCore",
+                     "slug":  "ferrite-core",
+                     "source":  "modrinth",
+                     "version":  "7.0.3-neoforge",
+                     "file":  "mods/ferritecore-7.0.3-neoforge.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/ferrite-core/version/x7kQWVju"
+                 },
+                 {
+                     "name":  "FTB Chunks",
+                     "slug":  "ftb-chunks-neoforge",
+                     "source":  "maven",
+                     "version":  "2101.1.14",
+                     "file":  "mods/ftb-chunks-neoforge-2101.1.14.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://maven.ftb.dev/releases/dev/ftb/mods/ftb-chunks-neoforge/"
+                 },
+                 {
+                     "name":  "GlitchCore",
+                     "slug":  "glitchcore",
+                     "source":  "modrinth",
+                     "version":  "2.1.0.0",
+                     "file":  "mods/GlitchCore-neoforge-1.21.1-2.1.0.0.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/glitchcore/version/8wmCpbQ2"
+                 },
+                 {
+                     "name":  "Inventory Profiles Next",
+                     "slug":  "inventory-profiles-next",
+                     "source":  "modrinth",
+                     "version":  "neoforge-1.21.1-2.2.5",
+                     "file":  "mods/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/inventory-profiles-next/version/vjuNnHLv"
+                 },
+                 {
+                     "name":  "Just Zoom",
+                     "slug":  "just-zoom",
+                     "source":  "modrinth",
+                     "version":  "2.1.0-1.21.1-neoforge",
+                     "file":  "mods/justzoom_neoforge_2.1.0_MC_1.21.1.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/just-zoom/version/mnCUZfmm"
+                 },
+                 {
+                     "name":  "Konkrete",
+                     "slug":  "konkrete",
+                     "source":  "modrinth",
+                     "version":  "1.9.9-1.21-neoforge",
+                     "file":  "mods/konkrete_neoforge_1.9.9_MC_1.21.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/konkrete/version/stJDU839"
+                 },
+                 {
+                     "name":  "Kotlin for Forge",
+                     "slug":  "kotlin-for-forge",
+                     "source":  "modrinth",
+                     "version":  "5.11.0",
+                     "file":  "mods/kotlinforforge-5.11.0-all.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/kotlin-for-forge/version/NrSebcsG"
+                 },
+                 {
+                     "name":  "libIPN",
+                     "slug":  "libipn",
+                     "source":  "modrinth",
+                     "version":  "neoforge-1.21.1-6.6.3",
+                     "file":  "mods/libIPN-neoforge-1.21.1-6.6.3.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/libipn/version/BGe4KMlE"
+                 },
+                 {
+                     "name":  "ModernFix",
+                     "slug":  "modernfix",
+                     "source":  "modrinth",
+                     "version":  "5.27.2+mc1.21.1",
+                     "file":  "mods/modernfix-neoforge-5.27.2+mc1.21.1.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/modernfix/version/iYwIkyV5"
+                 },
+                 {
+                     "name":  "Nature's Compass",
+                     "slug":  "natures-compass",
+                     "source":  "modrinth",
+                     "version":  "1.21.1-3.4.0-neoforge",
+                     "file":  "mods/NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/natures-compass/version/nFniEtJV"
+                 },
+                 {
+                     "name":  "Resourceful Lib",
+                     "slug":  "resourceful-lib",
+                     "source":  "modrinth",
+                     "version":  "3.0.12",
+                     "file":  "mods/resourcefullib-neoforge-1.21-3.0.12.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/resourceful-lib/version/x99nCLTm"
+                 },
+                 {
+                     "name":  "Serene Seasons",
+                     "slug":  "serene-seasons",
+                     "source":  "modrinth",
+                     "version":  "10.1.0.3",
+                     "file":  "mods/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/serene-seasons/version/SPj5bJoM"
+                 },
+                 {
+                     "name":  "Sophisticated Backpacks",
+                     "slug":  "sophisticated-backpacks",
+                     "source":  "modrinth",
+                     "version":  "1.21.1-3.25.40.1677",
+                     "file":  "mods/sophisticatedbackpacks-1.21.1-3.25.40.1677.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/sophisticated-backpacks/version/4tpk5wp9"
+                 },
+                 {
+                     "name":  "Sophisticated Core",
+                     "slug":  "sophisticated-core",
+                     "source":  "modrinth",
+                     "version":  "1.21.1-1.4.24.1680",
+                     "file":  "mods/sophisticatedcore-1.21.1-1.4.24.1680.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/sophisticated-core/version/T4AMspJ8"
+                 },
+                 {
+                     "name":  "Waystones",
+                     "slug":  "waystones",
+                     "source":  "modrinth",
+                     "version":  "21.1.29+neoforge-1.21.1",
+                     "file":  "mods/waystones-neoforge-1.21.1-21.1.29.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/waystones/version/Ayolso4x"
                  }
              ]
 }
