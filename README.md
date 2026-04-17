@@ -69,9 +69,17 @@ Interlock is being shaped into a premium factory pack with:
 - a full FTB Quests progression arc
 - enough decoration to make industrial builds feel intentional instead of bare
 
-## Next Steps
+## Credits
 
-1. Maintain the validated CurseForge profile from `meta/installed-mods.json`
-2. Keep refining the questbook flow and chapter presentation
-3. Continue tightening recipes, materials, and progression overlap
-4. Export CurseForge release candidates from the app when publishing
+Interlock is built on the work of an excellent set of mod authors and teams. Major progression and infrastructure credit goes to:
+
+- `Immersive Engineering` by BluSunrize
+- `Mekanism` by aidancbrady and contributors
+- `Industrial Foregoing` by Buuz135
+- `Applied Energistics 2` by the AE2 team and contributors
+- `Powah!` by the current Powah maintainers, continuing owmii's original work
+- `Pipez` by henkelmax
+- `FTB Library`, `FTB Quests`, `FTB Teams`, and `FTB Chunks` by the Feed The Beast team
+- `Sophisticated Backpacks` and `Sophisticated Storage` by P3pp3rF1y
+
+Interlock also depends on a wide set of supporting QoL, performance, world, and building mods made by their respective authors. This pack exists because of that wider modding ecosystem, and those creators deserve the real credit for the tools that make the experience possible.

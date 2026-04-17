@@ -1,7 +1,7 @@
 {
     "minecraft":  "1.21.1",
     "neoforge":  "21.1.226",
-    "generated_at":  "2026-04-16T10:45:00-07:00",
+    "generated_at":  "2026-04-16T13:05:00-07:00",
     "mods":  [
                  {
                      "name":  "Applied Energistics 2",
@@ -264,16 +264,6 @@
                      "url":  "https://modrinth.com/mod/durability-viewer-continuation/version/Akx0pRId"
                  },
                  {
-                     "name":  "Dynamic Surroundings",
-                     "slug":  "dynamicsurroundingsfabric",
-                     "source":  "modrinth",
-                     "version":  "0.4.2",
-                     "file":  "mods/dynamicsurroundings-neoforge-1.21.1-0.4.2.jar",
-                     "client_side":  "required",
-                     "server_side":  "unsupported",
-                     "url":  "https://modrinth.com/mod/dynamicsurroundingsfabric/version/aFsN201L"
-                 },
-                 {
                      "name":  "Embeddium",
                      "slug":  "embeddium",
                      "source":  "modrinth",
@@ -324,16 +314,6 @@
                      "url":  "https://modrinth.com/mod/glitchcore/version/8wmCpbQ2"
                  },
                  {
-                     "name":  "Inventory Profiles Next",
-                     "slug":  "inventory-profiles-next",
-                     "source":  "modrinth",
-                     "version":  "neoforge-1.21.1-2.2.5",
-                     "file":  "mods/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
-                     "client_side":  "required",
-                     "server_side":  "unsupported",
-                     "url":  "https://modrinth.com/mod/inventory-profiles-next/version/vjuNnHLv"
-                 },
-                 {
                      "name":  "Just Zoom",
                      "slug":  "just-zoom",
                      "source":  "modrinth",
@@ -362,16 +342,6 @@
                      "client_side":  "required",
                      "server_side":  "unsupported",
                      "url":  "https://modrinth.com/mod/kotlin-for-forge/version/NrSebcsG"
-                 },
-                 {
-                     "name":  "libIPN",
-                     "slug":  "libipn",
-                     "source":  "modrinth",
-                     "version":  "neoforge-1.21.1-6.6.3",
-                     "file":  "mods/libIPN-neoforge-1.21.1-6.6.3.jar",
-                     "client_side":  "required",
-                     "server_side":  "unsupported",
-                     "url":  "https://modrinth.com/mod/libipn/version/BGe4KMlE"
                  },
                  {
                      "name":  "ModernFix",
