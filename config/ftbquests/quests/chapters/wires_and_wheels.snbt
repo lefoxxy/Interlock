@@ -1,0 +1,101 @@
+{
+  autofocus_id: "63C805828750E8AA"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "wires_and_wheels"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "immersiveengineering:connector_lv_relay"
+  icon_scale: 1.25d
+  id: "23055B9789AB2303"
+  order_index: 6
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["8B2B07E0B7509548"]
+    description: ["Add another stretch of power and machine infrastructure without turning the floor into a knot."]
+    icon: "immersiveengineering:connector_lv"
+    id: "63C805828750E8AA"
+    rewards: [
+        { count: 1, id: "D9FCD483546178E4", item: { count: 1, id: "immersiveengineering:wirecoil_copper" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "5FD53C9BA3A83CAD", item: { count: 2, id: "immersiveengineering:connector_lv" }, type: "item" }
+    ]
+    title: "Run It Clean"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["63C805828750E8AA"]
+    description: ["Use relays to extend the floor without making the line unreadable."]
+    icon: "immersiveengineering:connector_lv_relay"
+    id: "F0B43513981749A7"
+    rewards: [
+        { count: 1, id: "165553C3ECF8A400", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "EA7BC579E14DB94B", item: { count: 2, id: "immersiveengineering:connector_lv_relay" }, type: "item" }
+    ]
+    title: "Backbone Relay"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["F0B43513981749A7"]
+    description: ["Extend routed items out to the machine row so the whole floor feels connected."]
+    icon: "pipez:item_pipe"
+    id: "509E3046A8706D52"
+    rewards: [
+        { count: 1, id: "A0642D785D818DD7", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "9D7CFD8E08B664A1", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    title: "Feed the Machine Row"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["509E3046A8706D52"]
+    description: ["Upgrade output handling so the machine row stops dumping everything into the first open slot."]
+    icon: "sophisticatedstorage:storage_output"
+    id: "49C0D8309C0B4198"
+    rewards: [
+        { count: 1, id: "0E1A9CC229E9B112", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "5FED0150E1AFE1C9", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+    ]
+    title: "Catch the Outputs"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["49C0D8309C0B4198"]
+    description: ["Make sure the whole early machine row now reads as one industrial section."]
+    icon: "immersiveengineering:dynamo"
+    id: "EDBC30F9D7034D5D"
+    rewards: [
+        { count: 1, id: "15B316377455FB82", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "4E9A977DD5F59636", type: "checkmark" }
+    ]
+    title: "Wires and Wheels"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Wires and Wheels"
+}

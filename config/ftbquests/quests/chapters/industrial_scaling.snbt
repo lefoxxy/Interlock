@@ -1,0 +1,101 @@
+{
+  autofocus_id: "B3379C55F1D99313"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "industrial_scaling"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "industrialforegoing:machine_frame_simple"
+  icon_scale: 1.25d
+  id: "BEA326B220638C30"
+  order_index: 21
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["1017AF614B231D50"]
+    description: ["Step into the next IF tier now that the plastic chain can actually support it."]
+    icon: "industrialforegoing:machine_frame_simple"
+    id: "B3379C55F1D99313"
+    rewards: [
+        { count: 1, id: "B13479B4D856D4E6", item: { count: 4, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "76F7C363BE4CF90B", item: { count: 1, id: "industrialforegoing:machine_frame_simple" }, type: "item" }
+    ]
+    title: "Build the Next Frame"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["B3379C55F1D99313"]
+    description: ["Place the Plant Gatherer and let the automation wing start earning its floor space."]
+    icon: "industrialforegoing:plant_gatherer"
+    id: "E240E674A51CFE1B"
+    rewards: [
+        { count: 1, id: "C967F105C32C58C3", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "B812A81A9941C7DA", icon: "industrialforegoing:plant_gatherer", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:plant_gatherer", type: "observation" }
+    ]
+    title: "The First Worker"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["E240E674A51CFE1B"]
+    description: ["Pair the gatherer with a Plant Sower so the line can loop on purpose."]
+    icon: "industrialforegoing:plant_sower"
+    id: "0AD1BE56F4F3C57F"
+    rewards: [
+        { count: 1, id: "F07F68405E8BB54A", item: { count: 4, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "5E07B1ED3947BC1D", icon: "industrialforegoing:plant_sower", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:plant_sower", type: "observation" }
+    ]
+    title: "Plant It Once"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["0AD1BE56F4F3C57F"]
+    description: ["Craft the advanced frame so the wing can grow without breaking its own rules."]
+    icon: "industrialforegoing:machine_frame_advanced"
+    id: "DFBDED6090AE2473"
+    rewards: [
+        { count: 1, id: "E3AD6D6BA700F6C7", item: { count: 1, id: "mekanism:advanced_control_circuit" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "AA5FB9C35F46984A", item: { count: 1, id: "industrialforegoing:machine_frame_advanced" }, type: "item" }
+    ]
+    title: "Ready for Bigger Work"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["DFBDED6090AE2473"]
+    description: ["Make sure IF now feels like a real wing of the factory instead of one expensive gimmick room."]
+    icon: "industrialforegoing:machine_frame_advanced"
+    id: "EA7CA785D8C8ECDB"
+    rewards: [
+        { count: 1, id: "686FAC7A1198437B", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "6F2B2769EBE1AFE5", type: "checkmark" }
+    ]
+    title: "Industrial Scaling"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Industrial Scaling"
+}

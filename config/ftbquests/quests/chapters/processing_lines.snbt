@@ -1,0 +1,101 @@
+{
+  autofocus_id: "5EBBB98696B4B79F"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "processing_lines"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "immersiveengineering:crusher"
+  icon_scale: 1.25d
+  id: "09C62558F266F034"
+  order_index: 7
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["EDBC30F9D7034D5D"]
+    description: ["Commit to a dedicated early processing line instead of scattering machines around the room."]
+    icon: "immersiveengineering:crusher"
+    id: "5EBBB98696B4B79F"
+    rewards: [
+        { count: 1, id: "F20566FC6A56EBB0", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "051DA7ED9CC8B1FE", icon: "immersiveengineering:crusher", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:crusher", type: "observation" }
+    ]
+    title: "One Job, One Line"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["5EBBB98696B4B79F"]
+    description: ["Keep raw materials arriving automatically so the line can stay busy."]
+    icon: "pipez:item_pipe"
+    id: "BDD05202A084F951"
+    rewards: [
+        { count: 1, id: "F6F7E89D256372D6", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "183C0627EC1D6369", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    title: "Feed the Front End"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["BDD05202A084F951"]
+    description: ["Add the pump work needed to support a more complete line."]
+    icon: "immersiveengineering:fluid_pump"
+    id: "89A38649F683A2B7"
+    rewards: [
+        { count: 1, id: "FAE0032D0678FE9F", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "77B1E59701DA3DA2", icon: "immersiveengineering:fluid_pump", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:fluid_pump", type: "observation" }
+    ]
+    title: "Fluid Support"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["89A38649F683A2B7"]
+    description: ["Give the finished side enough storage and room that it no longer clogs the whole floor."]
+    icon: "sophisticatedstorage:chest"
+    id: "72F2B01618B29FF3"
+    rewards: [
+        { count: 1, id: "946652EFB22E5DFF", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "DBF019B99B7B1213", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
+    ]
+    title: "Catch the Good Stuff"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["72F2B01618B29FF3"]
+    description: ["This line should now run like a system instead of a sequence of chores."]
+    icon: "immersiveengineering:fluid_pump"
+    id: "E420351781B80765"
+    rewards: [
+        { count: 1, id: "F5B1B16F97863351", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "A60A46CF44CB802A", type: "checkmark" }
+    ]
+    title: "Processing Lines"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Processing Lines"
+}

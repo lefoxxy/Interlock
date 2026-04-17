@@ -1,0 +1,101 @@
+{
+  autofocus_id: "0F6E5BF0D3AA1A10"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "system_stability"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "immersiveengineering:light_engineering"
+  icon_scale: 1.25d
+  id: "4527A461846C3790"
+  order_index: 11
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["4937FA718582D30F"]
+    description: ["Tighten up one weak point in the workshop before it gets amplified by everything that comes next."]
+    icon: "immersiveengineering:light_engineering"
+    id: "0F6E5BF0D3AA1A10"
+    rewards: [
+        { count: 1, id: "55FC2E620DFDC97D", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "6341B46CEE3C5CA9", item: { count: 1, id: "immersiveengineering:light_engineering" }, type: "item" }
+    ]
+    title: "No More Flickering Lines"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["0F6E5BF0D3AA1A10"]
+    description: ["Use better storage to take the edge off a workshop that is finally running more than one job at once."]
+    icon: "sophisticatedstorage:stack_upgrade_tier_1"
+    id: "AE2BBC17DDAF7988"
+    rewards: [
+        { count: 1, id: "35E8CF79B1EA2F44", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "D4302DFCC3EDCFB2", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    title: "Buffers Save Bad Days"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["AE2BBC17DDAF7988"]
+    description: ["Add one more branch of energy transport and keep the whole floor calm under load."]
+    icon: "pipez:energy_pipe"
+    id: "1B4082123B3D3934"
+    rewards: [
+        { count: 1, id: "A55D119937EB528E", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "D2DB58635A540B44", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
+    ]
+    title: "Power That Doesn't Flinch"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["1B4082123B3D3934"]
+    description: ["Use relays and routing cleanup so the machine floor stops fighting itself."]
+    icon: "immersiveengineering:connector_lv_relay"
+    id: "5DAD0E896CF51302"
+    rewards: [
+        { count: 1, id: "201BE1FCC85CBD66", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "B9C5839FA5D30642", item: { count: 2, id: "immersiveengineering:connector_lv_relay" }, type: "item" }
+    ]
+    title: "Clean the Crossings"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["5DAD0E896CF51302"]
+    description: ["Give the workshop one final check and make sure it is ready to carry a much more demanding core progression."]
+    icon: "immersiveengineering:capacitor_mv"
+    id: "7C2ACFFF742C2536"
+    rewards: [
+        { count: 1, id: "B60A95DC7BE173B3", item: { count: 6, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "BA70A1FBDE09EF1A", type: "checkmark" }
+    ]
+    title: "System Stability"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "System Stability"
+}

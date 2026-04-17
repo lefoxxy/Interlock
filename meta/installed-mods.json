@@ -1,7 +1,7 @@
 {
     "minecraft":  "1.21.1",
     "neoforge":  "21.1.226",
-    "generated_at":  "2026-04-13T22:10:00-07:00",
+    "generated_at":  "2026-04-16T10:45:00-07:00",
     "mods":  [
                  {
                      "name":  "Applied Energistics 2",
@@ -234,6 +234,26 @@
                      "url":  "https://modrinth.com/mod/chipped/version/eqVowbGc"
                  },
                  {
+                     "name":  "FramedBlocks",
+                     "slug":  "framedblocks",
+                     "source":  "modrinth",
+                     "version":  "10.5.3",
+                     "file":  "mods/FramedBlocks-10.5.3.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/framedblocks"
+                 },
+                 {
+                     "name":  "Handcrafted",
+                     "slug":  "handcrafted",
+                     "source":  "modrinth",
+                     "version":  "4.0.2",
+                     "file":  "mods/handcrafted-neoforge-1.21.1-4.0.2.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/handcrafted/version/wcwzTL8u"
+                 },
+                 {
                      "name":  "Durability Viewer Continuation",
                      "slug":  "durability-viewer-continuation",
                      "source":  "modrinth",
@@ -374,6 +394,16 @@
                      "url":  "https://modrinth.com/mod/natures-compass/version/nFniEtJV"
                  },
                  {
+                     "name":  "Moonlight Lib",
+                     "slug":  "moonlight",
+                     "source":  "modrinth",
+                     "version":  "1.21-2.29.29-neoforge",
+                     "file":  "mods/moonlight-1.21-2.29.29-neoforge.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/moonlight/version/QiGuwr5v"
+                 },
+                 {
                      "name":  "Resourceful Lib",
                      "slug":  "resourceful-lib",
                      "source":  "modrinth",
@@ -382,6 +412,16 @@
                      "client_side":  "required",
                      "server_side":  "required",
                      "url":  "https://modrinth.com/mod/resourceful-lib/version/x99nCLTm"
+                 },
+                 {
+                     "name":  "Supplementaries",
+                     "slug":  "supplementaries",
+                     "source":  "modrinth",
+                     "version":  "1.21-3.5.32-neoforge",
+                     "file":  "mods/supplementaries-1.21-3.5.32-neoforge.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/supplementaries/version/amkd53BE"
                  },
                  {
                      "name":  "Serene Seasons",
@@ -422,6 +462,66 @@
                      "client_side":  "required",
                      "server_side":  "required",
                      "url":  "https://modrinth.com/mod/waystones/version/Ayolso4x"
+                 },
+                 {
+                     "name":  "Entity Culling",
+                     "slug":  "entityculling",
+                     "source":  "modrinth",
+                     "version":  "1.10.1",
+                     "file":  "mods/entityculling-neoforge-1.10.1-mc1.21.1.jar",
+                     "client_side":  "required",
+                     "server_side":  "unsupported",
+                     "url":  "https://modrinth.com/mod/entityculling/version/LrKSuU8e"
+                 },
+                 {
+                     "name":  "Lootr",
+                     "slug":  "lootr",
+                     "source":  "modrinth",
+                     "version":  "1.21.1-1.11.37.118",
+                     "file":  "mods/lootr-neoforge-1.21.1-1.11.37.118.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/lootr/version/EB2B27qh"
+                 },
+                 {
+                     "name":  "Sophisticated Storage",
+                     "slug":  "sophisticated-storage",
+                     "source":  "modrinth",
+                     "version":  "1.21.1-1.5.37.1622",
+                     "file":  "mods/sophisticatedstorage-1.21.1-1.5.37.1622.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/sophisticated-storage/version/1R8DEbS9"
+                 },
+                 {
+                     "name":  "YUNG's API",
+                     "slug":  "yungs-api",
+                     "source":  "modrinth",
+                     "version":  "1.21.1-NeoForge-5.1.6",
+                     "file":  "mods/YungsApi-1.21.1-NeoForge-5.1.6.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/yungs-api/version/ZB22DE9q"
+                 },
+                 {
+                     "name":  "YUNG's Better Dungeons",
+                     "slug":  "yungs-better-dungeons",
+                     "source":  "modrinth",
+                     "version":  "1.21.1-NeoForge-5.1.4",
+                     "file":  "mods/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/yungs-better-dungeons/version/D6aZn0Em"
+                 },
+                 {
+                     "name":  "YUNG's Better Mineshafts",
+                     "slug":  "yungs-better-mineshafts",
+                     "source":  "modrinth",
+                     "version":  "1.21.1-NeoForge-5.1.1",
+                     "file":  "mods/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+                     "client_side":  "required",
+                     "server_side":  "required",
+                     "url":  "https://modrinth.com/mod/yungs-better-mineshafts/version/Go3nbneL"
                  }
              ]
 }

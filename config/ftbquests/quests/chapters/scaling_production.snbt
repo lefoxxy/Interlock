@@ -1,0 +1,101 @@
+{
+  autofocus_id: "1891E6A0C559D7FA"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "scaling_production"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "immersiveengineering:component_steel"
+  icon_scale: 1.25d
+  id: "7E7BE7D3A0DB9AAA"
+  order_index: 10
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["0767844EE3B07AC6"]
+    description: ["Admit your early floor has limits and start building something it can grow into."]
+    icon: "immersiveengineering:component_steel"
+    id: "1891E6A0C559D7FA"
+    rewards: [
+        { count: 1, id: "2F35DFAA2250E7D5", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "86FE90ACEEBC4186", item: { count: 2, id: "immersiveengineering:component_steel" }, type: "item" }
+    ]
+    title: "The Line Is Too Small"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["1891E6A0C559D7FA"]
+    description: ["Push more traffic across the main route without the workshop falling apart."]
+    icon: "pipez:universal_pipe"
+    id: "A1A1C6311208D509"
+    rewards: [
+        { count: 1, id: "D7A6B04A6418A16B", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "A0A529F999418C6F", item: { count: 12, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    title: "More Through the Backbone"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["A1A1C6311208D509"]
+    description: ["Upgrade the stockroom again so volume stops spilling into random chests."]
+    icon: "sophisticatedstorage:gold_chest"
+    id: "148D8481B693A459"
+    rewards: [
+        { count: 1, id: "A61DF7036EF55931", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "B8BB70540CCB52C8", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
+    ]
+    title: "Storage That Matches the Work"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["148D8481B693A459"]
+    description: ["Add the heavier IE parts needed to support a larger factory section."]
+    icon: "immersiveengineering:capacitor_mv"
+    id: "3D60402919BDEF7C"
+    rewards: [
+        { count: 1, id: "D3F9C625CEB12678", item: { count: 6, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "65AE6D727C1892FF", icon: "immersiveengineering:capacitor_mv", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:capacitor_mv", type: "observation" }
+    ]
+    title: "Bigger Power Floor"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["3D60402919BDEF7C"]
+    description: ["Make sure the production floor now feels intentionally bigger instead of merely busier."]
+    icon: "immersiveengineering:capacitor_mv"
+    id: "4937FA718582D30F"
+    rewards: [
+        { count: 1, id: "5DD4643DCE0EE424", item: { count: 4, id: "minecraft:copper_ingot" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "76362D26154275A6", type: "checkmark" }
+    ]
+    title: "Scaling Production"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Scaling Production"
+}

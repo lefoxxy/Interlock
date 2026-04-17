@@ -1,0 +1,101 @@
+{
+  autofocus_id: "E3957AB6171AF7DE"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "energy_expansion"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "powah:energizing_orb"
+  icon_scale: 1.25d
+  id: "93BADA31034867DB"
+  order_index: 15
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["BF62849950E9E76C"]
+    description: ["Craft the first Powah casing and commit to a more serious grid."]
+    icon: "powah:dielectric_casing"
+    id: "E3957AB6171AF7DE"
+    rewards: [
+        { count: 1, id: "4D67BA6906683283", item: { count: 4, id: "powah:dielectric_paste" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "6A4AD234A3B531FE", item: { count: 1, id: "powah:dielectric_casing" }, type: "item" }
+    ]
+    title: "A New Power Tier"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["E3957AB6171AF7DE"]
+    description: ["Build your first Powah cell so the grid starts feeling planned instead of stretched thin."]
+    icon: "powah:energy_cell_starter"
+    id: "6257C1A6028B23D4"
+    rewards: [
+        { count: 1, id: "A7DD2ED22DD4BBAF", item: { count: 6, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "818104D9C2FE82EE", icon: "powah:energy_cell_starter", observe_type: 0, timer: 0L, to_observe: "powah:energy_cell_starter", type: "observation" }
+    ]
+    title: "Stored Current"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["6257C1A6028B23D4"]
+    description: ["Run the first Powah cable path into the factory proper."]
+    icon: "powah:energy_cable_starter"
+    id: "41ED2D75AF965711"
+    rewards: [
+        { count: 1, id: "78AEECEA2CDDC6D6", item: { count: 4, id: "powah:dielectric_paste" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "2E94A826B77B30CF", item: { count: 8, id: "powah:energy_cable_starter" }, type: "item" }
+    ]
+    title: "Cable the New Grid"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["41ED2D75AF965711"]
+    description: ["Place the Energizing Orb and open the door to Powah's real progression."]
+    icon: "powah:energizing_orb"
+    id: "346E85E774C6C093"
+    rewards: [
+        { count: 1, id: "B143F5A261E061DF", item: { count: 1, id: "powah:capacitor_basic" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "4E0B655FE7896348", icon: "powah:energizing_orb", observe_type: 0, timer: 0L, to_observe: "powah:energizing_orb", type: "observation" }
+    ]
+    title: "Bring the Orb Online"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["346E85E774C6C093"]
+    description: ["Do one final check and make sure Powah now feels like a true part of the base power story."]
+    icon: "powah:energizing_orb"
+    id: "7DCC49607AE47B96"
+    rewards: [
+        { count: 1, id: "0D3AD64D6D78FC67", item: { count: 2, id: "powah:photoelectric_pane" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "924ADF14FAE1F045", type: "checkmark" }
+    ]
+    title: "Energy Expansion"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Energy Expansion"
+}

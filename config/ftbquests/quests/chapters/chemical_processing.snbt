@@ -1,0 +1,101 @@
+{
+  autofocus_id: "24F05E4C529B63A6"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "chemical_processing"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "mekanism:chemical_injection_chamber"
+  icon_scale: 1.25d
+  id: "C23F66E723EDBDAA"
+  order_index: 14
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["B84347CCDBF851B9"]
+    description: ["Place your first chemical machine and let the factory become a little more demanding."]
+    icon: "mekanism:chemical_injection_chamber"
+    id: "24F05E4C529B63A6"
+    rewards: [
+        { count: 1, id: "3230133CE7B95219", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "B2D2774AE107AAD1", icon: "mekanism:chemical_injection_chamber", observe_type: 0, timer: 0L, to_observe: "mekanism:chemical_injection_chamber", type: "observation" }
+    ]
+    title: "Now It Gets Complicated"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["24F05E4C529B63A6"]
+    description: ["Step up to an advanced control circuit so the chemistry line can keep going."]
+    icon: "mekanism:advanced_control_circuit"
+    id: "E0118DEA0857E056"
+    rewards: [
+        { count: 1, id: "5D6B4C7111183254", item: { count: 6, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "8F55735876B261D6", item: { count: 1, id: "mekanism:advanced_control_circuit" }, type: "item" }
+    ]
+    title: "More Control, More Cost"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["E0118DEA0857E056"]
+    description: ["Add the first proper Mekanism cube to support machines that no longer sip power."]
+    icon: "mekanism:basic_energy_cube"
+    id: "40AD894B28ADE331"
+    rewards: [
+        { count: 1, id: "29510C6536157170", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "9B8DFEFCEC90AC0C", item: { count: 1, id: "mekanism:basic_energy_cube" }, type: "item" }
+    ]
+    title: "Give the Line a Battery"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["40AD894B28ADE331"]
+    description: ["Give the chemical side enough routed support and storage to stay sane."]
+    icon: "sophisticatedstorage:storage_output"
+    id: "9ED26A2F4FEB2F49"
+    rewards: [
+        { count: 1, id: "DA82B76087C87D3A", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "81BD84898742EFA2", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+    ]
+    title: "Keep the Outputs Sorted"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["9ED26A2F4FEB2F49"]
+    description: ["Give the chemistry wing one final check and make sure it belongs to the same factory instead of feeling like a side project."]
+    icon: "mekanism:chemical_injection_chamber"
+    id: "BF62849950E9E76C"
+    rewards: [
+        { count: 1, id: "48F90CAD8B87D577", item: { count: 2, id: "mekanism:alloy_infused" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "9870DA5CE3CD1074", type: "checkmark" }
+    ]
+    title: "Chemical Processing"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Chemical Processing"
+}

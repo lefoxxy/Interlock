@@ -1,0 +1,101 @@
+{
+  autofocus_id: "7AF735049B7EA198"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "ore_to_output"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "immersiveengineering:crusher"
+  icon_scale: 1.25d
+  id: "3A678EEFF82B248C"
+  order_index: 4
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["EFADE204F2FFC651"]
+    description: ["Set aside a proper ore intake instead of stuffing raw materials wherever they fit."]
+    icon: "sophisticatedstorage:chest"
+    id: "7AF735049B7EA198"
+    rewards: [
+        { count: 1, id: "9A8727F5A11F0609", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "010F022276EE1CD0", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
+    ]
+    title: "The First Real Input"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["7AF735049B7EA198"]
+    description: ["Place the crusher and turn the workshop into a real processing floor."]
+    icon: "immersiveengineering:crusher"
+    id: "E3729BEC3B726172"
+    rewards: [
+        { count: 1, id: "BE4B62F038363323", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "6801A1E017FCC7C9", icon: "immersiveengineering:crusher", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:crusher", type: "observation" }
+    ]
+    title: "Bring the Crusher Online"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["E3729BEC3B726172"]
+    description: ["Route ore into the line and stop relying on hand-fed batches."]
+    icon: "pipez:item_pipe"
+    id: "D5DE90D194927AC2"
+    rewards: [
+        { count: 1, id: "DE1A07A29B4FE922", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "A221583927404172", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    title: "Raw In, Crushed Out"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["D5DE90D194927AC2"]
+    description: ["Give processed materials their own storage so the line stays readable."]
+    icon: "sophisticatedstorage:storage_output"
+    id: "DC2440338B69459F"
+    rewards: [
+        { count: 1, id: "74254A144B4651E8", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "B50FEDD02DEC7E56", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+    ]
+    title: "Finished Goods Have a Home"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["DC2440338B69459F"]
+    description: ["Lock in a line that starts with raw material and ends with usable stock without constant babysitting."]
+    icon: "immersiveengineering:crusher"
+    id: "6B456F5D1743DB11"
+    rewards: [
+        { count: 1, id: "BD89F6BFE8EADE6F", item: { count: 4, id: "minecraft:copper_ingot" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "80A809DCCA5ECF4C", type: "checkmark" }
+    ]
+    title: "Ore to Output"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Ore to Output"
+}

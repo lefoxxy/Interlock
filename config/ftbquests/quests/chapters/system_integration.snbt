@@ -1,0 +1,101 @@
+{
+  autofocus_id: "2827EB635100A14D"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "system_integration"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "ae2:drive"
+  icon_scale: 1.25d
+  id: "BBBBBCCAD248BD3D"
+  order_index: 25
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["B859F33E3BCD2AA9"]
+    description: ["Tie AE2 into a real production wing instead of a quiet side room."]
+    icon: "ae2:drive"
+    id: "2827EB635100A14D"
+    rewards: [
+        { count: 1, id: "3430212467B53D39", item: { count: 6, id: "ae2:fluix_glass_cable" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "794B022DB606F68B", icon: "ae2:drive", observe_type: 0, timer: 0L, to_observe: "ae2:drive", type: "observation" }
+    ]
+    title: "Let Storage Meet Production"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["2827EB635100A14D"]
+    description: ["Keep physical logistics in the jobs they still do best."]
+    icon: "pipez:universal_pipe"
+    id: "1B403CD3F6755A3C"
+    rewards: [
+        { count: 1, id: "D38A723B5EF6FD62", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "AD710F15A0E724BA", item: { count: 8, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    title: "Pipes Where Pipes Belong"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["1B403CD3F6755A3C"]
+    description: ["Use a higher circuit tier to show the core machine backbone is now part of a bigger whole."]
+    icon: "mekanism:advanced_control_circuit"
+    id: "A60A4B3B0090AF34"
+    rewards: [
+        { count: 1, id: "3BD05A61EB1E1AB5", item: { count: 2, id: "mekanism:alloy_infused" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "F9020222B48A689D", item: { count: 1, id: "mekanism:advanced_control_circuit" }, type: "item" }
+    ]
+    title: "Mekanism Reports In"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["A60A4B3B0090AF34"]
+    description: ["Use the simple IF frame as proof that automation now lives inside the same factory logic."]
+    icon: "industrialforegoing:machine_frame_simple"
+    id: "0D73056EBF46A0C6"
+    rewards: [
+        { count: 1, id: "44291D1CBE4F6FEB", item: { count: 4, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "3444E157902CC348", item: { count: 1, id: "industrialforegoing:machine_frame_simple" }, type: "item" }
+    ]
+    title: "Automation Joins the Grid"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["0D73056EBF46A0C6"]
+    description: ["Take the pass that makes every major modded system feel like part of one factory instead of neighboring projects."]
+    icon: "ae2:controller"
+    id: "0F2D55679E4260E6"
+    rewards: [
+        { count: 1, id: "85E6F14A991487C0", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "A54D0CCEBA8B507E", type: "checkmark" }
+    ]
+    title: "System Integration"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "System Integration"
+}

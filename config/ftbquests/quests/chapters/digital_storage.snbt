@@ -1,0 +1,101 @@
+{
+  autofocus_id: "433A047327BEBB5B"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "digital_storage"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "ae2:controller"
+  icon_scale: 1.25d
+  id: "E7C83FF5EF692066"
+  order_index: 23
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["ABED98412E3C88D1"]
+    description: ["Craft the gated controller and open AE2 the hard way."]
+    icon: "ae2:controller"
+    id: "433A047327BEBB5B"
+    rewards: [
+        { count: 1, id: "9740BCB1AA5D1849", item: { count: 4, id: "ae2:fluix_dust" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "2F6A0789EA1527BF", item: { count: 1, id: "ae2:controller" }, type: "item" }
+    ]
+    title: "Earn the Controller"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["433A047327BEBB5B"]
+    description: ["Place the drive that turns AE2 from an idea into a room full of hardware."]
+    icon: "ae2:drive"
+    id: "6A134CB8CB220FA5"
+    rewards: [
+        { count: 1, id: "92B60F9AE6B9BCE1", item: { count: 4, id: "ae2:quartz_glass" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "2884861D2BD782F9", icon: "ae2:drive", observe_type: 0, timer: 0L, to_observe: "ae2:drive", type: "observation" }
+    ]
+    title: "First Drive, First Shelf"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["6A134CB8CB220FA5"]
+    description: ["Craft a 1k component and start building storage the way this pack expects you to earn it."]
+    icon: "ae2:cell_component_1k"
+    id: "3E2F2981D6B7C9DF"
+    rewards: [
+        { count: 1, id: "03EDEC8E58D43E02", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "F7585E6CAA6B96EB", item: { count: 1, id: "ae2:cell_component_1k" }, type: "item" }
+    ]
+    title: "The First Cell"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["3E2F2981D6B7C9DF"]
+    description: ["Craft the first item cell so AE2 starts doing real storage work instead of sitting pretty."]
+    icon: "ae2:item_storage_cell_1k"
+    id: "6DCA730A27227B51"
+    rewards: [
+        { count: 1, id: "E87C2B52879E794A", item: { count: 6, id: "ae2:fluix_glass_cable" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "F6E535F9DC740608", item: { count: 1, id: "ae2:item_storage_cell_1k" }, type: "item" }
+    ]
+    title: "A Cell Worth Using"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["6DCA730A27227B51"]
+    description: ["Make sure the first AE2 room adds control without erasing the value of your physical logistics."]
+    icon: "ae2:controller"
+    id: "892B0C46BF4FE6E5"
+    rewards: [
+        { count: 1, id: "EAE538334B7834A2", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "B42CF26A69A3C8E7", type: "checkmark" }
+    ]
+    title: "Digital Storage"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Digital Storage"
+}

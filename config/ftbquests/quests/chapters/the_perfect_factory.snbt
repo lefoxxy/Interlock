@@ -1,0 +1,101 @@
+{
+  autofocus_id: "C1C51613B95A9755"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "the_perfect_factory"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "ae2:controller"
+  icon_scale: 1.25d
+  id: "4A0220260BFB4946"
+  order_index: 29
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["95428BC028FED476"]
+    description: ["Make sure the old IE backbone still has a visible place in the finished build."]
+    icon: "immersiveengineering:dynamo"
+    id: "C1C51613B95A9755"
+    rewards: [
+        { count: 1, id: "D6EADE3332C3ADAE", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "0FC4F5ADB0FEC1A3", icon: "immersiveengineering:dynamo", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:dynamo", type: "observation" }
+    ]
+    title: "Early Bones Still Matter"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["C1C51613B95A9755"]
+    description: ["Keep Mekanism at the heart of the factory instead of letting it disappear behind convenience."]
+    icon: "mekanism:metallurgic_infuser"
+    id: "D79C1996832159C3"
+    rewards: [
+        { count: 1, id: "4677BB7575D12CC7", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "A1124454C58756B6", icon: "mekanism:metallurgic_infuser", observe_type: 0, timer: 0L, to_observe: "mekanism:metallurgic_infuser", type: "observation" }
+    ]
+    title: "Core Machines, Still Central"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["D79C1996832159C3"]
+    description: ["Keep IF in the role it earned: powerful, useful, and still clearly mid-to-late support."]
+    icon: "industrialforegoing:plant_gatherer"
+    id: "0AF0CAEF8B17B31F"
+    rewards: [
+        { count: 1, id: "5C5207CC6F50C238", item: { count: 4, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "797B9C15C549CE05", icon: "industrialforegoing:plant_gatherer", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:plant_gatherer", type: "observation" }
+    ]
+    title: "Automation in Its Place"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["0AF0CAEF8B17B31F"]
+    description: ["Keep AE2 present as the late control layer without erasing the physical factory beneath it."]
+    icon: "ae2:controller"
+    id: "B9DA29A5F242A609"
+    rewards: [
+        { count: 1, id: "0E63F1A3CCE006B5", item: { count: 8, id: "ae2:fluix_glass_cable" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "7B59C35BAD837017", icon: "ae2:controller", observe_type: 0, timer: 0L, to_observe: "ae2:controller", type: "observation" }
+    ]
+    title: "Control Without Replacement"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["B9DA29A5F242A609"]
+    description: ["Finish a factory where every major system has a clear role, clean boundaries, and a reason to be there."]
+    icon: "ae2:controller"
+    id: "F2C26B42D018A112"
+    rewards: [
+        { count: 1, id: "5B8043F7C4583C76", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "A54E5A436C813430", type: "checkmark" }
+    ]
+    title: "The Perfect Factory"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "The Perfect Factory"
+}

@@ -1,0 +1,101 @@
+{
+  autofocus_id: "2AA00D13106D282D"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "the_engineers_mindset"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "sophisticatedstorage:controller"
+  icon_scale: 1.25d
+  id: "291275B697C22176"
+  order_index: 5
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["6B456F5D1743DB11"]
+    description: ["Start organizing the workshop so storage follows function instead of convenience."]
+    icon: "sophisticatedstorage:controller"
+    id: "2AA00D13106D282D"
+    rewards: [
+        { count: 1, id: "00B774AAE8732AD7", item: { count: 2, id: "minecraft:chest" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "1AD8EB2028483320", icon: "sophisticatedstorage:controller", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:controller", type: "observation" }
+    ]
+    title: "Give Each Shelf a Job"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["2AA00D13106D282D"]
+    description: ["Add a dedicated storage input where materials actually enter production."]
+    icon: "sophisticatedstorage:storage_input"
+    id: "FB54707913DD7A7D"
+    rewards: [
+        { count: 1, id: "BCC69BFC143883AE", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "C82CEAC9FB5E4236", icon: "sophisticatedstorage:storage_input", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_input", type: "observation" }
+    ]
+    title: "Inputs Belong Near the Line"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["FB54707913DD7A7D"]
+    description: ["Do the same for finished goods so the workshop finally has a readable flow."]
+    icon: "sophisticatedstorage:storage_output"
+    id: "718C01737C3D33FA"
+    rewards: [
+        { count: 1, id: "E58F0165232A04D3", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "4C0C87E972765F28", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+    ]
+    title: "Outputs Belong at the End"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["718C01737C3D33FA"]
+    description: ["Add a stack upgrade and prove the workshop is being built for tomorrow too."]
+    icon: "sophisticatedstorage:stack_upgrade_tier_1"
+    id: "CB6C6C8FF3F30480"
+    rewards: [
+        { count: 1, id: "2CDCE3BD204FC3B6", item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "1A200FFA1A2F4A84", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    title: "Leave Room to Grow"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["CB6C6C8FF3F30480"]
+    description: ["Do a last cleanup pass and make sure the workshop now has some intentional shape."]
+    icon: "sophisticatedstorage:controller"
+    id: "8B2B07E0B7509548"
+    rewards: [
+        { count: 1, id: "00BDE928F904A4E1", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "1B0B3B9CCF81407B", type: "checkmark" }
+    ]
+    title: "Build Like You Mean It"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "The Engineer's Mindset"
+}

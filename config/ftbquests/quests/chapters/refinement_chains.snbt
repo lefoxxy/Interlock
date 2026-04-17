@@ -1,0 +1,101 @@
+{
+  autofocus_id: "B9507552E40993D6"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "refinement_chains"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "mekanism:crusher"
+  icon_scale: 1.25d
+  id: "F9C69F53854274DF"
+  order_index: 13
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["85ED3FD039550A4E"]
+    description: ["Build a second serious Mekanism step so materials stop being done after one touch."]
+    icon: "mekanism:crusher"
+    id: "B9507552E40993D6"
+    rewards: [
+        { count: 1, id: "B006943767C7590D", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "ABBD55D29F91619D", icon: "mekanism:crusher", observe_type: 0, timer: 0L, to_observe: "mekanism:crusher", type: "observation" }
+    ]
+    title: "Add the Next Stage"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["B9507552E40993D6"]
+    description: ["Add the energized smelter and make the chain feel like a real production run."]
+    icon: "mekanism:energized_smelter"
+    id: "CA1E396271D9D78D"
+    rewards: [
+        { count: 1, id: "7D9830A194565DE0", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "12A08CC094D873EE", icon: "mekanism:energized_smelter", observe_type: 0, timer: 0L, to_observe: "mekanism:energized_smelter", type: "observation" }
+    ]
+    title: "Heat for the Line"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["CA1E396271D9D78D"]
+    description: ["Feed the chain with enough routing that it starts to carry itself."]
+    icon: "pipez:item_pipe"
+    id: "B2A60847F6810D9A"
+    rewards: [
+        { count: 1, id: "AAD50B6448C4FAA4", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "4D27DFBC30BC96B8", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    title: "Link the Machines"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["B2A60847F6810D9A"]
+    description: ["Put an Energy Tablet into the system and accept the factory's appetite has grown."]
+    icon: "mekanism:energy_tablet"
+    id: "80DB4827954FB0B0"
+    rewards: [
+        { count: 1, id: "D33218C72E0B2F12", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "0D7B31B1BBBA14CD", item: { count: 1, id: "mekanism:energy_tablet" }, type: "item" }
+    ]
+    title: "Power for the Chain"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["80DB4827954FB0B0"]
+    description: ["Take a last look at the line and make sure it now works like one thought instead of three separate machines."]
+    icon: "mekanism:crusher"
+    id: "B84347CCDBF851B9"
+    rewards: [
+        { count: 1, id: "9464EAE27ABAF66B", item: { count: 2, id: "mekanism:alloy_infused" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "4EB69474D5D5B465", type: "checkmark" }
+    ]
+    title: "Refinement Chains"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Refinement Chains"
+}

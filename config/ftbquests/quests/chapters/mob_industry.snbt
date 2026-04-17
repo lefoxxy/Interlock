@@ -1,0 +1,101 @@
+{
+  autofocus_id: "997A3FB9A9F735D0"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "mob_industry"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "mekanism:advanced_control_circuit"
+  icon_scale: 1.25d
+  id: "73E3FD4F248E0513"
+  order_index: 19
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["5D361E9E3FC57D57"]
+    description: ["Reserve and power a space for future mob handling without using IF machines ahead of schedule."]
+    icon: "mekanism:advanced_control_circuit"
+    id: "997A3FB9A9F735D0"
+    rewards: [
+        { count: 1, id: "C0B8C0664600D9B9", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "28CE520F69312F4B", item: { count: 1, id: "mekanism:advanced_control_circuit" }, type: "item" }
+    ]
+    title: "A Room for the Ugly Work"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["997A3FB9A9F735D0"]
+    description: ["Build the fluid side of the room so it can eventually support the dirtier jobs."]
+    icon: "pipez:fluid_pipe"
+    id: "7CA57957D08700D3"
+    rewards: [
+        { count: 1, id: "7980104C39809C97", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "889AD98CB0B780C1", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
+    ]
+    title: "Drain and Route"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["7CA57957D08700D3"]
+    description: ["Set up the routing and storage the room will need before the first real machine ever lands."]
+    icon: "sophisticatedstorage:storage_input"
+    id: "7E187671580B0D1E"
+    rewards: [
+        { count: 1, id: "3BC203AFAC81674E", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "818E33C8E9B4ADD8", icon: "sophisticatedstorage:storage_input", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_input", type: "observation" }
+    ]
+    title: "Leave Space for Intake"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["7E187671580B0D1E"]
+    description: ["Do the same for drops and byproducts so the eventual line has somewhere to report."]
+    icon: "sophisticatedstorage:storage_output"
+    id: "0D6B15C67DC6FF3B"
+    rewards: [
+        { count: 1, id: "D729FC383DFDBF61", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "1D287CCF039444B9", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+    ]
+    title: "Leave Space for Output"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["0D6B15C67DC6FF3B"]
+    description: ["This room should now be prepared, contained, and waiting for the actual IF unlock."]
+    icon: "mekanism:advanced_control_circuit"
+    id: "2DA009B5B62E462D"
+    rewards: [
+        { count: 1, id: "A732641955E4F5D1", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "EB2FCC82F6F53547", type: "checkmark" }
+    ]
+    title: "Mob Wing Ready"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Mob Industry"
+}

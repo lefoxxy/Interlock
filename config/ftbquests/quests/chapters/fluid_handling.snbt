@@ -1,0 +1,101 @@
+{
+  autofocus_id: "41E945D4E86C7633"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "fluid_handling"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "immersiveengineering:fluid_pipe"
+  icon_scale: 1.25d
+  id: "CE1ED8B8A172815C"
+  order_index: 8
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["E420351781B80765"]
+    description: ["Put down a real fluid route and stop pretending buckets are good enough."]
+    icon: "pipez:fluid_pipe"
+    id: "41E945D4E86C7633"
+    rewards: [
+        { count: 1, id: "757965C1F1159484", item: { count: 1, id: "pipez:wrench" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "EE9FB36EDD6E38BF", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
+    ]
+    title: "The First Wet Line"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["41E945D4E86C7633"]
+    description: ["Use IE fluid pipework where the line needs to feel anchored to the floor."]
+    icon: "immersiveengineering:fluid_pipe"
+    id: "E46D64277D2226CF"
+    rewards: [
+        { count: 1, id: "B266ABAC5C8246FA", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "CE9C132C1F2D1968", item: { count: 8, id: "immersiveengineering:fluid_pipe" }, type: "item" }
+    ]
+    title: "Pipe the Machine Room"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["E46D64277D2226CF"]
+    description: ["Give the fluid side of the workshop an actual machine and not just a pipe run."]
+    icon: "immersiveengineering:fluid_pump"
+    id: "1F14DA570828F4F2"
+    rewards: [
+        { count: 1, id: "51ADB9E15F273A29", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "31A1D93EEAABECF1", icon: "immersiveengineering:fluid_pump", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:fluid_pump", type: "observation" }
+    ]
+    title: "Pump with Purpose"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["1F14DA570828F4F2"]
+    description: ["Use better storage around the fluid section so the whole thing is easier to live with."]
+    icon: "sophisticatedstorage:barrel"
+    id: "80C2BA04AECF0AA6"
+    rewards: [
+        { count: 1, id: "6391B6B4F3A20428", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "FD478497FABEDD68", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
+    ]
+    title: "Buffer the Wet Side"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["80C2BA04AECF0AA6"]
+    description: ["Do a final pass and make sure the fluid section reads like part of the workshop instead of an awkward add-on."]
+    icon: "immersiveengineering:fluid_pump"
+    id: "12B7875EC44D2506"
+    rewards: [
+        { count: 1, id: "47FB638FF5DF1DDE", item: { count: 4, id: "minecraft:copper_ingot" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "D928B9954B47B93E", type: "checkmark" }
+    ]
+    title: "Fluids Belong in the Factory Too"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Fluid Handling"
+}

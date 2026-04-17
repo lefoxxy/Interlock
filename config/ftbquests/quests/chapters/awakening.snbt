@@ -1,0 +1,100 @@
+{
+  autofocus_id: "5DCBC7479FA0654C"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "awakening"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "sophisticatedbackpacks:backpack"
+  icon_scale: 1.25d
+  id: "9E4EB93B5BFFC575"
+  order_index: 0
+  quest_links: []
+  quests: [
+  {
+    description: ["Nothing in this factory happens by accident. Every line, buffer, machine, and power feed exists because you put it there and made it work together. Interlock is about building systems that hold under pressure, grow with demand, and turn scattered tools into a real industrial base.\\n\\nYou will start with physical infrastructure: storage that makes sense, routed materials, early power, and machine lines you can actually read. From there, the factory grows through better engineering. Immersive Engineering lays the groundwork, Mekanism becomes the processing backbone, Industrial Foregoing expands automation once you have earned it, and AE2 arrives only when the rest of the factory is ready to be coordinated instead of replaced.\\n\\nProgress here comes from design, throughput, and control. If a system fails, you fix it. If a line stalls, you improve it. The goal is not to get lucky and stumble into progress. The goal is to build something that works because every part of it belongs."]
+    icon: "sophisticatedbackpacks:backpack"
+    id: "5DCBC7479FA0654C"
+    rewards: [
+        { count: 1, id: "AED5D532C4886AA2", item: { count: 6, id: "minecraft:bread" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "F5F0BBE71AB1802E", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }
+    ]
+    title: "Pack Light, Build Heavy"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["5DCBC7479FA0654C"]
+    description: ["Put down real storage instead of living out of a loose pile of chests."]
+    icon: "sophisticatedstorage:barrel"
+    id: "4E8D6EA8CA9ED64F"
+    rewards: [
+        { count: 1, id: "BD7BAD529C6B858A", item: { count: 2, id: "minecraft:chest" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "FF62E27ECC536F24", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
+    ]
+    title: "A Place for Parts"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["4E8D6EA8CA9ED64F"]
+    description: ["Run your first item route with Pipez and let the base move its own materials."]
+    icon: "pipez:item_pipe"
+    id: "8AEADB590ACCE7F4"
+    rewards: [
+        { count: 1, id: "593EE7E038F2C4B3", item: { count: 1, id: "pipez:wrench" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "414B652577B864A4", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    title: "Stop Carrying Everything by Hand"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["8AEADB590ACCE7F4"]
+    description: ["Pick up the Engineer's Manual and give the workshop a direction."]
+    icon: "immersiveengineering:manual"
+    id: "4D0372A040D5D62F"
+    rewards: [
+        { count: 1, id: "89A97BA8E9B3B3C3", item: { count: 4, id: "immersiveengineering:stick_treated" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "8D99120236962C71", item: { count: 1, id: "immersiveengineering:manual" }, type: "item" }
+    ]
+    title: "The First Manual"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["4D0372A040D5D62F"]
+    description: ["Take stock of the base and make sure it actually feels ready for industry before you move on."]
+    icon: "sophisticatedstorage:chest"
+    id: "85DFB5A0DD2414FA"
+    rewards: [
+        { count: 1, id: "46F4E88B4A727421", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "D74DAD8B2D7DC547", type: "checkmark" }
+    ]
+    title: "Ready for Real Work"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Awakening"
+}

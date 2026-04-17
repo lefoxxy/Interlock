@@ -1,0 +1,101 @@
+{
+  autofocus_id: "540025B324BDA6B8"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "enter_mekanism"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "mekanism:metallurgic_infuser"
+  icon_scale: 1.25d
+  id: "85FE30C7C866E4AA"
+  order_index: 12
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["7C2ACFFF742C2536"]
+    description: ["Place your first Metallurgic Infuser and let the base learn some precision."]
+    icon: "mekanism:metallurgic_infuser"
+    id: "540025B324BDA6B8"
+    rewards: [
+        { count: 1, id: "E7950D98EA7BB187", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "7ABBEA1307EBC81A", icon: "mekanism:metallurgic_infuser", observe_type: 0, timer: 0L, to_observe: "mekanism:metallurgic_infuser", type: "observation" }
+    ]
+    title: "A New Kind of Machine"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["540025B324BDA6B8"]
+    description: ["Craft the first real control circuit and accept that the workshop has changed."]
+    icon: "mekanism:basic_control_circuit"
+    id: "BB194CEA4A770915"
+    rewards: [
+        { count: 1, id: "6EBC686052444744", item: { count: 6, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "0F8DD62D151DF504", item: { count: 1, id: "mekanism:basic_control_circuit" }, type: "item" }
+    ]
+    title: "Circuits, Not Just Steel"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["BB194CEA4A770915"]
+    description: ["Build the casing that ties Mekanism into the rest of the factory."]
+    icon: "mekanism:steel_casing"
+    id: "DB9C1929AB5D2B55"
+    rewards: [
+        { count: 1, id: "ECBDB91BD0CFEAC9", item: { count: 2, id: "mekanism:alloy_infused" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "5FA8426C2D7CAEFC", item: { count: 1, id: "mekanism:steel_casing" }, type: "item" }
+    ]
+    title: "Steel for the New Backbone"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["DB9C1929AB5D2B55"]
+    description: ["Bring an Enrichment Chamber online and let it show why Mekanism is the new core."]
+    icon: "mekanism:enrichment_chamber"
+    id: "40B70055BE1A1B55"
+    rewards: [
+        { count: 1, id: "E09941461674050E", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "EEE6381AD8F0B6C6", icon: "mekanism:enrichment_chamber", observe_type: 0, timer: 0L, to_observe: "mekanism:enrichment_chamber", type: "observation" }
+    ]
+    title: "A Better First Process"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["40B70055BE1A1B55"]
+    description: ["Make sure the new machine row feels permanent, powered, and connected to the rest of the factory."]
+    icon: "mekanism:enrichment_chamber"
+    id: "85ED3FD039550A4E"
+    rewards: [
+        { count: 1, id: "F2D998440BBE785C", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "ADC7E507E9A6F86D", type: "checkmark" }
+    ]
+    title: "Enter Mekanism"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Enter Mekanism"
+}

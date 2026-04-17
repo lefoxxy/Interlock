@@ -1,0 +1,101 @@
+{
+  autofocus_id: "2C6E3F61333D6B09"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "first_power"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "immersiveengineering:capacitor_lv"
+  icon_scale: 1.25d
+  id: "5D9D6C7CCCE76E42"
+  order_index: 3
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["7198448BF7E8EAAA"]
+    description: ["Bring the first real generator online and give the base its own heartbeat."]
+    icon: "immersiveengineering:dynamo"
+    id: "2C6E3F61333D6B09"
+    rewards: [
+        { count: 1, id: "647D06E4B9396D65", item: { count: 8, id: "minecraft:coal" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "4E49FC5ADBED8178", icon: "immersiveengineering:dynamo", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:dynamo", type: "observation" }
+    ]
+    title: "Make It Spin"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["2C6E3F61333D6B09"]
+    description: ["Wire the new power into the workshop so it actually reaches useful work."]
+    icon: "immersiveengineering:connector_lv_relay"
+    id: "544C360EF77E9BFE"
+    rewards: [
+        { count: 1, id: "78B82C927568BC6E", item: { count: 1, id: "immersiveengineering:wirecoil_copper" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "D5BBC51217EC71F9", item: { count: 2, id: "immersiveengineering:connector_lv_relay" }, type: "item" }
+    ]
+    title: "Run the First Line"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["544C360EF77E9BFE"]
+    description: ["Place the first LV capacitor so the grid can handle more than one little spike at a time."]
+    icon: "immersiveengineering:capacitor_lv"
+    id: "BE849B74ADE129D4"
+    rewards: [
+        { count: 1, id: "E0DDA96B384C29EB", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "CC0C36852736F7A1", icon: "immersiveengineering:capacitor_lv", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:capacitor_lv", type: "observation" }
+    ]
+    title: "Give It a Buffer"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["BE849B74ADE129D4"]
+    description: ["Tie your new grid into a real machine area instead of leaving it stranded in the power corner."]
+    icon: "pipez:energy_pipe"
+    id: "A20CA798C89CF5D7"
+    rewards: [
+        { count: 1, id: "5C55894DE8DC85AD", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "80C1FB2573BFDC91", item: { count: 4, id: "pipez:energy_pipe" }, type: "item" }
+    ]
+    title: "Power on the Machine Row"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["A20CA798C89CF5D7"]
+    description: ["Make sure the workshop now feels powered on purpose instead of held together with temporary fixes."]
+    icon: "immersiveengineering:capacitor_lv"
+    id: "EFADE204F2FFC651"
+    rewards: [
+        { count: 1, id: "72F2A645783EA5AA", item: { count: 6, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "B5AE27E9A4287C3C", type: "checkmark" }
+    ]
+    title: "Your First Real Grid"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "First Power"
+}

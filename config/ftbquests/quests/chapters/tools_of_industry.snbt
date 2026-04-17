@@ -1,0 +1,101 @@
+{
+  autofocus_id: "5627478B71A99F16"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "tools_of_industry"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "immersiveengineering:craftingtable"
+  icon_scale: 1.25d
+  id: "527DC6915BF9CDFA"
+  order_index: 1
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["85DFB5A0DD2414FA"]
+    description: ["Build an engineering corner that can support the next wave of parts."]
+    icon: "immersiveengineering:craftingtable"
+    id: "5627478B71A99F16"
+    rewards: [
+        { count: 1, id: "7F7819686DD839D1", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "EE7AC890C7BF1325", icon: "immersiveengineering:craftingtable", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:craftingtable", type: "observation" }
+    ]
+    title: "Set the Bench"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["5627478B71A99F16"]
+    description: ["Stock your first real engineering components instead of crafting each one at the last second."]
+    icon: "immersiveengineering:component_iron"
+    id: "ECFDB7E09A5F8E2A"
+    rewards: [
+        { count: 1, id: "A1A3808B5F141B42", item: { count: 4, id: "minecraft:copper_ingot" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "EB8920C992CEF591", item: { count: 2, id: "immersiveengineering:component_iron" }, type: "item" }
+    ]
+    title: "Parts on the Shelf"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["ECFDB7E09A5F8E2A"]
+    description: ["Get your first copper coil ready so future power and machine lines have something to stand on."]
+    icon: "immersiveengineering:wirecoil_copper"
+    id: "FEC1B9C4267D802E"
+    rewards: [
+        { count: 1, id: "012A507D48CAACB9", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "45D8B28D4EC49C45", item: { count: 1, id: "immersiveengineering:wirecoil_copper" }, type: "item" }
+    ]
+    title: "Wire for the Workshop"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["FEC1B9C4267D802E"]
+    description: ["Upgrade the stockroom so machine parts and building materials stop fighting for the same slots."]
+    icon: "sophisticatedstorage:upgrade_base"
+    id: "0C60F9BEC12047F3"
+    rewards: [
+        { count: 1, id: "462C94D93869756E", item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "F07E2FE87B35F2CE", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    title: "Storage with Intent"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["0C60F9BEC12047F3"]
+    description: ["Make sure the room feels deliberate before you move into motion and power."]
+    icon: "sophisticatedstorage:chest"
+    id: "16FA0182E945670A"
+    rewards: [
+        { count: 1, id: "DB6D75B7AF430EFC", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "B83912418B111FE4", type: "checkmark" }
+    ]
+    title: "Built Like a Workshop"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Tools of Industry"
+}

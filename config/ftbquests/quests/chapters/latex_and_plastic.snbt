@@ -1,0 +1,101 @@
+{
+  autofocus_id: "FE64AD67A9A86CBF"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "latex_and_plastic"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "industrialforegoing:latex_processing_unit"
+  icon_scale: 1.25d
+  id: "F71BA15954879FAC"
+  order_index: 20
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["2DA009B5B62E462D"]
+    description: ["Craft the first gated IF frame and feel the price of finally opening the automation branch."]
+    icon: "industrialforegoing:machine_frame_pity"
+    id: "FE64AD67A9A86CBF"
+    rewards: [
+        { count: 1, id: "43C574846CB50CDF", item: { count: 4, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "B6CC3EDB29C70D4C", item: { count: 1, id: "industrialforegoing:machine_frame_pity" }, type: "item" }
+    ]
+    title: "First Frame, Real Cost"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["FE64AD67A9A86CBF"]
+    description: ["Place the Fluid Extractor and start the latex side of the chain for real."]
+    icon: "industrialforegoing:fluid_extractor"
+    id: "9810376501182D68"
+    rewards: [
+        { count: 1, id: "FF7213D70114E3B1", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "E684B75387A4B001", icon: "industrialforegoing:fluid_extractor", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:fluid_extractor", type: "observation" }
+    ]
+    title: "Tap the Trees"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["9810376501182D68"]
+    description: ["Place the Latex Processing Unit and turn goo into something the factory can build with."]
+    icon: "industrialforegoing:latex_processing_unit"
+    id: "A45921CC6033340E"
+    rewards: [
+        { count: 1, id: "96E09EBC19CDB7B2", item: { count: 4, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "241E4F97DF58DEF8", icon: "industrialforegoing:latex_processing_unit", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:latex_processing_unit", type: "observation" }
+    ]
+    title: "Cook the Mess"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["A45921CC6033340E"]
+    description: ["Actually stock a small reserve so IF stops feeling like a one-off novelty craft."]
+    icon: "industrialforegoing:plastic"
+    id: "447D7366F3F25800"
+    rewards: [
+        { count: 1, id: "FB56E848D30658B0", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "56C3C84A78D4E80F", item: { count: 8, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    title: "Plastic on the Shelf"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["447D7366F3F25800"]
+    description: ["This is the real IF unlock. Make sure the new material line is stable before you scale it."]
+    icon: "industrialforegoing:plastic"
+    id: "1017AF614B231D50"
+    rewards: [
+        { count: 1, id: "CB846E333694FE97", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "D01EF34B453725CB", type: "checkmark" }
+    ]
+    title: "Latex and Plastic"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Latex and Plastic"
+}

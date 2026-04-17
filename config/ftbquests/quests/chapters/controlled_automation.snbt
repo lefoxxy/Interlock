@@ -1,0 +1,101 @@
+{
+  autofocus_id: "BF05B4DAAA44B49D"
+  default_hide_dependency_lines: false
+  default_quest_shape: "square"
+  filename: "controlled_automation"
+  group: "27A06DCB36C6BDA7"
+  hide_quest_until_deps_visible: true
+  icon: "industrialforegoing:mob_crusher"
+  icon_scale: 1.25d
+  id: "E76CCAE0546B3E17"
+  order_index: 22
+  quest_links: []
+  quests: [
+  {
+    dependencies: ["EA7CA785D8C8ECDB"]
+    description: ["Craft the top IF frame tier so automation can scale without losing its gates."]
+    icon: "industrialforegoing:machine_frame_supreme"
+    id: "BF05B4DAAA44B49D"
+    rewards: [
+        { count: 1, id: "D8FA70269D64C84B", item: { count: 6, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "gear"
+    size: 2.25d
+    tasks: [
+        { id: "3DCD03A34591157C", item: { count: 1, id: "industrialforegoing:machine_frame_supreme" }, type: "item" }
+    ]
+    title: "Build the Heavy Frame"
+    x: 0d
+    y: 0d
+  },
+  {
+    dependencies: ["BF05B4DAAA44B49D"]
+    description: ["Place the Animal Rancher and make sure it has a clear job in the factory."]
+    icon: "industrialforegoing:animal_rancher"
+    id: "7DE63445EA731C59"
+    rewards: [
+        { count: 1, id: "20386D4D16DA57F3", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 1.75d
+    tasks: [
+        { id: "CFF63CE647A2677A", icon: "industrialforegoing:animal_rancher", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:animal_rancher", type: "observation" }
+    ]
+    title: "The Animal Line"
+    x: 4d
+    y: -1.5d
+  },
+  {
+    dependencies: ["7DE63445EA731C59"]
+    description: ["Place the Mob Crusher and give the dirty work room a real purpose."]
+    icon: "industrialforegoing:mob_crusher"
+    id: "C25F5329EBC17CBD"
+    rewards: [
+        { count: 1, id: "CCF93940D2547A59", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 1.75d
+    tasks: [
+        { id: "C8CD7BA30E7EB054", icon: "industrialforegoing:mob_crusher", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:mob_crusher", type: "observation" }
+    ]
+    title: "The Mob Line"
+    x: 8d
+    y: 1.5d
+  },
+  {
+    dependencies: ["C25F5329EBC17CBD"]
+    description: ["Place the Fluid Placer and put one more automation tool under control instead of leaving it loose."]
+    icon: "industrialforegoing:fluid_placer"
+    id: "0DE44D0EFAB37104"
+    rewards: [
+        { count: 1, id: "DAD573E3C848D3F8", item: { count: 1, id: "mekanism:elite_control_circuit" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 1.75d
+    tasks: [
+        { id: "B57C7CAEE41E78C6", icon: "industrialforegoing:fluid_placer", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:fluid_placer", type: "observation" }
+    ]
+    title: "Fluid on Command"
+    x: 12d
+    y: -1.5d
+  },
+  {
+    dependencies: ["0DE44D0EFAB37104"]
+    description: ["Do the pass that makes the automation wing feel coordinated instead of merely full of machines."]
+    icon: "industrialforegoing:mob_crusher"
+    id: "ABED98412E3C88D1"
+    rewards: [
+        { count: 1, id: "D66B5C9A755A7874", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "octagon"
+    size: 2.25d
+    tasks: [
+        { id: "6C136FC2C9226CA1", type: "checkmark" }
+    ]
+    title: "Controlled Automation"
+    x: 16d
+    y: 0d
+  }
+  ]
+  title: "Controlled Automation"
+}
