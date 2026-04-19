@@ -1,26 +1,26 @@
 {
   autofocus_id: "344424E33BB94523"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "hexagon"
   filename: "harnessing_motion"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "immersiveengineering:waterwheel_segment"
-  icon_scale: 1.25d
+  icon_scale: 1.38
   id: "D37BA0F99255F1B8"
   order_index: 2
   quest_links: []
   quests: [
   {
-    dependencies: ["16FA0182E945670A"]
+    dependencies: ["939330CB835C8D94"]
     description: ["Lay down the first moving parts of the workshop and give them some breathing room."]
     icon: "immersiveengineering:waterwheel_segment"
     id: "344424E33BB94523"
     rewards: [
-        { count: 1, id: "DDD68592D394943F", item: { count: 6, id: "immersiveengineering:stick_treated" }, type: "item" }
+        { count: 1, id: "DDD68592D394943F", item: { count: 9, id: "immersiveengineering:stick_treated" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.95d
     tasks: [
         { id: "A1AB10EC7D657D72", item: { count: 4, id: "immersiveengineering:waterwheel_segment" }, type: "item" }
     ]
@@ -34,16 +34,16 @@
     icon: "immersiveengineering:dynamo"
     id: "B659567D30379434"
     rewards: [
-        { count: 1, id: "0DCF37D53FE732D1", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "0DCF37D53FE732D1", item: { count: 5, id: "minecraft:iron_ingot" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.4d
     tasks: [
         { id: "1A5BD1342B354343", icon: "immersiveengineering:dynamo", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:dynamo", type: "observation" }
     ]
     title: "Make It Turn"
-    x: 4d
-    y: -1.5d
+    x: 4.45d
+    y: -2.6d
   },
   {
     dependencies: ["B659567D30379434"]
@@ -51,49 +51,83 @@
     icon: "immersiveengineering:connector_lv"
     id: "1E94D5CCC5CEA54E"
     rewards: [
-        { count: 1, id: "F88D40148F4A97BE", item: { count: 1, id: "immersiveengineering:wirecoil_copper" }, type: "item" }
+        { count: 1, id: "F88D40148F4A97BE", item: { count: 2, id: "immersiveengineering:wirecoil_copper" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.2d
     tasks: [
         { id: "B5153C3AF793881F", item: { count: 2, id: "immersiveengineering:connector_lv" }, type: "item" }
     ]
     title: "Connect the Floor"
-    x: 8d
-    y: 1.5d
+    x: 8.9d
+    y: 2.4d
   },
   {
     dependencies: ["1E94D5CCC5CEA54E"]
-    description: ["Keep your motion setup fed by tying it back into the stockroom."]
-    icon: "sophisticatedstorage:chest"
+    description: ["Back the motion floor with real stock so the first moving setup stops feeling decorative."]
+    icon: "pipez:item_pipe"
     id: "45057723F83E0A56"
     rewards: [
-        { count: 1, id: "01BB408AE5AB0142", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+        { count: 1, id: "01BB408AE5AB0142", item: { count: 8, id: "pipez:universal_pipe" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.2d
     tasks: [
-        { id: "87D1E2E9098A6181", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
+        { id: "87D1E2E9098A6181", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
     ]
-    title: "Storage on the Line"
-    x: 12d
-    y: -1.5d
+    title: "A Wheel Worth Feeding"
+    x: 13.85d
+    y: -1.1d
   },
   {
     dependencies: ["45057723F83E0A56"]
-    description: ["Step back and make sure this first moving section reads like a system, not a test rig."]
-    icon: "immersiveengineering:dynamo"
+    description: ["Keep your motion setup fed by tying it back into the stockroom."]
+    icon: "sophisticatedstorage:chest"
     id: "7198448BF7E8EAAA"
     rewards: [
-        { count: 1, id: "D4A4AF2F4AD8D43E", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "D4A4AF2F4AD8D43E", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.2d
+    tasks: [
+        { id: "6516B57D02B8D883", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
+    ]
+    title: "Storage on the Line"
+    x: 18.3d
+    y: 1.2d
+  },
+  {
+    dependencies: ["7198448BF7E8EAAA"]
+    description: ["Leave room around the moving section so it feels built into the shop instead of jammed into a corner."]
+    icon: "immersiveengineering:treated_scaffold"
+    id: "9CC8F2959931CCD7"
+    rewards: [
+        { count: 1, id: "26993C6EB4346CFD", item: { count: 6, id: "minecraft:copper_ingot" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.4d
+    tasks: [
+        { id: "939539D25D944F46", item: { count: 8, id: "immersiveengineering:treated_scaffold" }, type: "item" }
+    ]
+    title: "Clear the Service Path"
+    x: 22.75d
+    y: -2.2d
+  },
+  {
+    dependencies: ["9CC8F2959931CCD7"]
+    description: ["Step back and make sure this first moving section reads like a system, not a test rig."]
+    icon: "immersiveengineering:dynamo"
+    id: "0AB17D6F2AAB3A1F"
+    rewards: [
+        { count: 1, id: "761CDC4802D3EC0C", item: { count: 8, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.95d
     tasks: [
-        { id: "6516B57D02B8D883", type: "checkmark" }
+        { id: "CD0CA747B7A57AF5", type: "checkmark" }
     ]
     title: "The Floor Comes Alive"
-    x: 16d
+    x: 27.2d
     y: 0d
   }
   ]

@@ -1,26 +1,26 @@
 {
   autofocus_id: "CBEF1A33DA397F07"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "rsquare"
   filename: "network_architecture"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "ae2:fluix_glass_cable"
-  icon_scale: 1.25d
+  icon_scale: 1.52
   id: "050A456F082A5435"
   order_index: 24
   quest_links: []
   quests: [
   {
-    dependencies: ["892B0C46BF4FE6E5"]
+    dependencies: ["F2625BDA68374C36"]
     description: ["Extend the AE2 network beyond the storage room and into the factory."]
     icon: "ae2:fluix_glass_cable"
     id: "CBEF1A33DA397F07"
     rewards: [
-        { count: 1, id: "C6D9AB0A95486B76", item: { count: 4, id: "ae2:fluix_dust" }, type: "item" }
+        { count: 1, id: "C6D9AB0A95486B76", item: { count: 9, id: "ae2:fluix_dust" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.9d
     tasks: [
         { id: "5ACAD962CE38460E", item: { count: 8, id: "ae2:fluix_glass_cable" }, type: "item" }
     ]
@@ -34,16 +34,16 @@
     icon: "ae2:cell_component_4k"
     id: "96CD3EC4AFFE05B0"
     rewards: [
-        { count: 1, id: "AE57E25F92AD8E1D", item: { count: 4, id: "ae2:quartz_glass" }, type: "item" }
+        { count: 1, id: "AE57E25F92AD8E1D", item: { count: 9, id: "ae2:quartz_glass" }, type: "item" }
     ]
     shape: "rsquare"
-    size: 1.75d
+    size: 2.3d
     tasks: [
         { id: "8C1CB265F381FF19", item: { count: 1, id: "ae2:cell_component_4k" }, type: "item" }
     ]
     title: "More Than One Shelf"
-    x: 4d
-    y: -1.5d
+    x: 4.3d
+    y: -2.6d
   },
   {
     dependencies: ["96CD3EC4AFFE05B0"]
@@ -51,49 +51,83 @@
     icon: "ae2:item_storage_cell_4k"
     id: "C66F3141B7129323"
     rewards: [
-        { count: 1, id: "D034328063DF7820", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "D034328063DF7820", item: { count: 9, id: "minecraft:redstone" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.1d
     tasks: [
         { id: "E7802E840C5DEC25", item: { count: 1, id: "ae2:item_storage_cell_4k" }, type: "item" }
     ]
     title: "A Bigger Cell"
-    x: 8d
-    y: 1.5d
+    x: 8.6d
+    y: 2.4d
   },
   {
     dependencies: ["C66F3141B7129323"]
-    description: ["Build the cable and drive layout like you expect to live with it for a long time."]
-    icon: "ae2:drive"
+    description: ["Place a terminal somewhere useful so the network starts serving the floor instead of the storage room alone."]
+    icon: "ae2:terminal"
     id: "25C740456D6F52FC"
     rewards: [
-        { count: 1, id: "E4515F2EE0F75529", item: { count: 6, id: "ae2:fluix_glass_cable" }, type: "item" }
+        { count: 1, id: "E4515F2EE0F75529", item: { count: 14, id: "ae2:fluix_glass_cable" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.1d
     tasks: [
-        { id: "AF8975298A379509", icon: "ae2:drive", observe_type: 0, timer: 0L, to_observe: "ae2:drive", type: "observation" }
+        { id: "AF8975298A379509", icon: "ae2:terminal", observe_type: 0, timer: 0L, to_observe: "ae2:terminal", type: "observation" }
     ]
-    title: "Keep the Core Clean"
-    x: 12d
-    y: -1.5d
+    title: "A Terminal Where You Work"
+    x: 13.4d
+    y: -1.1d
   },
   {
     dependencies: ["25C740456D6F52FC"]
-    description: ["Make sure the network now reaches into the factory without trying to replace everything else."]
-    icon: "ae2:controller"
+    description: ["Craft an ME Glass Cable anchor and start thinking about the network as something arranged, not merely placed."]
+    icon: "ae2:fluix_glass_cable"
     id: "B859F33E3BCD2AA9"
     rewards: [
-        { count: 1, id: "B2BF2CFDCDF2E820", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "B2BF2CFDCDF2E820", item: { count: 9, id: "ae2:quartz_glass" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.1d
+    tasks: [
+        { id: "57EEC88776CBBF6B", item: { count: 16, id: "ae2:fluix_glass_cable" }, type: "item" }
+    ]
+    title: "The Pattern of the Core"
+    x: 17.7d
+    y: 1.2d
+  },
+  {
+    dependencies: ["B859F33E3BCD2AA9"]
+    description: ["Build the cable and drive layout like you expect to live with it for a long time."]
+    icon: "ae2:drive"
+    id: "FD03DF3649A2E161"
+    rewards: [
+        { count: 1, id: "D0877713EBA1A830", item: { count: 14, id: "ae2:fluix_glass_cable" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.3d
+    tasks: [
+        { id: "E1BF17EA9F461D95", icon: "ae2:drive", observe_type: 0, timer: 0L, to_observe: "ae2:drive", type: "observation" }
+    ]
+    title: "Keep the Core Clean"
+    x: 22.0d
+    y: -2.2d
+  },
+  {
+    dependencies: ["FD03DF3649A2E161"]
+    description: ["Make sure the network now reaches into the factory without trying to replace everything else."]
+    icon: "ae2:controller"
+    id: "A63635AAE759AE1B"
+    rewards: [
+        { count: 1, id: "F07425F251A32E28", item: { count: 11, id: "minecraft:iron_ingot" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.9d
     tasks: [
-        { id: "57EEC88776CBBF6B", type: "checkmark" }
+        { id: "9EADBF306664119E", type: "checkmark" }
     ]
     title: "Network Architecture"
-    x: 16d
+    x: 26.3d
     y: 0d
   }
   ]

@@ -1,26 +1,26 @@
 {
   autofocus_id: "5627478B71A99F16"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "hexagon"
   filename: "tools_of_industry"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "immersiveengineering:craftingtable"
-  icon_scale: 1.25d
+  icon_scale: 1.38
   id: "527DC6915BF9CDFA"
   order_index: 1
   quest_links: []
   quests: [
   {
-    dependencies: ["85DFB5A0DD2414FA"]
+    dependencies: ["D807EF3E75F6DA84"]
     description: ["Build an engineering corner that can support the next wave of parts."]
     icon: "immersiveengineering:craftingtable"
     id: "5627478B71A99F16"
     rewards: [
-        { count: 1, id: "7F7819686DD839D1", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "7F7819686DD839D1", item: { count: 5, id: "minecraft:iron_ingot" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.95d
     tasks: [
         { id: "EE7AC890C7BF1325", icon: "immersiveengineering:craftingtable", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:craftingtable", type: "observation" }
     ]
@@ -34,16 +34,16 @@
     icon: "immersiveengineering:component_iron"
     id: "ECFDB7E09A5F8E2A"
     rewards: [
-        { count: 1, id: "A1A3808B5F141B42", item: { count: 4, id: "minecraft:copper_ingot" }, type: "item" }
+        { count: 1, id: "A1A3808B5F141B42", item: { count: 6, id: "minecraft:copper_ingot" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.4d
     tasks: [
         { id: "EB8920C992CEF591", item: { count: 2, id: "immersiveengineering:component_iron" }, type: "item" }
     ]
     title: "Parts on the Shelf"
-    x: 4d
-    y: -1.5d
+    x: 4.45d
+    y: -2.6d
   },
   {
     dependencies: ["ECFDB7E09A5F8E2A"]
@@ -51,49 +51,83 @@
     icon: "immersiveengineering:wirecoil_copper"
     id: "FEC1B9C4267D802E"
     rewards: [
-        { count: 1, id: "012A507D48CAACB9", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+        { count: 1, id: "012A507D48CAACB9", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.2d
     tasks: [
         { id: "45D8B28D4EC49C45", item: { count: 1, id: "immersiveengineering:wirecoil_copper" }, type: "item" }
     ]
     title: "Wire for the Workshop"
-    x: 8d
-    y: 1.5d
+    x: 8.9d
+    y: 2.4d
   },
   {
     dependencies: ["FEC1B9C4267D802E"]
-    description: ["Upgrade the stockroom so machine parts and building materials stop fighting for the same slots."]
-    icon: "sophisticatedstorage:upgrade_base"
+    description: ["Craft the Wire Cutters so your engineering tools stop being decorative and start being useful."]
+    icon: "immersiveengineering:wirecutter"
     id: "0C60F9BEC12047F3"
     rewards: [
-        { count: 1, id: "462C94D93869756E", item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
+        { count: 1, id: "462C94D93869756E", item: { count: 2, id: "immersiveengineering:wirecoil_copper" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.2d
     tasks: [
-        { id: "F07E2FE87B35F2CE", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+        { id: "F07E2FE87B35F2CE", item: { count: 1, id: "immersiveengineering:wirecutter" }, type: "item" }
     ]
-    title: "Storage with Intent"
-    x: 12d
-    y: -1.5d
+    title: "Cut and Shape"
+    x: 13.85d
+    y: -1.1d
   },
   {
     dependencies: ["0C60F9BEC12047F3"]
-    description: ["Make sure the room feels deliberate before you move into motion and power."]
-    icon: "sophisticatedstorage:chest"
+    description: ["Upgrade the stockroom so machine parts and building materials stop fighting for the same slots."]
+    icon: "sophisticatedstorage:upgrade_base"
     id: "16FA0182E945670A"
     rewards: [
-        { count: 1, id: "DB6D75B7AF430EFC", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "DB6D75B7AF430EFC", item: { count: 2, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.2d
+    tasks: [
+        { id: "B83912418B111FE4", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    title: "Storage with Intent"
+    x: 18.3d
+    y: 1.2d
+  },
+  {
+    dependencies: ["16FA0182E945670A"]
+    description: ["Put down a better dedicated storage block for all the parts this workshop is about to start consuming."]
+    icon: "sophisticatedstorage:gold_barrel"
+    id: "AA9E99938595FDE8"
+    rewards: [
+        { count: 1, id: "8376AD5479ED75B8", item: { count: 6, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.4d
+    tasks: [
+        { id: "87E1EFBCA0F4F98B", icon: "sophisticatedstorage:gold_barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_barrel", type: "observation" }
+    ]
+    title: "A Bin for Building Stock"
+    x: 22.75d
+    y: -2.2d
+  },
+  {
+    dependencies: ["AA9E99938595FDE8"]
+    description: ["Make sure the room feels deliberate before you move into motion and power."]
+    icon: "sophisticatedstorage:chest"
+    id: "939330CB835C8D94"
+    rewards: [
+        { count: 1, id: "406E3FB518A07357", item: { count: 8, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.95d
     tasks: [
-        { id: "B83912418B111FE4", type: "checkmark" }
+        { id: "E811CE27CC7338D3", type: "checkmark" }
     ]
     title: "Built Like a Workshop"
-    x: 16d
+    x: 27.2d
     y: 0d
   }
   ]

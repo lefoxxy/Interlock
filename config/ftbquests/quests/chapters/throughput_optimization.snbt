@@ -1,26 +1,26 @@
 {
   autofocus_id: "BFF4F7F204CC7D19"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "rsquare"
   filename: "throughput_optimization"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "ae2:item_storage_cell_4k"
-  icon_scale: 1.25d
+  icon_scale: 1.52
   id: "6112FF9CCECA5CC3"
   order_index: 26
   quest_links: []
   quests: [
   {
-    dependencies: ["0F2D55679E4260E6"]
+    dependencies: ["019090EDB00AE2D3"]
     description: ["Upgrade a real bottleneck instead of adding random speed to random places."]
     icon: "ae2:item_storage_cell_4k"
     id: "BFF4F7F204CC7D19"
     rewards: [
-        { count: 1, id: "A0CD82423E9AA68F", item: { count: 6, id: "ae2:fluix_glass_cable" }, type: "item" }
+        { count: 1, id: "A0CD82423E9AA68F", item: { count: 16, id: "ae2:fluix_glass_cable" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.9d
     tasks: [
         { id: "3C51D8CBD01B5885", item: { count: 1, id: "ae2:item_storage_cell_4k" }, type: "item" }
     ]
@@ -34,66 +34,100 @@
     icon: "mekanism:basic_energy_cube"
     id: "58E224643886F964"
     rewards: [
-        { count: 1, id: "B8DF249ADFCE8F4C", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
+        { count: 1, id: "B8DF249ADFCE8F4C", item: { count: 23, id: "pipez:energy_pipe" }, type: "item" }
     ]
     shape: "rsquare"
-    size: 1.75d
+    size: 2.3d
     tasks: [
         { id: "DA5801F405988084", item: { count: 1, id: "mekanism:basic_energy_cube" }, type: "item" }
     ]
     title: "Feed the Hungry Side"
-    x: 4d
-    y: -1.5d
+    x: 4.3d
+    y: -2.6d
   },
   {
     dependencies: ["58E224643886F964"]
-    description: ["Clean up one more major line so it wastes less motion and less space."]
-    icon: "pipez:universal_pipe"
+    description: ["Make sure finished goods stop waiting in machine buffers while the rest of the line chokes behind them."]
+    icon: "sophisticatedstorage:gold_chest"
     id: "5CF218360E755C51"
     rewards: [
-        { count: 1, id: "3092C76D4124C541", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+        { count: 1, id: "3092C76D4124C541", item: { count: 2, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.1d
     tasks: [
-        { id: "7C0E14D71267311A", item: { count: 12, id: "pipez:universal_pipe" }, type: "item" }
+        { id: "7C0E14D71267311A", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
     ]
-    title: "Trim the Waste"
-    x: 8d
-    y: 1.5d
+    title: "Get the Outputs Out Faster"
+    x: 8.6d
+    y: 2.4d
   },
   {
     dependencies: ["5CF218360E755C51"]
-    description: ["Use a working IF production block as proof that the optimized side of the factory can keep up too."]
-    icon: "industrialforegoing:plant_gatherer"
+    description: ["Clean up one more major line so it wastes less motion and less space."]
+    icon: "pipez:universal_pipe"
     id: "579D0EEACFB831D6"
     rewards: [
-        { count: 1, id: "D3806FA7F7F45B29", item: { count: 4, id: "industrialforegoing:plastic" }, type: "item" }
+        { count: 1, id: "D3806FA7F7F45B29", item: { count: 18, id: "pipez:item_pipe" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.1d
     tasks: [
-        { id: "E25070735520B897", icon: "industrialforegoing:plant_gatherer", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:plant_gatherer", type: "observation" }
+        { id: "E25070735520B897", item: { count: 12, id: "pipez:universal_pipe" }, type: "item" }
     ]
-    title: "Tune the Automation Wing"
-    x: 12d
-    y: -1.5d
+    title: "Trim the Waste"
+    x: 13.4d
+    y: -1.1d
   },
   {
     dependencies: ["579D0EEACFB831D6"]
-    description: ["Make sure the factory now feels smoother, quicker, and less wasteful than it did one chapter ago."]
-    icon: "ae2:item_storage_cell_4k"
+    description: ["Use a working IF production block as proof that the optimized side of the factory can keep up too."]
+    icon: "industrialforegoing:plant_gatherer"
     id: "F29F132C9A147BCC"
     rewards: [
-        { count: 1, id: "EAFE612F5FAB5668", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "EAFE612F5FAB5668", item: { count: 9, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.1d
+    tasks: [
+        { id: "83753DAF7DEBDF28", icon: "industrialforegoing:plant_gatherer", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:plant_gatherer", type: "observation" }
+    ]
+    title: "Tune the Automation Wing"
+    x: 17.7d
+    y: 1.2d
+  },
+  {
+    dependencies: ["F29F132C9A147BCC"]
+    description: ["Make sure AE2 access and physical routing are helping the same lines instead of fighting for control."]
+    icon: "ae2:controller"
+    id: "903EDB8E9AEB8453"
+    rewards: [
+        { count: 1, id: "314E08D0A6B64882", item: { count: 14, id: "ae2:fluix_glass_cable" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.3d
+    tasks: [
+        { id: "90B994D9433CE745", icon: "ae2:controller", observe_type: 0, timer: 0L, to_observe: "ae2:controller", type: "observation" }
+    ]
+    title: "Storage and Network in Agreement"
+    x: 22.0d
+    y: -2.2d
+  },
+  {
+    dependencies: ["903EDB8E9AEB8453"]
+    description: ["Make sure the factory now feels smoother, quicker, and less wasteful than it did one chapter ago."]
+    icon: "ae2:item_storage_cell_4k"
+    id: "D504168527A962B4"
+    rewards: [
+        { count: 1, id: "D3D4832136350A89", item: { count: 16, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.9d
     tasks: [
-        { id: "83753DAF7DEBDF28", type: "checkmark" }
+        { id: "CA70E97B917126F9", type: "checkmark" }
     ]
     title: "Throughput Optimization"
-    x: 16d
+    x: 26.3d
     y: 0d
   }
   ]

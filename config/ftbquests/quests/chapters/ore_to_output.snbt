@@ -1,26 +1,26 @@
 {
   autofocus_id: "7AF735049B7EA198"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "hexagon"
   filename: "ore_to_output"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "immersiveengineering:crusher"
-  icon_scale: 1.25d
+  icon_scale: 1.38
   id: "3A678EEFF82B248C"
   order_index: 4
   quest_links: []
   quests: [
   {
-    dependencies: ["EFADE204F2FFC651"]
+    dependencies: ["17BA6FFA7B392D55"]
     description: ["Set aside a proper ore intake instead of stuffing raw materials wherever they fit."]
     icon: "sophisticatedstorage:chest"
     id: "7AF735049B7EA198"
     rewards: [
-        { count: 1, id: "9A8727F5A11F0609", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "9A8727F5A11F0609", item: { count: 5, id: "minecraft:iron_ingot" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.95d
     tasks: [
         { id: "010F022276EE1CD0", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
     ]
@@ -34,16 +34,16 @@
     icon: "immersiveengineering:crusher"
     id: "E3729BEC3B726172"
     rewards: [
-        { count: 1, id: "BE4B62F038363323", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "BE4B62F038363323", item: { count: 6, id: "minecraft:redstone" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.4d
     tasks: [
         { id: "6801A1E017FCC7C9", icon: "immersiveengineering:crusher", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:crusher", type: "observation" }
     ]
     title: "Bring the Crusher Online"
-    x: 4d
-    y: -1.5d
+    x: 4.45d
+    y: -2.6d
   },
   {
     dependencies: ["E3729BEC3B726172"]
@@ -51,49 +51,83 @@
     icon: "pipez:item_pipe"
     id: "D5DE90D194927AC2"
     rewards: [
-        { count: 1, id: "DE1A07A29B4FE922", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+        { count: 1, id: "DE1A07A29B4FE922", item: { count: 8, id: "pipez:universal_pipe" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.2d
     tasks: [
         { id: "A221583927404172", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
     ]
     title: "Raw In, Crushed Out"
-    x: 8d
-    y: 1.5d
+    x: 8.9d
+    y: 2.4d
   },
   {
     dependencies: ["D5DE90D194927AC2"]
-    description: ["Give processed materials their own storage so the line stays readable."]
-    icon: "sophisticatedstorage:storage_output"
+    description: ["Dedicate real storage to the input side so raw ore stops invading the rest of the workshop."]
+    icon: "sophisticatedstorage:barrel"
     id: "DC2440338B69459F"
     rewards: [
-        { count: 1, id: "74254A144B4651E8", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+        { count: 1, id: "74254A144B4651E8", item: { count: 6, id: "minecraft:iron_ingot" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.2d
     tasks: [
-        { id: "B50FEDD02DEC7E56", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+        { id: "B50FEDD02DEC7E56", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
     ]
-    title: "Finished Goods Have a Home"
-    x: 12d
-    y: -1.5d
+    title: "A Bin for Raw Ore"
+    x: 13.85d
+    y: -1.1d
   },
   {
     dependencies: ["DC2440338B69459F"]
-    description: ["Lock in a line that starts with raw material and ends with usable stock without constant babysitting."]
-    icon: "immersiveengineering:crusher"
+    description: ["Make sure the first processed output has somewhere deliberate to land instead of spilling into mixed storage."]
+    icon: "immersiveengineering:dust_iron"
     id: "6B456F5D1743DB11"
     rewards: [
-        { count: 1, id: "BD89F6BFE8EADE6F", item: { count: 4, id: "minecraft:copper_ingot" }, type: "item" }
+        { count: 1, id: "BD89F6BFE8EADE6F", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.2d
+    tasks: [
+        { id: "80A809DCCA5ECF4C", item: { count: 4, id: "immersiveengineering:dust_iron" }, type: "item" }
+    ]
+    title: "Catch the Dust"
+    x: 18.3d
+    y: 1.2d
+  },
+  {
+    dependencies: ["6B456F5D1743DB11"]
+    description: ["Give processed materials their own storage so the line stays readable."]
+    icon: "sophisticatedstorage:barrel"
+    id: "2AF86C99FDA6DCC8"
+    rewards: [
+        { count: 1, id: "2057066BDCE23338", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.4d
+    tasks: [
+        { id: "27DCD0C9E8B1BF02", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
+    ]
+    title: "Finished Goods Have a Home"
+    x: 22.75d
+    y: -2.2d
+  },
+  {
+    dependencies: ["2AF86C99FDA6DCC8"]
+    description: ["Lock in a line that starts with raw material and ends with usable stock without constant babysitting."]
+    icon: "immersiveengineering:crusher"
+    id: "60D07A38CD1481E7"
+    rewards: [
+        { count: 1, id: "3D7B858DDAE412E4", item: { count: 8, id: "minecraft:copper_ingot" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.95d
     tasks: [
-        { id: "80A809DCCA5ECF4C", type: "checkmark" }
+        { id: "46797EC1DAFDB1B5", type: "checkmark" }
     ]
     title: "Ore to Output"
-    x: 16d
+    x: 27.2d
     y: 0d
   }
   ]

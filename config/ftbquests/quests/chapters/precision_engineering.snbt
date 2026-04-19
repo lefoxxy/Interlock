@@ -6,21 +6,21 @@
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "mekanism:advanced_control_circuit"
-  icon_scale: 1.25d
+  icon_scale: 1.4
   id: "8A0946CE89617DCD"
   order_index: 16
   quest_links: []
   quests: [
   {
-    dependencies: ["7DCC49607AE47B96"]
+    dependencies: ["9169E17A8C5ACB8B"]
     description: ["Start replacing rougher pieces with parts you actually trust in the long term."]
     icon: "mekanism:advanced_control_circuit"
     id: "8FD9BFC4DF6F848B"
     rewards: [
-        { count: 1, id: "75115B6D1D55E087", item: { count: 2, id: "mekanism:alloy_infused" }, type: "item" }
+        { count: 1, id: "75115B6D1D55E087", item: { count: 4, id: "mekanism:alloy_infused" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.85d
     tasks: [
         { id: "6F43DAB432A8E17D", item: { count: 1, id: "mekanism:advanced_control_circuit" }, type: "item" }
     ]
@@ -34,66 +34,100 @@
     icon: "mekanism:basic_energy_cube"
     id: "F1CE1C3002DBA35E"
     rewards: [
-        { count: 1, id: "B999530A4EE592B3", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
+        { count: 1, id: "B999530A4EE592B3", item: { count: 18, id: "pipez:energy_pipe" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.35d
     tasks: [
         { id: "6F3B0BD56BBC3BF5", item: { count: 1, id: "mekanism:basic_energy_cube" }, type: "item" }
     ]
-    title: "Support the Better Machines"
-    x: 4d
-    y: -1.5d
+    title: "Better Power for Better Hardware"
+    x: 4.15d
+    y: -2.6d
   },
   {
     dependencies: ["F1CE1C3002DBA35E"]
     description: ["Tighten routing and storage around one important machine line."]
-    icon: "sophisticatedstorage:storage_input"
+    icon: "sophisticatedstorage:chest"
     id: "DACCB218282EA441"
     rewards: [
-        { count: 1, id: "D90F550EF2F7D031", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+        { count: 1, id: "D90F550EF2F7D031", item: { count: 2, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.15d
     tasks: [
-        { id: "8194DA2644466B6F", icon: "sophisticatedstorage:storage_input", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_input", type: "observation" }
+        { id: "8194DA2644466B6F", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
     ]
     title: "Exact Inputs"
-    x: 8d
-    y: 1.5d
+    x: 8.3d
+    y: 2.4d
   },
   {
     dependencies: ["DACCB218282EA441"]
-    description: ["Craft the circuit tier that marks a workshop no longer built out of temporary compromises."]
-    icon: "mekanism:elite_control_circuit"
+    description: ["Higher-tier machines deserve cleaner output handling too. Tighten the back half of the line."]
+    icon: "sophisticatedstorage:gold_chest"
     id: "390192E425F0586B"
     rewards: [
-        { count: 1, id: "3F022A17B10D72A5", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+        { count: 1, id: "3F022A17B10D72A5", item: { count: 11, id: "minecraft:redstone" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.15d
     tasks: [
-        { id: "08B3A557D4DF94F7", item: { count: 1, id: "mekanism:elite_control_circuit" }, type: "item" }
+        { id: "08B3A557D4DF94F7", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
     ]
-    title: "Long-Term Hardware"
-    x: 12d
-    y: -1.5d
+    title: "Cleaner Outputs"
+    x: 12.95d
+    y: -1.1d
   },
   {
     dependencies: ["390192E425F0586B"]
-    description: ["Take the pass that turns a merely working machine area into one you want to keep."]
+    description: ["Craft the circuit tier that marks a workshop no longer built out of temporary compromises."]
     icon: "mekanism:elite_control_circuit"
     id: "232B0C24443EEA02"
     rewards: [
-        { count: 1, id: "E8816A48169B975E", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "E8816A48169B975E", item: { count: 7, id: "mekanism:ingot_osmium" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 2.15d
+    tasks: [
+        { id: "6BD43D143FAE94A7", item: { count: 1, id: "mekanism:elite_control_circuit" }, type: "item" }
+    ]
+    title: "Long-Term Hardware"
+    x: 17.1d
+    y: 1.2d
+  },
+  {
+    dependencies: ["232B0C24443EEA02"]
+    description: ["Leave enough structure around the line that the next part swap will not become a demolition project."]
+    icon: "mekanism:energy_tablet"
+    id: "D4A4CDE9521FF9D3"
+    rewards: [
+        { count: 1, id: "E4028CE03BAC5A1D", item: { count: 7, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.35d
+    tasks: [
+        { id: "4451605811FEFC96", item: { count: 1, id: "mekanism:energy_tablet" }, type: "item" }
+    ]
+    title: "Built to Upgrade Again"
+    x: 21.25d
+    y: -2.2d
+  },
+  {
+    dependencies: ["D4A4CDE9521FF9D3"]
+    description: ["Take the pass that turns a merely working machine area into one you want to keep."]
+    icon: "mekanism:elite_control_circuit"
+    id: "F82863CC5D6E8949"
+    rewards: [
+        { count: 1, id: "BC9484F5EF810801", item: { count: 14, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.85d
     tasks: [
-        { id: "6BD43D143FAE94A7", type: "checkmark" }
+        { id: "0D7D4CF7047EA6E3", type: "checkmark" }
     ]
     title: "Precision Engineering"
-    x: 16d
+    x: 25.4d
     y: 0d
   }
   ]

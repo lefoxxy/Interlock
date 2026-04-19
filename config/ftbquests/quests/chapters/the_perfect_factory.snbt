@@ -1,26 +1,26 @@
 {
   autofocus_id: "C1C51613B95A9755"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "rsquare"
   filename: "the_perfect_factory"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "ae2:controller"
-  icon_scale: 1.25d
+  icon_scale: 1.52
   id: "4A0220260BFB4946"
   order_index: 29
   quest_links: []
   quests: [
   {
-    dependencies: ["95428BC028FED476"]
+    dependencies: ["893EE7E2BDF58F59"]
     description: ["Make sure the old IE backbone still has a visible place in the finished build."]
     icon: "immersiveengineering:dynamo"
     id: "C1C51613B95A9755"
     rewards: [
-        { count: 1, id: "D6EADE3332C3ADAE", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "D6EADE3332C3ADAE", item: { count: 9, id: "minecraft:iron_ingot" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.9d
     tasks: [
         { id: "0FC4F5ADB0FEC1A3", icon: "immersiveengineering:dynamo", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:dynamo", type: "observation" }
     ]
@@ -34,66 +34,117 @@
     icon: "mekanism:metallurgic_infuser"
     id: "D79C1996832159C3"
     rewards: [
-        { count: 1, id: "4677BB7575D12CC7", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+        { count: 1, id: "4677BB7575D12CC7", item: { count: 9, id: "mekanism:ingot_osmium" }, type: "item" }
     ]
     shape: "rsquare"
-    size: 1.75d
+    size: 2.3d
     tasks: [
         { id: "A1124454C58756B6", icon: "mekanism:metallurgic_infuser", observe_type: 0, timer: 0L, to_observe: "mekanism:metallurgic_infuser", type: "observation" }
     ]
     title: "Core Machines, Still Central"
-    x: 4d
-    y: -1.5d
+    x: 4.3d
+    y: -2.6d
   },
   {
     dependencies: ["D79C1996832159C3"]
-    description: ["Keep IF in the role it earned: powerful, useful, and still clearly mid-to-late support."]
-    icon: "industrialforegoing:plant_gatherer"
+    description: ["Keep the big grid stable and visible enough that the late factory still feels grounded in infrastructure."]
+    icon: "powah:energy_cell_basic"
     id: "0AF0CAEF8B17B31F"
     rewards: [
-        { count: 1, id: "5C5207CC6F50C238", item: { count: 4, id: "industrialforegoing:plastic" }, type: "item" }
+        { count: 1, id: "5C5207CC6F50C238", item: { count: 9, id: "powah:dielectric_paste" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.1d
     tasks: [
-        { id: "797B9C15C549CE05", icon: "industrialforegoing:plant_gatherer", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:plant_gatherer", type: "observation" }
+        { id: "797B9C15C549CE05", icon: "powah:energy_cell_basic", observe_type: 0, timer: 0L, to_observe: "powah:energy_cell_basic", type: "observation" }
     ]
-    title: "Automation in Its Place"
-    x: 8d
-    y: 1.5d
+    title: "Power for the Whole Site"
+    x: 8.6d
+    y: 2.4d
   },
   {
     dependencies: ["0AF0CAEF8B17B31F"]
-    description: ["Keep AE2 present as the late control layer without erasing the physical factory beneath it."]
-    icon: "ae2:controller"
+    description: ["Keep visible routing in the finished build so the factory still feels physical instead of abstracted away."]
+    icon: "pipez:universal_pipe"
     id: "B9DA29A5F242A609"
     rewards: [
-        { count: 1, id: "0E63F1A3CCE006B5", item: { count: 8, id: "ae2:fluix_glass_cable" }, type: "item" }
+        { count: 1, id: "0E63F1A3CCE006B5", item: { count: 18, id: "pipez:item_pipe" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.1d
     tasks: [
-        { id: "7B59C35BAD837017", icon: "ae2:controller", observe_type: 0, timer: 0L, to_observe: "ae2:controller", type: "observation" }
+        { id: "7B59C35BAD837017", item: { count: 16, id: "pipez:universal_pipe" }, type: "item" }
     ]
-    title: "Control Without Replacement"
-    x: 12d
-    y: -1.5d
+    title: "Logistics Still Have Shape"
+    x: 13.4d
+    y: -1.1d
   },
   {
     dependencies: ["B9DA29A5F242A609"]
-    description: ["Finish a factory where every major system has a clear role, clean boundaries, and a reason to be there."]
-    icon: "ae2:controller"
+    description: ["Keep IF in the role it earned: powerful, useful, and still clearly mid-to-late support."]
+    icon: "industrialforegoing:plant_gatherer"
     id: "F2C26B42D018A112"
     rewards: [
-        { count: 1, id: "5B8043F7C4583C76", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+        { count: 1, id: "5B8043F7C4583C76", item: { count: 9, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.1d
+    tasks: [
+        { id: "A54E5A436C813430", icon: "industrialforegoing:plant_gatherer", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:plant_gatherer", type: "observation" }
+    ]
+    title: "Automation in Its Place"
+    x: 17.7d
+    y: 1.2d
+  },
+  {
+    dependencies: ["F2C26B42D018A112"]
+    description: ["Keep AE2 present as the late control layer without erasing the physical factory beneath it."]
+    icon: "ae2:controller"
+    id: "77337E6DA45F098A"
+    rewards: [
+        { count: 1, id: "DF0D055FACA2F4A3", item: { count: 16, id: "ae2:fluix_glass_cable" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.1d
+    tasks: [
+        { id: "77220A4A070423BD", icon: "ae2:controller", observe_type: 0, timer: 0L, to_observe: "ae2:controller", type: "observation" }
+    ]
+    title: "Control Without Replacement"
+    x: 22.45d
+    y: -2.4d
+  },
+  {
+    dependencies: ["77337E6DA45F098A"]
+    description: ["Finish the stockroom with the kind of storage support that belongs in an endgame industrial complex."]
+    icon: "sophisticatedstorage:stack_upgrade_tier_1"
+    id: "FF80CCA3F7691066"
+    rewards: [
+        { count: 1, id: "ACF9D3C80B8085AC", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 2.3d
+    tasks: [
+        { id: "8A110539226582D7", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    title: "Storage That Keeps Up"
+    x: 26.75d
+    y: 2.4d
+  },
+  {
+    dependencies: ["FF80CCA3F7691066"]
+    description: ["Finish a factory where every major system has a clear role, clean boundaries, and a reason to be there."]
+    icon: "ae2:controller"
+    id: "A3EBA80A35B37B2D"
+    rewards: [
+        { count: 1, id: "E25D4D8841A4873E", item: { count: 2, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.9d
     tasks: [
-        { id: "A54E5A436C813430", type: "checkmark" }
+        { id: "97B39018C8E4F872", type: "checkmark" }
     ]
     title: "The Perfect Factory"
-    x: 16d
+    x: 31.05d
     y: 0d
   }
   ]

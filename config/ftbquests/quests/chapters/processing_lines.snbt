@@ -1,26 +1,26 @@
 {
   autofocus_id: "5EBBB98696B4B79F"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "hexagon"
   filename: "processing_lines"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "immersiveengineering:crusher"
-  icon_scale: 1.25d
+  icon_scale: 1.38
   id: "09C62558F266F034"
   order_index: 7
   quest_links: []
   quests: [
   {
-    dependencies: ["EDBC30F9D7034D5D"]
+    dependencies: ["EAF1241CD124F073"]
     description: ["Commit to a dedicated early processing line instead of scattering machines around the room."]
     icon: "immersiveengineering:crusher"
     id: "5EBBB98696B4B79F"
     rewards: [
-        { count: 1, id: "F20566FC6A56EBB0", item: { count: 3, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "F20566FC6A56EBB0", item: { count: 5, id: "minecraft:iron_ingot" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.95d
     tasks: [
         { id: "051DA7ED9CC8B1FE", icon: "immersiveengineering:crusher", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:crusher", type: "observation" }
     ]
@@ -34,66 +34,100 @@
     icon: "pipez:item_pipe"
     id: "BDD05202A084F951"
     rewards: [
-        { count: 1, id: "F6F7E89D256372D6", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+        { count: 1, id: "F6F7E89D256372D6", item: { count: 8, id: "pipez:universal_pipe" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.4d
     tasks: [
         { id: "183C0627EC1D6369", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
     ]
     title: "Feed the Front End"
-    x: 4d
-    y: -1.5d
+    x: 4.45d
+    y: -2.6d
   },
   {
     dependencies: ["BDD05202A084F951"]
-    description: ["Add the pump work needed to support a more complete line."]
-    icon: "immersiveengineering:fluid_pump"
+    description: ["Give the line a committed first step so the front end feels anchored instead of improvised."]
+    icon: "immersiveengineering:dust_iron"
     id: "89A38649F683A2B7"
     rewards: [
-        { count: 1, id: "FAE0032D0678FE9F", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
+        { count: 1, id: "FAE0032D0678FE9F", item: { count: 6, id: "minecraft:copper_ingot" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.2d
     tasks: [
-        { id: "77B1E59701DA3DA2", icon: "immersiveengineering:fluid_pump", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:fluid_pump", type: "observation" }
+        { id: "77B1E59701DA3DA2", item: { count: 4, id: "immersiveengineering:dust_iron" }, type: "item" }
     ]
-    title: "Fluid Support"
-    x: 8d
-    y: 1.5d
+    title: "Crush Before You Sort"
+    x: 8.9d
+    y: 2.4d
   },
   {
     dependencies: ["89A38649F683A2B7"]
-    description: ["Give the finished side enough storage and room that it no longer clogs the whole floor."]
-    icon: "sophisticatedstorage:chest"
+    description: ["Add the pump work needed to support a more complete line."]
+    icon: "immersiveengineering:fluid_pump"
     id: "72F2B01618B29FF3"
     rewards: [
-        { count: 1, id: "946652EFB22E5DFF", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+        { count: 1, id: "946652EFB22E5DFF", item: { count: 12, id: "pipez:fluid_pipe" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.2d
     tasks: [
-        { id: "DBF019B99B7B1213", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
+        { id: "DBF019B99B7B1213", icon: "immersiveengineering:fluid_pump", observe_type: 0, timer: 0L, to_observe: "immersiveengineering:fluid_pump", type: "observation" }
     ]
-    title: "Catch the Good Stuff"
-    x: 12d
-    y: -1.5d
+    title: "Fluid Support"
+    x: 13.85d
+    y: -1.1d
   },
   {
     dependencies: ["72F2B01618B29FF3"]
-    description: ["This line should now run like a system instead of a sequence of chores."]
-    icon: "immersiveengineering:fluid_pump"
+    description: ["Give the finished side enough storage and room that it no longer clogs the whole floor."]
+    icon: "sophisticatedstorage:chest"
     id: "E420351781B80765"
     rewards: [
-        { count: 1, id: "F5B1B16F97863351", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "F5B1B16F97863351", item: { count: 2, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.2d
+    tasks: [
+        { id: "A60A46CF44CB802A", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
+    ]
+    title: "Catch the Good Stuff"
+    x: 18.3d
+    y: 1.2d
+  },
+  {
+    dependencies: ["E420351781B80765"]
+    description: ["Leave a little breathing room in the handoff so one slow machine does not stall the whole section."]
+    icon: "sophisticatedstorage:barrel"
+    id: "CE6F00F096EFB3F0"
+    rewards: [
+        { count: 1, id: "8F00553D13DAB18C", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.4d
+    tasks: [
+        { id: "4B09796BCB2BAF78", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
+    ]
+    title: "A Buffer in the Middle"
+    x: 22.75d
+    y: -2.2d
+  },
+  {
+    dependencies: ["CE6F00F096EFB3F0"]
+    description: ["This line should now run like a system instead of a sequence of chores."]
+    icon: "immersiveengineering:fluid_pump"
+    id: "06F659FDF46F9F34"
+    rewards: [
+        { count: 1, id: "C939F931431A6404", item: { count: 8, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.95d
     tasks: [
-        { id: "A60A46CF44CB802A", type: "checkmark" }
+        { id: "F1C560ACB9FE0A43", type: "checkmark" }
     ]
     title: "Processing Lines"
-    x: 16d
+    x: 27.2d
     y: 0d
   }
   ]

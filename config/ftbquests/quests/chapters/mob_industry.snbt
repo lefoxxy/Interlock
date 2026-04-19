@@ -6,21 +6,21 @@
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "mekanism:advanced_control_circuit"
-  icon_scale: 1.25d
+  icon_scale: 1.4
   id: "73E3FD4F248E0513"
   order_index: 19
   quest_links: []
   quests: [
   {
-    dependencies: ["5D361E9E3FC57D57"]
+    dependencies: ["D8C466809645380B"]
     description: ["Reserve and power a space for future mob handling without using IF machines ahead of schedule."]
     icon: "mekanism:advanced_control_circuit"
     id: "997A3FB9A9F735D0"
     rewards: [
-        { count: 1, id: "C0B8C0664600D9B9", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "C0B8C0664600D9B9", item: { count: 7, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.85d
     tasks: [
         { id: "28CE520F69312F4B", item: { count: 1, id: "mekanism:advanced_control_circuit" }, type: "item" }
     ]
@@ -30,70 +30,104 @@
   },
   {
     dependencies: ["997A3FB9A9F735D0"]
-    description: ["Build the fluid side of the room so it can eventually support the dirtier jobs."]
-    icon: "pipez:fluid_pipe"
+    description: ["Make sure the future mob wing has dedicated energy support instead of borrowing from the nearest machine row."]
+    icon: "pipez:energy_pipe"
     id: "7CA57957D08700D3"
     rewards: [
-        { count: 1, id: "7980104C39809C97", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
+        { count: 1, id: "7980104C39809C97", item: { count: 7, id: "minecraft:iron_ingot" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.35d
     tasks: [
-        { id: "889AD98CB0B780C1", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
+        { id: "889AD98CB0B780C1", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
     ]
-    title: "Drain and Route"
-    x: 4d
-    y: -1.5d
+    title: "Keep It on Its Own Power Branch"
+    x: 4.15d
+    y: -2.6d
   },
   {
     dependencies: ["7CA57957D08700D3"]
-    description: ["Set up the routing and storage the room will need before the first real machine ever lands."]
-    icon: "sophisticatedstorage:storage_input"
+    description: ["Build the fluid side of the room so it can eventually support the dirtier jobs."]
+    icon: "pipez:fluid_pipe"
     id: "7E187671580B0D1E"
     rewards: [
-        { count: 1, id: "3BC203AFAC81674E", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+        { count: 1, id: "3BC203AFAC81674E", item: { count: 14, id: "pipez:energy_pipe" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.15d
     tasks: [
-        { id: "818E33C8E9B4ADD8", icon: "sophisticatedstorage:storage_input", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_input", type: "observation" }
+        { id: "818E33C8E9B4ADD8", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
     ]
-    title: "Leave Space for Intake"
-    x: 8d
-    y: 1.5d
+    title: "Drain and Route"
+    x: 8.3d
+    y: 2.4d
   },
   {
     dependencies: ["7E187671580B0D1E"]
-    description: ["Do the same for drops and byproducts so the eventual line has somewhere to report."]
-    icon: "sophisticatedstorage:storage_output"
+    description: ["Set up the routing and storage the room will need before the first real machine ever lands."]
+    icon: "sophisticatedstorage:chest"
     id: "0D6B15C67DC6FF3B"
     rewards: [
-        { count: 1, id: "D729FC383DFDBF61", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+        { count: 1, id: "D729FC383DFDBF61", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.15d
     tasks: [
-        { id: "1D287CCF039444B9", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+        { id: "1D287CCF039444B9", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
     ]
-    title: "Leave Space for Output"
-    x: 12d
-    y: -1.5d
+    title: "Leave Space for Intake"
+    x: 12.95d
+    y: -1.1d
   },
   {
     dependencies: ["0D6B15C67DC6FF3B"]
-    description: ["This room should now be prepared, contained, and waiting for the actual IF unlock."]
-    icon: "mekanism:advanced_control_circuit"
+    description: ["Do the same for drops and byproducts so the eventual line has somewhere to report."]
+    icon: "sophisticatedstorage:barrel"
     id: "2DA009B5B62E462D"
     rewards: [
-        { count: 1, id: "A732641955E4F5D1", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "A732641955E4F5D1", item: { count: 2, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 2.15d
+    tasks: [
+        { id: "EB2FCC82F6F53547", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
+    ]
+    title: "Leave Space for Output"
+    x: 17.1d
+    y: 1.2d
+  },
+  {
+    dependencies: ["2DA009B5B62E462D"]
+    description: ["Finish the ugly room in a way that feels controlled and intentional before any real throughput shows up."]
+    icon: "sophisticatedstorage:gold_chest"
+    id: "422F0D39E927993F"
+    rewards: [
+        { count: 1, id: "4CE69DD27B6B6C82", item: { count: 11, id: "minecraft:redstone" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.35d
+    tasks: [
+        { id: "89FF56C3FE4EAEDB", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
+    ]
+    title: "Containment Before Capacity"
+    x: 21.25d
+    y: -2.2d
+  },
+  {
+    dependencies: ["422F0D39E927993F"]
+    description: ["This room should now be prepared, contained, and waiting for the actual IF unlock."]
+    icon: "mekanism:advanced_control_circuit"
+    id: "FBBACD56807F00B0"
+    rewards: [
+        { count: 1, id: "6B165850C2F02683", item: { count: 9, id: "minecraft:copper_ingot" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.85d
     tasks: [
-        { id: "EB2FCC82F6F53547", type: "checkmark" }
+        { id: "881DB51DF785BC7E", type: "checkmark" }
     ]
     title: "Mob Wing Ready"
-    x: 16d
+    x: 25.4d
     y: 0d
   }
   ]

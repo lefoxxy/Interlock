@@ -6,21 +6,21 @@
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "mekanism:crusher"
-  icon_scale: 1.25d
+  icon_scale: 1.4
   id: "F9C69F53854274DF"
   order_index: 13
   quest_links: []
   quests: [
   {
-    dependencies: ["85ED3FD039550A4E"]
+    dependencies: ["236205BFA0C64ACF"]
     description: ["Build a second serious Mekanism step so materials stop being done after one touch."]
     icon: "mekanism:crusher"
     id: "B9507552E40993D6"
     rewards: [
-        { count: 1, id: "B006943767C7590D", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+        { count: 1, id: "B006943767C7590D", item: { count: 7, id: "mekanism:ingot_osmium" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.85d
     tasks: [
         { id: "ABBD55D29F91619D", icon: "mekanism:crusher", observe_type: 0, timer: 0L, to_observe: "mekanism:crusher", type: "observation" }
     ]
@@ -34,66 +34,100 @@
     icon: "mekanism:energized_smelter"
     id: "CA1E396271D9D78D"
     rewards: [
-        { count: 1, id: "7D9830A194565DE0", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "7D9830A194565DE0", item: { count: 7, id: "minecraft:redstone" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.35d
     tasks: [
         { id: "12A08CC094D873EE", icon: "mekanism:energized_smelter", observe_type: 0, timer: 0L, to_observe: "mekanism:energized_smelter", type: "observation" }
     ]
     title: "Heat for the Line"
-    x: 4d
-    y: -1.5d
+    x: 4.15d
+    y: -2.6d
   },
   {
     dependencies: ["CA1E396271D9D78D"]
-    description: ["Feed the chain with enough routing that it starts to carry itself."]
-    icon: "pipez:item_pipe"
+    description: ["Give the chain a sensible buffer so every machine does not have to run at exactly the same pace."]
+    icon: "sophisticatedstorage:chest"
     id: "B2A60847F6810D9A"
     rewards: [
-        { count: 1, id: "AAD50B6448C4FAA4", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+        { count: 1, id: "AAD50B6448C4FAA4", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.15d
     tasks: [
-        { id: "4D27DFBC30BC96B8", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
+        { id: "4D27DFBC30BC96B8", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
     ]
-    title: "Link the Machines"
-    x: 8d
-    y: 1.5d
+    title: "A Place for the In-Between Stuff"
+    x: 8.3d
+    y: 2.4d
   },
   {
     dependencies: ["B2A60847F6810D9A"]
-    description: ["Put an Energy Tablet into the system and accept the factory's appetite has grown."]
-    icon: "mekanism:energy_tablet"
+    description: ["Feed the chain with enough routing that it starts to carry itself."]
+    icon: "pipez:item_pipe"
     id: "80DB4827954FB0B0"
     rewards: [
-        { count: 1, id: "D33218C72E0B2F12", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "D33218C72E0B2F12", item: { count: 11, id: "pipez:universal_pipe" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.15d
     tasks: [
-        { id: "0D7B31B1BBBA14CD", item: { count: 1, id: "mekanism:energy_tablet" }, type: "item" }
+        { id: "0D7B31B1BBBA14CD", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
     ]
-    title: "Power for the Chain"
-    x: 12d
-    y: -1.5d
+    title: "Link the Machines"
+    x: 12.95d
+    y: -1.1d
   },
   {
     dependencies: ["80DB4827954FB0B0"]
-    description: ["Take a last look at the line and make sure it now works like one thought instead of three separate machines."]
-    icon: "mekanism:crusher"
+    description: ["Put an Energy Tablet into the system and accept the factory's appetite has grown."]
+    icon: "mekanism:energy_tablet"
     id: "B84347CCDBF851B9"
     rewards: [
-        { count: 1, id: "9464EAE27ABAF66B", item: { count: 2, id: "mekanism:alloy_infused" }, type: "item" }
+        { count: 1, id: "9464EAE27ABAF66B", item: { count: 7, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 2.15d
+    tasks: [
+        { id: "4EB69474D5D5B465", item: { count: 1, id: "mekanism:energy_tablet" }, type: "item" }
+    ]
+    title: "Power for the Chain"
+    x: 17.1d
+    y: 1.2d
+  },
+  {
+    dependencies: ["B84347CCDBF851B9"]
+    description: ["Do not let better processing end in a worse stockroom. Give the line a real output destination."]
+    icon: "sophisticatedstorage:gold_chest"
+    id: "156FD12E823E80D8"
+    rewards: [
+        { count: 1, id: "44521D9C26DAC797", item: { count: 4, id: "mekanism:alloy_infused" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.35d
+    tasks: [
+        { id: "28B87C4E72EE2B46", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
+    ]
+    title: "Outputs Need a Landing Spot Too"
+    x: 21.25d
+    y: -2.2d
+  },
+  {
+    dependencies: ["156FD12E823E80D8"]
+    description: ["Take a last look at the line and make sure it now works like one thought instead of three separate machines."]
+    icon: "mekanism:crusher"
+    id: "E65DB0E52F66F2AA"
+    rewards: [
+        { count: 1, id: "78E5DB27A7DF68F8", item: { count: 7, id: "mekanism:alloy_infused" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.85d
     tasks: [
-        { id: "4EB69474D5D5B465", type: "checkmark" }
+        { id: "C9C89885A5CA5B9D", type: "checkmark" }
     ]
     title: "Refinement Chains"
-    x: 16d
+    x: 25.4d
     y: 0d
   }
   ]

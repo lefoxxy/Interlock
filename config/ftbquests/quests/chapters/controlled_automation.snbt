@@ -6,21 +6,21 @@
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "industrialforegoing:mob_crusher"
-  icon_scale: 1.25d
+  icon_scale: 1.4
   id: "E76CCAE0546B3E17"
   order_index: 22
   quest_links: []
   quests: [
   {
-    dependencies: ["EA7CA785D8C8ECDB"]
+    dependencies: ["DC19C20CB75EDBC4"]
     description: ["Craft the top IF frame tier so automation can scale without losing its gates."]
     icon: "industrialforegoing:machine_frame_supreme"
     id: "BF05B4DAAA44B49D"
     rewards: [
-        { count: 1, id: "D8FA70269D64C84B", item: { count: 6, id: "industrialforegoing:plastic" }, type: "item" }
+        { count: 1, id: "D8FA70269D64C84B", item: { count: 11, id: "industrialforegoing:plastic" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.85d
     tasks: [
         { id: "3DCD03A34591157C", item: { count: 1, id: "industrialforegoing:machine_frame_supreme" }, type: "item" }
     ]
@@ -34,16 +34,16 @@
     icon: "industrialforegoing:animal_rancher"
     id: "7DE63445EA731C59"
     rewards: [
-        { count: 1, id: "20386D4D16DA57F3", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
+        { count: 1, id: "20386D4D16DA57F3", item: { count: 14, id: "pipez:fluid_pipe" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.35d
     tasks: [
         { id: "CFF63CE647A2677A", icon: "industrialforegoing:animal_rancher", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:animal_rancher", type: "observation" }
     ]
     title: "The Animal Line"
-    x: 4d
-    y: -1.5d
+    x: 4.15d
+    y: -2.6d
   },
   {
     dependencies: ["7DE63445EA731C59"]
@@ -51,49 +51,83 @@
     icon: "industrialforegoing:mob_crusher"
     id: "C25F5329EBC17CBD"
     rewards: [
-        { count: 1, id: "CCF93940D2547A59", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+        { count: 1, id: "CCF93940D2547A59", item: { count: 14, id: "pipez:item_pipe" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.15d
     tasks: [
         { id: "C8CD7BA30E7EB054", icon: "industrialforegoing:mob_crusher", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:mob_crusher", type: "observation" }
     ]
     title: "The Mob Line"
-    x: 8d
-    y: 1.5d
+    x: 8.3d
+    y: 2.4d
   },
   {
     dependencies: ["C25F5329EBC17CBD"]
-    description: ["Place the Fluid Placer and put one more automation tool under control instead of leaving it loose."]
-    icon: "industrialforegoing:fluid_placer"
+    description: ["Give the tougher automation lines a proper landing spot so the wing stays readable even when it gets dirty."]
+    icon: "sophisticatedstorage:gold_chest"
     id: "0DE44D0EFAB37104"
     rewards: [
-        { count: 1, id: "DAD573E3C848D3F8", item: { count: 1, id: "mekanism:elite_control_circuit" }, type: "item" }
+        { count: 1, id: "DAD573E3C848D3F8", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.15d
     tasks: [
-        { id: "B57C7CAEE41E78C6", icon: "industrialforegoing:fluid_placer", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:fluid_placer", type: "observation" }
+        { id: "B57C7CAEE41E78C6", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
     ]
-    title: "Fluid on Command"
-    x: 12d
-    y: -1.5d
+    title: "Storage for the Messy Stuff"
+    x: 12.95d
+    y: -1.1d
   },
   {
     dependencies: ["0DE44D0EFAB37104"]
-    description: ["Do the pass that makes the automation wing feel coordinated instead of merely full of machines."]
-    icon: "industrialforegoing:mob_crusher"
+    description: ["Place the Fluid Placer and put one more automation tool under control instead of leaving it loose."]
+    icon: "industrialforegoing:fluid_placer"
     id: "ABED98412E3C88D1"
     rewards: [
-        { count: 1, id: "D66B5C9A755A7874", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "D66B5C9A755A7874", item: { count: 11, id: "industrialforegoing:plastic" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 2.15d
+    tasks: [
+        { id: "6C136FC2C9226CA1", icon: "industrialforegoing:fluid_placer", observe_type: 0, timer: 0L, to_observe: "industrialforegoing:fluid_placer", type: "observation" }
+    ]
+    title: "Fluid on Command"
+    x: 17.1d
+    y: 1.2d
+  },
+  {
+    dependencies: ["ABED98412E3C88D1"]
+    description: ["Take a pass through the automation wing and make sure each machine still has a job you can explain at a glance."]
+    icon: "pipez:universal_pipe"
+    id: "64ADAE1A5EF20C94"
+    rewards: [
+        { count: 1, id: "19DBAFC87B6493E1", item: { count: 14, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.35d
+    tasks: [
+        { id: "D5605DD077EA554E", item: { count: 12, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    title: "Clear Lines, Clear Roles"
+    x: 21.25d
+    y: -2.2d
+  },
+  {
+    dependencies: ["64ADAE1A5EF20C94"]
+    description: ["Do the pass that makes the automation wing feel coordinated instead of merely full of machines."]
+    icon: "industrialforegoing:mob_crusher"
+    id: "B983B30799FC5293"
+    rewards: [
+        { count: 1, id: "56CA7B062232F44E", item: { count: 9, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.85d
     tasks: [
-        { id: "6C136FC2C9226CA1", type: "checkmark" }
+        { id: "118B3138FD849C2E", type: "checkmark" }
     ]
     title: "Controlled Automation"
-    x: 16d
+    x: 25.4d
     y: 0d
   }
   ]

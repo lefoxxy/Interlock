@@ -1,26 +1,26 @@
 {
   autofocus_id: "38DDA8629F4419E6"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "hexagon"
   filename: "logistics_foundations"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "pipez:universal_pipe"
-  icon_scale: 1.25d
+  icon_scale: 1.38
   id: "DDEA4B7AA9CD89FF"
   order_index: 9
   quest_links: []
   quests: [
   {
-    dependencies: ["12B7875EC44D2506"]
+    dependencies: ["5881131A3193A18A"]
     description: ["Commit to a main Pipez route that actually organizes the workshop."]
     icon: "pipez:universal_pipe"
     id: "38DDA8629F4419E6"
     rewards: [
-        { count: 1, id: "6602783885F582F3", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+        { count: 1, id: "6602783885F582F3", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.95d
     tasks: [
         { id: "EA43EB58D13EA930", item: { count: 8, id: "pipez:universal_pipe" }, type: "item" }
     ]
@@ -31,69 +31,103 @@
   {
     dependencies: ["38DDA8629F4419E6"]
     description: ["Upgrade storage so raw inputs and finished goods stop tripping over each other."]
-    icon: "sophisticatedstorage:controller"
+    icon: "sophisticatedstorage:gold_barrel"
     id: "84981E2EFC009BF2"
     rewards: [
-        { count: 1, id: "FEEDA4C44E5CCA88", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+        { count: 1, id: "FEEDA4C44E5CCA88", item: { count: 2, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.4d
     tasks: [
-        { id: "CAB66479A666B8CD", icon: "sophisticatedstorage:controller", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:controller", type: "observation" }
+        { id: "CAB66479A666B8CD", icon: "sophisticatedstorage:gold_barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_barrel", type: "observation" }
     ]
     title: "Separate the Stock"
-    x: 4d
-    y: -1.5d
+    x: 4.45d
+    y: -2.6d
   },
   {
     dependencies: ["84981E2EFC009BF2"]
-    description: ["Extend a useful route far enough that the base starts feeling like more than one room."]
-    icon: "pipez:item_pipe"
+    description: ["Push the same backbone far enough that it supports more than one section of the shop without becoming a tangle."]
+    icon: "pipez:universal_pipe"
     id: "F2624CFF1E9056AD"
     rewards: [
-        { count: 1, id: "F3304805E963C49D", item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
+        { count: 1, id: "F3304805E963C49D", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.2d
     tasks: [
-        { id: "DE5C9B30F000E797", item: { count: 16, id: "pipez:item_pipe" }, type: "item" }
+        { id: "DE5C9B30F000E797", item: { count: 12, id: "pipez:universal_pipe" }, type: "item" }
     ]
-    title: "Items Across the Floor"
-    x: 8d
-    y: 1.5d
+    title: "One Route, Two Jobs"
+    x: 8.9d
+    y: 2.4d
   },
   {
     dependencies: ["F2624CFF1E9056AD"]
-    description: ["Put a proper destination on the far side of the route."]
-    icon: "sophisticatedstorage:gold_chest"
+    description: ["Extend a useful route far enough that the base starts feeling like more than one room."]
+    icon: "pipez:item_pipe"
     id: "EE1FC896B56E8E3D"
     rewards: [
-        { count: 1, id: "2B123D6BA3CEB85D", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "2B123D6BA3CEB85D", item: { count: 2, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.2d
     tasks: [
-        { id: "4399B47238EAF50A", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
+        { id: "4399B47238EAF50A", item: { count: 16, id: "pipez:item_pipe" }, type: "item" }
     ]
-    title: "Storage at the End of the Line"
-    x: 12d
-    y: -1.5d
+    title: "Items Across the Floor"
+    x: 13.85d
+    y: -1.1d
   },
   {
     dependencies: ["EE1FC896B56E8E3D"]
-    description: ["Make sure the workshop can now move its own materials without you acting as the missing transport layer."]
-    icon: "pipez:universal_pipe"
+    description: ["Put a proper destination on the far side of the route."]
+    icon: "sophisticatedstorage:gold_chest"
     id: "0767844EE3B07AC6"
     rewards: [
-        { count: 1, id: "D1F5D3B1D6543EE7", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "D1F5D3B1D6543EE7", item: { count: 6, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.2d
+    tasks: [
+        { id: "775AE26188851502", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
+    ]
+    title: "Storage at the End of the Line"
+    x: 18.3d
+    y: 1.2d
+  },
+  {
+    dependencies: ["0767844EE3B07AC6"]
+    description: ["Clean up one messy run so the workshop starts to read like planned logistics instead of accumulated pipe spaghetti."]
+    icon: "immersiveengineering:treated_scaffold"
+    id: "4A20D4D840910A4B"
+    rewards: [
+        { count: 1, id: "7A29390B456B0B48", item: { count: 6, id: "minecraft:copper_ingot" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.4d
+    tasks: [
+        { id: "82145E5FBA181DC0", item: { count: 8, id: "immersiveengineering:treated_scaffold" }, type: "item" }
+    ]
+    title: "Leave the Aisle Clear"
+    x: 22.75d
+    y: -2.2d
+  },
+  {
+    dependencies: ["4A20D4D840910A4B"]
+    description: ["Make sure the workshop can now move its own materials without you acting as the missing transport layer."]
+    icon: "pipez:universal_pipe"
+    id: "D32507319A057F56"
+    rewards: [
+        { count: 1, id: "542F5ECDB1997112", item: { count: 8, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.95d
     tasks: [
-        { id: "775AE26188851502", type: "checkmark" }
+        { id: "C412FA600489EBE8", type: "checkmark" }
     ]
     title: "Logistics Foundations"
-    x: 16d
+    x: 27.2d
     y: 0d
   }
   ]

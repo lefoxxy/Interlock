@@ -1,26 +1,26 @@
 {
   autofocus_id: "879AA3DEAB5950BF"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "rsquare"
   filename: "mass_production"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "industrialforegoing:machine_frame_supreme"
-  icon_scale: 1.25d
+  icon_scale: 1.52
   id: "7333073FDA837F32"
   order_index: 27
   quest_links: []
   quests: [
   {
-    dependencies: ["F29F132C9A147BCC"]
+    dependencies: ["D504168527A962B4"]
     description: ["Build at a scale where one section of the factory can carry meaningful stock on its own."]
     icon: "industrialforegoing:machine_frame_supreme"
     id: "879AA3DEAB5950BF"
     rewards: [
-        { count: 1, id: "2393F71F279EBFA7", item: { count: 6, id: "industrialforegoing:plastic" }, type: "item" }
+        { count: 1, id: "2393F71F279EBFA7", item: { count: 14, id: "industrialforegoing:plastic" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.9d
     tasks: [
         { id: "CDDBAF7D48347439", item: { count: 1, id: "industrialforegoing:machine_frame_supreme" }, type: "item" }
     ]
@@ -34,66 +34,100 @@
     icon: "ae2:item_storage_cell_4k"
     id: "D1723E3093377225"
     rewards: [
-        { count: 1, id: "25EA3844E293CB27", item: { count: 8, id: "ae2:fluix_glass_cable" }, type: "item" }
+        { count: 1, id: "25EA3844E293CB27", item: { count: 16, id: "ae2:fluix_glass_cable" }, type: "item" }
     ]
     shape: "rsquare"
-    size: 1.75d
+    size: 2.3d
     tasks: [
         { id: "9F263FE5164F7388", item: { count: 1, id: "ae2:item_storage_cell_4k" }, type: "item" }
     ]
     title: "Keep the Network Fed"
-    x: 4d
-    y: -1.5d
+    x: 4.3d
+    y: -2.6d
   },
   {
     dependencies: ["D1723E3093377225"]
-    description: ["Use a better Powah cell to keep heavier wings calm under sustained load."]
-    icon: "powah:energy_cell_basic"
+    description: ["Back the big line with storage that can actually absorb a good run instead of folding after one batch."]
+    icon: "sophisticatedstorage:gold_chest"
     id: "6C44E00ECE371596"
     rewards: [
-        { count: 1, id: "B025B4F7AE11E8A1", item: { count: 4, id: "powah:dielectric_paste" }, type: "item" }
+        { count: 1, id: "B025B4F7AE11E8A1", item: { count: 2, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.1d
     tasks: [
-        { id: "B770DA95C0254156", icon: "powah:energy_cell_basic", observe_type: 0, timer: 0L, to_observe: "powah:energy_cell_basic", type: "observation" }
+        { id: "B770DA95C0254156", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
     ]
-    title: "Power That Stays On"
-    x: 8d
-    y: 1.5d
+    title: "Storage for Real Volume"
+    x: 8.6d
+    y: 2.4d
   },
   {
     dependencies: ["6C44E00ECE371596"]
-    description: ["Use an elite circuit as proof this line is not a temporary build anymore."]
-    icon: "mekanism:elite_control_circuit"
+    description: ["Use a better Powah cell to keep heavier wings calm under sustained load."]
+    icon: "powah:energy_cell_basic"
     id: "5E49686E480DF74B"
     rewards: [
-        { count: 1, id: "1C6D13998B925BFA", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+        { count: 1, id: "1C6D13998B925BFA", item: { count: 9, id: "powah:dielectric_paste" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.1d
     tasks: [
-        { id: "F7B43A4326E83895", item: { count: 1, id: "mekanism:elite_control_circuit" }, type: "item" }
+        { id: "F7B43A4326E83895", icon: "powah:energy_cell_basic", observe_type: 0, timer: 0L, to_observe: "powah:energy_cell_basic", type: "observation" }
     ]
-    title: "Circuits for the Long Haul"
-    x: 12d
-    y: -1.5d
+    title: "Power That Stays On"
+    x: 13.4d
+    y: -1.1d
   },
   {
     dependencies: ["5E49686E480DF74B"]
-    description: ["Do the last pass that turns this wing from a clever setup into something the whole factory depends on."]
-    icon: "industrialforegoing:machine_frame_supreme"
+    description: ["Use an elite circuit as proof this line is not a temporary build anymore."]
+    icon: "mekanism:elite_control_circuit"
     id: "9CF4BBD30A9BA20B"
     rewards: [
-        { count: 1, id: "B091DE15575F7911", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "B091DE15575F7911", item: { count: 9, id: "mekanism:ingot_osmium" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.1d
+    tasks: [
+        { id: "5C398458BCE9E6B4", item: { count: 1, id: "mekanism:elite_control_circuit" }, type: "item" }
+    ]
+    title: "Circuits for the Long Haul"
+    x: 17.7d
+    y: 1.2d
+  },
+  {
+    dependencies: ["9CF4BBD30A9BA20B"]
+    description: ["Clean up the big production wing so you can actually read where stock goes when the line is working at full tilt."]
+    icon: "pipez:universal_pipe"
+    id: "FAB341E6D6B79DA6"
+    rewards: [
+        { count: 1, id: "A148DA9027EAA660", item: { count: 18, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.3d
+    tasks: [
+        { id: "A196B55B75C7AD0B", item: { count: 16, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    title: "A Route Worth Following"
+    x: 22.0d
+    y: -2.2d
+  },
+  {
+    dependencies: ["FAB341E6D6B79DA6"]
+    description: ["Do the last pass that turns this wing from a clever setup into something the whole factory depends on."]
+    icon: "industrialforegoing:machine_frame_supreme"
+    id: "F11402E25F20C220"
+    rewards: [
+        { count: 1, id: "49404918C97DA35E", item: { count: 11, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.9d
     tasks: [
-        { id: "5C398458BCE9E6B4", type: "checkmark" }
+        { id: "0DE261B87A73DEF1", type: "checkmark" }
     ]
     title: "Mass Production"
-    x: 16d
+    x: 26.3d
     y: 0d
   }
   ]

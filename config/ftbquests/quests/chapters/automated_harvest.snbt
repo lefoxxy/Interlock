@@ -6,21 +6,21 @@
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "powah:energy_cell_basic"
-  icon_scale: 1.25d
+  icon_scale: 1.4
   id: "BF67966F4848D388"
   order_index: 18
   quest_links: []
   quests: [
   {
-    dependencies: ["45A8D6FAB5AB181D"]
+    dependencies: ["088D89890FF9B481"]
     description: ["Build the power and storage foundations for future automation without unlocking IF early."]
     icon: "powah:energy_cell_basic"
     id: "D830CF37878591B5"
     rewards: [
-        { count: 1, id: "ACC04E90C6C07F7B", item: { count: 4, id: "powah:dielectric_paste" }, type: "item" }
+        { count: 1, id: "ACC04E90C6C07F7B", item: { count: 7, id: "powah:dielectric_paste" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.85d
     tasks: [
         { id: "95AF852B2BB8E49F", icon: "powah:energy_cell_basic", observe_type: 0, timer: 0L, to_observe: "powah:energy_cell_basic", type: "observation" }
     ]
@@ -30,70 +30,104 @@
   },
   {
     dependencies: ["D830CF37878591B5"]
-    description: ["Run the item routes that future farming gear will need."]
-    icon: "pipez:item_pipe"
+    description: ["Set up where future seeds, ingredients, and support materials will land before any automation block gets placed."]
+    icon: "sophisticatedstorage:chest"
     id: "E0F89CAABD6EB54C"
     rewards: [
-        { count: 1, id: "5993249E7F9636CF", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+        { count: 1, id: "5993249E7F9636CF", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.35d
     tasks: [
-        { id: "0A986B980C449D95", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
+        { id: "0A986B980C449D95", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
     ]
-    title: "Route Future Inputs"
-    x: 4d
-    y: -1.5d
+    title: "Give It an Intake Wall"
+    x: 4.15d
+    y: -2.6d
   },
   {
     dependencies: ["E0F89CAABD6EB54C"]
-    description: ["Do the same for fluid movement so the room is ready when the plastic chain comes online."]
-    icon: "pipez:fluid_pipe"
+    description: ["Run the item routes that future farming gear will need."]
+    icon: "pipez:item_pipe"
     id: "16813926886CD825"
     rewards: [
-        { count: 1, id: "BC60D61737EF7090", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "BC60D61737EF7090", item: { count: 11, id: "pipez:universal_pipe" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.15d
     tasks: [
-        { id: "3713C075EBC8DF08", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
+        { id: "3713C075EBC8DF08", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
     ]
-    title: "Route Future Fluids"
-    x: 8d
-    y: 1.5d
+    title: "Route Future Inputs"
+    x: 8.3d
+    y: 2.4d
   },
   {
     dependencies: ["16813926886CD825"]
-    description: ["Put down the storage that will eventually receive harvest output."]
-    icon: "sophisticatedstorage:gold_chest"
+    description: ["Do the same for fluid movement so the room is ready when the plastic chain comes online."]
+    icon: "pipez:fluid_pipe"
     id: "6668C79BD61B3EFB"
     rewards: [
-        { count: 1, id: "AFE963BCAC4864C1", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+        { count: 1, id: "AFE963BCAC4864C1", item: { count: 7, id: "minecraft:redstone" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.15d
     tasks: [
-        { id: "86789E80AEC43FCA", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
+        { id: "86789E80AEC43FCA", item: { count: 8, id: "pipez:fluid_pipe" }, type: "item" }
     ]
-    title: "Stock the Support Room"
-    x: 12d
-    y: -1.5d
+    title: "Route Future Fluids"
+    x: 12.95d
+    y: -1.1d
   },
   {
     dependencies: ["6668C79BD61B3EFB"]
-    description: ["Do the layout pass now so Industrial Foregoing arrives into a clean space later."]
-    icon: "powah:energy_cell_basic"
+    description: ["Prepare the shelves where future harvests will actually land so the room feels like part of the base already."]
+    icon: "sophisticatedstorage:gold_chest"
     id: "5D361E9E3FC57D57"
     rewards: [
-        { count: 1, id: "41E77BD02946BFF1", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "41E77BD02946BFF1", item: { count: 7, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 2.15d
+    tasks: [
+        { id: "F04BEA11D0B229A6", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
+    ]
+    title: "Give It an Output Wall"
+    x: 17.1d
+    y: 1.2d
+  },
+  {
+    dependencies: ["5D361E9E3FC57D57"]
+    description: ["Get the room wired and buffered now so later automation arrives into something stable."]
+    icon: "pipez:energy_pipe"
+    id: "71DEA9A08E5B612B"
+    rewards: [
+        { count: 1, id: "DC9262278307D2A0", item: { count: 7, id: "powah:dielectric_paste" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.35d
+    tasks: [
+        { id: "EFCE0B4B5229D7BC", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
+    ]
+    title: "Power Before the Machines"
+    x: 21.25d
+    y: -2.2d
+  },
+  {
+    dependencies: ["71DEA9A08E5B612B"]
+    description: ["Do the layout pass now so Industrial Foregoing arrives into a clean space later."]
+    icon: "powah:energy_cell_basic"
+    id: "D8C466809645380B"
+    rewards: [
+        { count: 1, id: "E34367B5B81DB9EA", item: { count: 9, id: "minecraft:copper_ingot" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.85d
     tasks: [
-        { id: "F04BEA11D0B229A6", type: "checkmark" }
+        { id: "3C4034D5A0145D43", type: "checkmark" }
     ]
     title: "Harvest Wing Ready"
-    x: 16d
+    x: 25.4d
     y: 0d
   }
   ]

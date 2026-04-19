@@ -1,28 +1,28 @@
 {
   autofocus_id: "2AA00D13106D282D"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "hexagon"
   filename: "the_engineers_mindset"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
-  icon: "sophisticatedstorage:controller"
-  icon_scale: 1.25d
+  icon: "sophisticatedstorage:gold_barrel"
+  icon_scale: 1.38
   id: "291275B697C22176"
   order_index: 5
   quest_links: []
   quests: [
   {
-    dependencies: ["6B456F5D1743DB11"]
+    dependencies: ["60D07A38CD1481E7"]
     description: ["Start organizing the workshop so storage follows function instead of convenience."]
-    icon: "sophisticatedstorage:controller"
+    icon: "sophisticatedstorage:gold_barrel"
     id: "2AA00D13106D282D"
     rewards: [
-        { count: 1, id: "00B774AAE8732AD7", item: { count: 2, id: "minecraft:chest" }, type: "item" }
+        { count: 1, id: "00B774AAE8732AD7", item: { count: 5, id: "minecraft:chest" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.95d
     tasks: [
-        { id: "1AD8EB2028483320", icon: "sophisticatedstorage:controller", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:controller", type: "observation" }
+        { id: "1AD8EB2028483320", icon: "sophisticatedstorage:gold_barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_barrel", type: "observation" }
     ]
     title: "Give Each Shelf a Job"
     x: 0d
@@ -30,70 +30,104 @@
   },
   {
     dependencies: ["2AA00D13106D282D"]
-    description: ["Add a dedicated storage input where materials actually enter production."]
-    icon: "sophisticatedstorage:storage_input"
+    description: ["Set up a clear place for untouched materials so the workshop starts making sense before the machines even run."]
+    icon: "sophisticatedstorage:barrel"
     id: "FB54707913DD7A7D"
     rewards: [
-        { count: 1, id: "BCC69BFC143883AE", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+        { count: 1, id: "BCC69BFC143883AE", item: { count: 5, id: "minecraft:iron_ingot" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.4d
     tasks: [
-        { id: "C82CEAC9FB5E4236", icon: "sophisticatedstorage:storage_input", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_input", type: "observation" }
+        { id: "C82CEAC9FB5E4236", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
     ]
-    title: "Inputs Belong Near the Line"
-    x: 4d
-    y: -1.5d
+    title: "Raw Means Raw"
+    x: 4.45d
+    y: -2.6d
   },
   {
     dependencies: ["FB54707913DD7A7D"]
-    description: ["Do the same for finished goods so the workshop finally has a readable flow."]
-    icon: "sophisticatedstorage:storage_output"
+    description: ["Add a dedicated storage input where materials actually enter production."]
+    icon: "sophisticatedstorage:chest"
     id: "718C01737C3D33FA"
     rewards: [
-        { count: 1, id: "E58F0165232A04D3", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+        { count: 1, id: "E58F0165232A04D3", item: { count: 14, id: "pipez:item_pipe" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.2d
     tasks: [
-        { id: "4C0C87E972765F28", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+        { id: "4C0C87E972765F28", icon: "sophisticatedstorage:chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:chest", type: "observation" }
     ]
-    title: "Outputs Belong at the End"
-    x: 8d
-    y: 1.5d
+    title: "Inputs Belong Near the Line"
+    x: 8.9d
+    y: 2.4d
   },
   {
     dependencies: ["718C01737C3D33FA"]
-    description: ["Add a stack upgrade and prove the workshop is being built for tomorrow too."]
-    icon: "sophisticatedstorage:stack_upgrade_tier_1"
+    description: ["Do the same for finished goods so the workshop finally has a readable flow."]
+    icon: "sophisticatedstorage:barrel"
     id: "CB6C6C8FF3F30480"
     rewards: [
-        { count: 1, id: "2CDCE3BD204FC3B6", item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
+        { count: 1, id: "2CDCE3BD204FC3B6", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.2d
     tasks: [
-        { id: "1A200FFA1A2F4A84", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+        { id: "1A200FFA1A2F4A84", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
     ]
-    title: "Leave Room to Grow"
-    x: 12d
-    y: -1.5d
+    title: "Outputs Belong at the End"
+    x: 13.85d
+    y: -1.1d
   },
   {
     dependencies: ["CB6C6C8FF3F30480"]
-    description: ["Do a last cleanup pass and make sure the workshop now has some intentional shape."]
-    icon: "sophisticatedstorage:controller"
+    description: ["Machine parts and wiring should stop living in the same bins as raw materials."]
+    icon: "sophisticatedstorage:gold_chest"
     id: "8B2B07E0B7509548"
     rewards: [
-        { count: 1, id: "00BDE928F904A4E1", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "00BDE928F904A4E1", item: { count: 2, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.2d
+    tasks: [
+        { id: "1B0B3B9CCF81407B", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
+    ]
+    title: "Parts Need Their Own Shelf Too"
+    x: 18.3d
+    y: 1.2d
+  },
+  {
+    dependencies: ["8B2B07E0B7509548"]
+    description: ["Add a stack upgrade and prove the workshop is being built for tomorrow too."]
+    icon: "sophisticatedstorage:stack_upgrade_tier_1"
+    id: "0E0C7137162BFB9E"
+    rewards: [
+        { count: 1, id: "542064D2859383EA", item: { count: 2, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.4d
+    tasks: [
+        { id: "2011E93B998B8E64", item: { count: 1, id: "sophisticatedstorage:stack_upgrade_tier_1" }, type: "item" }
+    ]
+    title: "Leave Room to Grow"
+    x: 22.75d
+    y: -2.2d
+  },
+  {
+    dependencies: ["0E0C7137162BFB9E"]
+    description: ["Do a last cleanup pass and make sure the workshop now has some intentional shape."]
+    icon: "sophisticatedstorage:gold_barrel"
+    id: "7908D9D87A542443"
+    rewards: [
+        { count: 1, id: "F3C91AEAA5E9607F", item: { count: 12, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.95d
     tasks: [
-        { id: "1B0B3B9CCF81407B", type: "checkmark" }
+        { id: "63BB3D1BDA62E887", type: "checkmark" }
     ]
     title: "Build Like You Mean It"
-    x: 16d
+    x: 27.2d
     y: 0d
   }
   ]

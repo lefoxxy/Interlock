@@ -1,12 +1,12 @@
 {
   autofocus_id: "5DCBC7479FA0654C"
   default_hide_dependency_lines: false
-  default_quest_shape: "square"
+  default_quest_shape: "hexagon"
   filename: "awakening"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "sophisticatedbackpacks:backpack"
-  icon_scale: 1.25d
+  icon_scale: 1.38
   id: "9E4EB93B5BFFC575"
   order_index: 0
   quest_links: []
@@ -16,10 +16,10 @@
     icon: "sophisticatedbackpacks:backpack"
     id: "5DCBC7479FA0654C"
     rewards: [
-        { count: 1, id: "AED5D532C4886AA2", item: { count: 6, id: "minecraft:bread" }, type: "item" }
+        { count: 1, id: "AED5D532C4886AA2", item: { count: 9, id: "minecraft:bread" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.95d
     tasks: [
         { id: "F5F0BBE71AB1802E", item: { count: 1, id: "sophisticatedbackpacks:backpack" }, type: "item" }
     ]
@@ -33,66 +33,117 @@
     icon: "sophisticatedstorage:barrel"
     id: "4E8D6EA8CA9ED64F"
     rewards: [
-        { count: 1, id: "BD7BAD529C6B858A", item: { count: 2, id: "minecraft:chest" }, type: "item" }
+        { count: 1, id: "BD7BAD529C6B858A", item: { count: 3, id: "minecraft:chest" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.4d
     tasks: [
         { id: "FF62E27ECC536F24", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
     ]
     title: "A Place for Parts"
-    x: 4d
-    y: -1.5d
+    x: 4.45d
+    y: -2.6d
   },
   {
     dependencies: ["4E8D6EA8CA9ED64F"]
-    description: ["Run your first item route with Pipez and let the base move its own materials."]
-    icon: "pipez:item_pipe"
+    description: ["Upgrade your early storage a little so the workshop can hold parts with some dignity."]
+    icon: "sophisticatedstorage:upgrade_base"
     id: "8AEADB590ACCE7F4"
     rewards: [
-        { count: 1, id: "593EE7E038F2C4B3", item: { count: 1, id: "pipez:wrench" }, type: "item" }
+        { count: 1, id: "593EE7E038F2C4B3", item: { count: 2, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.2d
     tasks: [
-        { id: "414B652577B864A4", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+        { id: "414B652577B864A4", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
     ]
-    title: "Stop Carrying Everything by Hand"
-    x: 8d
-    y: 1.5d
+    title: "A Shelf Worth Using"
+    x: 8.9d
+    y: 2.4d
   },
   {
     dependencies: ["8AEADB590ACCE7F4"]
-    description: ["Pick up the Engineer's Manual and give the workshop a direction."]
-    icon: "immersiveengineering:manual"
+    description: ["Run your first item route with Pipez and let the base move its own materials."]
+    icon: "pipez:item_pipe"
     id: "4D0372A040D5D62F"
     rewards: [
-        { count: 1, id: "89A97BA8E9B3B3C3", item: { count: 4, id: "immersiveengineering:stick_treated" }, type: "item" }
+        { count: 1, id: "89A97BA8E9B3B3C3", item: { count: 1, id: "pipez:wrench" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.2d
     tasks: [
-        { id: "8D99120236962C71", item: { count: 1, id: "immersiveengineering:manual" }, type: "item" }
+        { id: "8D99120236962C71", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
     ]
-    title: "The First Manual"
-    x: 12d
-    y: -1.5d
+    title: "Stop Carrying Everything by Hand"
+    x: 13.85d
+    y: -1.1d
   },
   {
     dependencies: ["4D0372A040D5D62F"]
-    description: ["Take stock of the base and make sure it actually feels ready for industry before you move on."]
-    icon: "sophisticatedstorage:chest"
+    description: ["Add a second visible route so your workshop starts to look like a system instead of a lucky accident."]
+    icon: "pipez:universal_pipe"
     id: "85DFB5A0DD2414FA"
     rewards: [
-        { count: 1, id: "46F4E88B4A727421", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "46F4E88B4A727421", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.2d
+    tasks: [
+        { id: "D74DAD8B2D7DC547", item: { count: 4, id: "pipez:universal_pipe" }, type: "item" }
+    ]
+    title: "One Pipe, One Purpose"
+    x: 18.3d
+    y: 1.2d
+  },
+  {
+    dependencies: ["85DFB5A0DD2414FA"]
+    description: ["Pick up the Engineer's Manual and give the workshop a direction."]
+    icon: "immersiveengineering:manual"
+    id: "32AC9C7D9C2EFEA1"
+    rewards: [
+        { count: 1, id: "8198498EC9E41625", item: { count: 6, id: "immersiveengineering:stick_treated" }, type: "item" }
+    ]
+    shape: "rsquare"
+    size: 2.2d
+    tasks: [
+        { id: "CBF5F7B4CFF17A7A", item: { count: 1, id: "immersiveengineering:manual" }, type: "item" }
+    ]
+    title: "The First Manual"
+    x: 23.20d
+    y: -2.4d
+  },
+  {
+    dependencies: ["32AC9C7D9C2EFEA1"]
+    description: ["Craft the Engineer's Hammer and make the jump from scavenging to actual industrial building."]
+    icon: "immersiveengineering:hammer"
+    id: "A77D9C128DC4BD37"
+    rewards: [
+        { count: 1, id: "F9807A151C395578", item: { count: 6, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 2.4d
+    tasks: [
+        { id: "6652FB8F01E84AEB", item: { count: 1, id: "immersiveengineering:hammer" }, type: "item" }
+    ]
+    title: "Tools on the Wall"
+    x: 27.65d
+    y: 2.4d
+  },
+  {
+    dependencies: ["A77D9C128DC4BD37"]
+    description: ["Take stock of the base and make sure it actually feels ready for industry before you move on."]
+    icon: "sophisticatedstorage:chest"
+    id: "D807EF3E75F6DA84"
+    rewards: [
+        { count: 1, id: "A41714878607F99D", item: { count: 8, id: "minecraft:redstone" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.95d
     tasks: [
-        { id: "D74DAD8B2D7DC547", type: "checkmark" }
+        { id: "5BC802CD29FCE305", type: "checkmark" }
     ]
     title: "Ready for Real Work"
-    x: 16d
+    x: 32.10d
     y: 0d
   }
   ]

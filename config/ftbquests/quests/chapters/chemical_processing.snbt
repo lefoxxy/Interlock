@@ -6,21 +6,21 @@
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
   icon: "mekanism:chemical_injection_chamber"
-  icon_scale: 1.25d
+  icon_scale: 1.4
   id: "C23F66E723EDBDAA"
   order_index: 14
   quest_links: []
   quests: [
   {
-    dependencies: ["B84347CCDBF851B9"]
+    dependencies: ["E65DB0E52F66F2AA"]
     description: ["Place your first chemical machine and let the factory become a little more demanding."]
     icon: "mekanism:chemical_injection_chamber"
     id: "24F05E4C529B63A6"
     rewards: [
-        { count: 1, id: "3230133CE7B95219", item: { count: 4, id: "mekanism:ingot_osmium" }, type: "item" }
+        { count: 1, id: "3230133CE7B95219", item: { count: 7, id: "mekanism:ingot_osmium" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.85d
     tasks: [
         { id: "B2D2774AE107AAD1", icon: "mekanism:chemical_injection_chamber", observe_type: 0, timer: 0L, to_observe: "mekanism:chemical_injection_chamber", type: "observation" }
     ]
@@ -34,16 +34,16 @@
     icon: "mekanism:advanced_control_circuit"
     id: "E0118DEA0857E056"
     rewards: [
-        { count: 1, id: "5D6B4C7111183254", item: { count: 6, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "5D6B4C7111183254", item: { count: 11, id: "minecraft:redstone" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.35d
     tasks: [
         { id: "8F55735876B261D6", item: { count: 1, id: "mekanism:advanced_control_circuit" }, type: "item" }
     ]
     title: "More Control, More Cost"
-    x: 4d
-    y: -1.5d
+    x: 4.15d
+    y: -2.6d
   },
   {
     dependencies: ["E0118DEA0857E056"]
@@ -51,49 +51,83 @@
     icon: "mekanism:basic_energy_cube"
     id: "40AD894B28ADE331"
     rewards: [
-        { count: 1, id: "29510C6536157170", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
+        { count: 1, id: "29510C6536157170", item: { count: 14, id: "pipez:energy_pipe" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.15d
     tasks: [
         { id: "9B8DFEFCEC90AC0C", item: { count: 1, id: "mekanism:basic_energy_cube" }, type: "item" }
     ]
     title: "Give the Line a Battery"
-    x: 8d
-    y: 1.5d
+    x: 8.3d
+    y: 2.4d
   },
   {
     dependencies: ["40AD894B28ADE331"]
-    description: ["Give the chemical side enough routed support and storage to stay sane."]
-    icon: "sophisticatedstorage:storage_output"
+    description: ["Back the chemical line with enough item support that it stops living batch to batch."]
+    icon: "pipez:item_pipe"
     id: "9ED26A2F4FEB2F49"
     rewards: [
-        { count: 1, id: "DA82B76087C87D3A", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+        { count: 1, id: "DA82B76087C87D3A", item: { count: 8, id: "pipez:universal_pipe" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.15d
     tasks: [
-        { id: "81BD84898742EFA2", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+        { id: "81BD84898742EFA2", item: { count: 12, id: "pipez:item_pipe" }, type: "item" }
     ]
-    title: "Keep the Outputs Sorted"
-    x: 12d
-    y: -1.5d
+    title: "Feed the Reagent Side"
+    x: 12.95d
+    y: -1.1d
   },
   {
     dependencies: ["9ED26A2F4FEB2F49"]
-    description: ["Give the chemistry wing one final check and make sure it belongs to the same factory instead of feeling like a side project."]
-    icon: "mekanism:chemical_injection_chamber"
+    description: ["Give the chemical side enough routed support and storage to stay sane."]
+    icon: "sophisticatedstorage:barrel"
     id: "BF62849950E9E76C"
     rewards: [
-        { count: 1, id: "48F90CAD8B87D577", item: { count: 2, id: "mekanism:alloy_infused" }, type: "item" }
+        { count: 1, id: "48F90CAD8B87D577", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 2.15d
+    tasks: [
+        { id: "9870DA5CE3CD1074", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
+    ]
+    title: "Keep the Outputs Sorted"
+    x: 17.1d
+    y: 1.2d
+  },
+  {
+    dependencies: ["BF62849950E9E76C"]
+    description: ["Open the room up enough that the chemistry side feels like a designed wing, not a dangerous pile of upgrades."]
+    icon: "immersiveengineering:treated_scaffold"
+    id: "C94A4EDA16C10786"
+    rewards: [
+        { count: 1, id: "CF1D3AE533BECCE9", item: { count: 7, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.35d
+    tasks: [
+        { id: "00FD2B0AFDDFBD9A", item: { count: 8, id: "immersiveengineering:treated_scaffold" }, type: "item" }
+    ]
+    title: "Aisles for the Chemical Wing"
+    x: 21.25d
+    y: -2.2d
+  },
+  {
+    dependencies: ["C94A4EDA16C10786"]
+    description: ["Give the chemistry wing one final check and make sure it belongs to the same factory instead of feeling like a side project."]
+    icon: "mekanism:chemical_injection_chamber"
+    id: "69D249CD034A5CA2"
+    rewards: [
+        { count: 1, id: "EFD18CA12B8DCE9D", item: { count: 5, id: "mekanism:alloy_infused" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.85d
     tasks: [
-        { id: "9870DA5CE3CD1074", type: "checkmark" }
+        { id: "2F069A4D1BD8DF33", type: "checkmark" }
     ]
     title: "Chemical Processing"
-    x: 16d
+    x: 25.4d
     y: 0d
   }
   ]

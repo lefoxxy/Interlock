@@ -5,24 +5,24 @@
   filename: "factory_design"
   group: "27A06DCB36C6BDA7"
   hide_quest_until_deps_visible: true
-  icon: "sophisticatedstorage:controller"
-  icon_scale: 1.25d
+  icon: "sophisticatedstorage:gold_barrel"
+  icon_scale: 1.4
   id: "71ED34B795141BD4"
   order_index: 17
   quest_links: []
   quests: [
   {
-    dependencies: ["232B0C24443EEA02"]
-    description: ["Use the storage controller to anchor a more intentional factory layout."]
-    icon: "sophisticatedstorage:controller"
+    dependencies: ["F82863CC5D6E8949"]
+    description: ["Use strong storage as the anchor for a more intentional factory layout."]
+    icon: "sophisticatedstorage:gold_barrel"
     id: "3F7AA9442D80289A"
     rewards: [
-        { count: 1, id: "EBD330A5E86447A7", item: { count: 1, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
+        { count: 1, id: "EBD330A5E86447A7", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
     ]
     shape: "gear"
-    size: 2.25d
+    size: 2.85d
     tasks: [
-        { id: "9DD1EF5E20AB7257", icon: "sophisticatedstorage:controller", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:controller", type: "observation" }
+        { id: "9DD1EF5E20AB7257", icon: "sophisticatedstorage:gold_barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_barrel", type: "observation" }
     ]
     title: "Give Each Section a Job"
     x: 0d
@@ -34,66 +34,100 @@
     icon: "pipez:universal_pipe"
     id: "3C613EF7DFF2D6CB"
     rewards: [
-        { count: 1, id: "7BB897F4D658DB93", item: { count: 8, id: "pipez:item_pipe" }, type: "item" }
+        { count: 1, id: "7BB897F4D658DB93", item: { count: 18, id: "pipez:item_pipe" }, type: "item" }
     ]
-    shape: "rsquare"
-    size: 1.75d
+    shape: "diamond"
+    size: 2.35d
     tasks: [
         { id: "A3F22270BA0188B7", item: { count: 12, id: "pipez:universal_pipe" }, type: "item" }
     ]
     title: "A Hall for the Lines"
-    x: 4d
-    y: -1.5d
+    x: 4.15d
+    y: -2.6d
   },
   {
     dependencies: ["3C613EF7DFF2D6CB"]
-    description: ["Use better energy routing so power looks like it was part of the build from the start."]
-    icon: "pipez:energy_pipe"
+    description: ["Give yourself room to walk, route, and fix things without dismantling whatever is next to it."]
+    icon: "sophisticatedstorage:barrel"
     id: "A0BAAC4B8FA5BB5E"
     rewards: [
-        { count: 1, id: "5EB33566475E821D", item: { count: 4, id: "minecraft:redstone" }, type: "item" }
+        { count: 1, id: "5EB33566475E821D", item: { count: 4, id: "minecraft:chest" }, type: "item" }
     ]
-    shape: "diamond"
-    size: 1.75d
+    shape: "hexagon"
+    size: 2.15d
     tasks: [
-        { id: "B05E03E99C69D6D1", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
+        { id: "B05E03E99C69D6D1", icon: "sophisticatedstorage:barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:barrel", type: "observation" }
     ]
-    title: "Power Belongs in the Plan Too"
-    x: 8d
-    y: 1.5d
+    title: "Leave a Service Lane"
+    x: 8.3d
+    y: 2.4d
   },
   {
     dependencies: ["A0BAAC4B8FA5BB5E"]
-    description: ["Put storage on the floor where it actually supports the design instead of filling gaps."]
-    icon: "sophisticatedstorage:storage_output"
+    description: ["Use better energy routing so power looks like it was part of the build from the start."]
+    icon: "pipez:energy_pipe"
     id: "1EB65A90F20953C8"
     rewards: [
-        { count: 1, id: "650B65407899AE7E", item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
+        { count: 1, id: "650B65407899AE7E", item: { count: 7, id: "minecraft:redstone" }, type: "item" }
     ]
-    shape: "hexagon"
-    size: 1.75d
+    shape: "rsquare"
+    size: 2.15d
     tasks: [
-        { id: "684A03FD8544B6E3", icon: "sophisticatedstorage:storage_output", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:storage_output", type: "observation" }
+        { id: "684A03FD8544B6E3", item: { count: 8, id: "pipez:energy_pipe" }, type: "item" }
     ]
-    title: "Storage Where It Matters"
-    x: 12d
-    y: -1.5d
+    title: "Power Belongs in the Plan Too"
+    x: 12.95d
+    y: -1.1d
   },
   {
     dependencies: ["1EB65A90F20953C8"]
-    description: ["Step back and make sure the floor now has recognizable zones instead of a single expanding workshop blob."]
-    icon: "sophisticatedstorage:controller"
+    description: ["Put storage on the floor where it actually supports the design instead of filling gaps."]
+    icon: "sophisticatedstorage:gold_chest"
     id: "45A8D6FAB5AB181D"
     rewards: [
-        { count: 1, id: "16B437FAD2AA8271", item: { count: 4, id: "minecraft:iron_ingot" }, type: "item" }
+        { count: 1, id: "16B437FAD2AA8271", item: { count: 2, id: "sophisticatedbackpacks:upgrade_base" }, type: "item" }
+    ]
+    shape: "diamond"
+    size: 2.15d
+    tasks: [
+        { id: "2DE4D56CFFEF80FA", icon: "sophisticatedstorage:gold_chest", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_chest", type: "observation" }
+    ]
+    title: "Storage Where It Matters"
+    x: 17.1d
+    y: 1.2d
+  },
+  {
+    dependencies: ["45A8D6FAB5AB181D"]
+    description: ["Give the floor enough separation that power, processing, and storage do not all blur into one another."]
+    icon: "sophisticatedstorage:gold_barrel"
+    id: "B401351F5E67C2A0"
+    rewards: [
+        { count: 1, id: "E48B25E1457DCFB3", item: { count: 7, id: "minecraft:iron_ingot" }, type: "item" }
+    ]
+    shape: "hexagon"
+    size: 2.35d
+    tasks: [
+        { id: "D24EC919C95522C7", icon: "sophisticatedstorage:gold_barrel", observe_type: 0, timer: 0L, to_observe: "sophisticatedstorage:gold_barrel", type: "observation" }
+    ]
+    title: "Zones You Can Actually Read"
+    x: 21.25d
+    y: -2.2d
+  },
+  {
+    dependencies: ["B401351F5E67C2A0"]
+    description: ["Step back and make sure the floor now has recognizable zones instead of a single expanding workshop blob."]
+    icon: "sophisticatedstorage:gold_barrel"
+    id: "088D89890FF9B481"
+    rewards: [
+        { count: 1, id: "86DA96C93E847196", item: { count: 2, id: "sophisticatedstorage:upgrade_base" }, type: "item" }
     ]
     shape: "octagon"
-    size: 2.25d
+    size: 2.85d
     tasks: [
-        { id: "2DE4D56CFFEF80FA", type: "checkmark" }
+        { id: "8BB10B64BD2A3424", type: "checkmark" }
     ]
     title: "Factory Design"
-    x: 16d
+    x: 25.4d
     y: 0d
   }
   ]
